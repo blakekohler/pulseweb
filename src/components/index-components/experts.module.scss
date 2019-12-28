@@ -1,0 +1,107 @@
+.container{
+    width: 100%;
+    padding: 40px;
+    font-family: 'Lato', sans-serif;
+   
+    border-bottom: 1px solid #8080801f;
+    background-color: #c32c5c;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+.tamera{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    height: 100px;
+    margin-left: 10px;
+
+}
+.iain{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 74% 26% 70% 30% / 76% 78% 22% 24%;
+    margin-left: 10px;
+
+    height: 100px;
+}
+.mark, .amy{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 27% 73% 39% 61% / 76% 78% 22% 24% ;
+margin-left: 10px;
+    height: 100px;
+}
+
+.matt{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 80% 20% 56% 44% / 34% 53% 47% 66%;
+    margin-left: 10px;
+    height: 100px;
+}
+
+.kathryn{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 15% 85% 56% 44% / 67% 53% 47% 33%;
+    margin-left: 10px;
+
+    height: 100px;
+}
+.michelle{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 74% 26% 70% 30% / 76% 78% 22% 24%;
+    margin-left: 10px;
+
+    height: 100px;
+}
+
+.jamison{
+    border: 2px white solid;
+    margin: 0;
+    width: 100px;
+    border-radius: 72% 28% 36% 64% / 26% 91% 9% 74% ;
+    margin-left: 10px;
+
+    height: 100px;
+}
+.headline{
+    color: white;   
+    font-size: 30pt;
+    font-family: 'Quicksand', sans-serif;
+    padding: 30px;
+    text-align: center;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.seemore{
+    border: 1px solid white;
+    border-radius: 21px;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    padding: 17px !important;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: medium;
+    text-decoration: none;
+    white-space: nowrap;
+   
+}

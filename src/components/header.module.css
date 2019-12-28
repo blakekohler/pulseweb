@@ -1,0 +1,92 @@
+.topnav {
+    overflow: hidden;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+}
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #C32B5C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd3;
+    color: #4E56A4;
+  }
+  
+  .topnav a.active {
+    background-color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .buttonHolder, .signin{ display: none !important;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      position: absolute;
+    right: 0px;
+    }
+  }
+  .hidden{
+      display: none;
+  }
+  .show{
+      display: block;
+  }
+
+  .logo{
+      width: 100%;
+      height: 100%;
+      max-width: 150px;
+      min-width: 150px;
+  }
+
+  .signin{
+    border: 1px solid #C32B5C;
+    border-radius: 41px;
+    height: 40px;
+    display: flex;
+    padding: 7px !important;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize !important;
+    margin-top: 5px;
+    width: 100px !important;
+    min-width: 100px;
+  }
+
+  .demo{
+    border: 1px solid #fff;
+    color: #fff !important;
+    background-color: #C32B5C;
+    border-radius: 41px;
+    height: 40px;
+    display: flex;
+    padding: 7px !important;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize !important;
+    margin-top: 5px;
+    width: 200px !important;
+    margin-left: 20px;
+  }
+
+  .buttonHolder{
+    flex: 1 1;
+    justify-content: flex-end;
+    
+    display: flex;
+
+  }

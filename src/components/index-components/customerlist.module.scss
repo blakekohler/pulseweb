@@ -1,0 +1,112 @@
+.container{
+    width: 100%;
+    padding: 40px;
+    font-family: 'Lato', sans-serif;
+    // background-color: #c4c4c454;
+    
+    padding-bottom: 100px;
+    background-image: url('../../../static/backgrounds/testback.png');
+    border-bottom: 1px solid #8080801f;
+}
+
+.customerPic{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 10px;
+    border-radius: 200px;
+    margin: 10px;
+    padding: 50px;
+   
+}
+.imgHolder{
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    height: 100px;
+
+}
+.testimonial{
+    width: 100%;
+}
+.story{
+    display: flex;
+    align-content: center;
+    flex: 1;
+}
+.storyHolder{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.name{
+    font-weight: 600;
+    font-size: 12pt;
+    white-space: nowrap;
+}
+.title{
+    font-weight: 300;
+    font-size: 10pt;
+    margin-left: 10px;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+.buttonHolder{
+    display:flex;
+}
+
+.seemore{
+    border: 1px solid #C32B5C;
+    border-radius: 21px;
+    height: 20px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: #C32B5C;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.play{
+    
+    color: #fff !important;
+    background-color: #C32B5C;
+    border-radius: 21px;
+    height: 20px;
+    white-space: nowrap;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: #C32B5C;
+    text-transform: capitalize !important;
+    margin-top: 5px;
+    font-size: small;
+    text-decoration: none;
+}
+.playicon{
+    font-size: 7pt;
+    margin-right: 5px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+}
+.testimonial{
+    margin-top: 10px;
+}
+.trusted{
+    font-size: xx-large;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #4E56A4;
+
+}

@@ -1,0 +1,103 @@
+.container{
+    width: 100%;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #c32c5c;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+    border-bottom: 1px solid #8080801f;
+}
+
+h1, h2{
+   
+    font-family: 'Quicksand', sans-serif;
+    color: #4E56A4;
+    text-align: center;
+    
+}
+.quote{
+    color: white;
+    flex: 1;
+    padding-right: 50px;
+    font-size: larger;
+}
+.author{
+    color: white;
+    font-size: small;
+
+}
+.seemore{
+    border: 1px solid white;
+    border-radius: 21px;
+    height: 20px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+   
+}
+
+
+.cityweekly{
+    object-fit: cover;
+    padding: 25px;
+    height: 100px;
+    flex: 1 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    max-width: 300px;
+    margin: 0;
+}
+
+.orgcode{
+    height: 100px;
+    flex: 1 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    max-width: 300px;
+    object-position: center;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.tribune{
+    height: 100px;
+    flex: 1 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    max-width: 300px;
+    object-position: center;
+    margin: 0;
+    opacity: 0.6;
+}
+.forbespic{
+    height: 120px;
+    flex: 1 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    max-width: 300px;
+    padding: 30px;
+    object-position: center;
+    margin: 0;
+    filter: brightness(0) invert(1);
+
+}
+
+
+
+.imgHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
