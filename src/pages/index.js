@@ -9,6 +9,7 @@ import FeatureOverview from "../components/index-components/featureoverview";
 import PressList from "../components/index-components/presslist";
 import Experts from "../components/index-components/experts";
 import MarketsOverview from "../components/index-components/marketsoverview";
+import MissionOverview from "../components/index-components/missionoverview";
 
 const IndexPage = () => (
   <Layout>
@@ -20,7 +21,7 @@ const IndexPage = () => (
     <FeatureOverview></FeatureOverview>
     <Experts></Experts>
     <MarketsOverview></MarketsOverview>
-    <div>Social Mission </div>
+    <MissionOverview></MissionOverview>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )

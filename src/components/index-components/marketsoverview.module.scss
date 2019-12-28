@@ -2,8 +2,55 @@
     width: 100%;
     padding: 40px;
     font-family: 'Lato', sans-serif;
-    margin-top: 50px;
     background-color: white;
     padding-left: 10%;
     padding-right: 10%;
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.vulnerablelist{
+    display: flex;
+}
+
+.item{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.name{
+    font-weight: 600;
+    color: grey;
+}
+
+.big{
+    font-size: 30pt;
+    padding: 20px;
+    color: #c32b5c;
+}
+
+.seemore{
+    border: 1px solid #c32b5c;
+    border-radius: 21px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    padding: 17px !important;
+    justify-content: center;
+    align-items: center;
+    color: #c32b5c;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: medium;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 300px;
+    cursor: pointer;
+   
+}
+.buttonHolder{
+    display: flex;
+    justify-content: center;
 }
