@@ -68,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    ><link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand&display=swap" rel="stylesheet"/>
+    </Helmet>
   )
 }
 
