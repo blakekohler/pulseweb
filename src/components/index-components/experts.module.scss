@@ -10,6 +10,7 @@
     padding-left: 10%;
     padding-right: 10%;
     align-items: center;
+  
 }
 
 .tamera{
@@ -104,5 +105,19 @@ margin-left: 10px;
     text-decoration: none;
     white-space: nowrap;
     margin-top: 20px;
-   
+   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .matt, .mark, .tamera, .michelle,.kathryn, .jamison,.iain, .amy {
+        display: none;
+    }
+}
+
+.seemore:hover{
+    color: #c32c5c;
+    background-color: #d4d0d0;
+    border: 1px solid #fff;
 }

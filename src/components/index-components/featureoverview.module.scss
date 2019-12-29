@@ -2,8 +2,9 @@
     color: #4E56A4;
 
 }
-.featureRow{
+.featureRow, .featureRow2{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -44,4 +45,18 @@ h1{
 .featureImageLeft{
     min-width: 300px;
     max-width: 500px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .featureRow2{
+        flex-wrap: wrap-reverse;
+    }
+    .featureImageLeft, .featureDetails{
+        padding: 5px;
+    }
+    
 }

@@ -12,12 +12,14 @@
 
 .vulnerablelist{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .item{
     flex: 1;
     margin: 10px;
     text-align: center;
+   
 }
 
 .name{
@@ -53,4 +55,15 @@
 .buttonHolder{
     display: flex;
     justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .item{
+        min-width: 150px;
+    }
+    
+}
+.seemore:hover{
+    color: #C32B5C;
+    background-color: #8080801c;
+    border: 1px solid #C32B5C;
 }

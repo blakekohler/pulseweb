@@ -55,7 +55,7 @@ const FeatureOverview = () => {
           </div>
         </div>
       </div>
-      <div className={style.featureRow}>
+      <div className={style.featureRow2}>
         
         <div className={style.featureDetails}>
           <div className={style.detailRow}>

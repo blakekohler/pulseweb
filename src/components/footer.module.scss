@@ -21,6 +21,7 @@
     padding-right: 10%;
     background-color: #f3f3f3;
     font-family: 'Quicksand', sans-serif;
+    flex-wrap: wrap;
 }
 
 .left{
@@ -47,18 +48,38 @@
     }
     .demo{
         border: 1px solid #fff;
-        color: #fff !important;
+        color: #fff ;
         background-color: #C32B5C;
         border-radius: 41px;
         height: 60px;
         display: flex;
-        padding: 7px !important;
+        padding: 7px ;
         justify-content: center;
         align-items: center;
-        text-transform: capitalize !important;
+        text-transform: capitalize ;
         margin-top: 5px;
-        width: 250px !important;
+        width: 250px;
         margin-right: 20px;
         text-decoration: none;
+        cursor: pointer;
     
       }
+
+      .demo:hover{
+          color: #C32B5C;
+          background-color: #80808038;
+          border: 1px solid #C32B5C;
+      }
+
+
+
+      @media only screen and (max-width: 600px) {
+       .callToAction{
+padding-left: 10px;
+padding-right: 10px;
+       }   
+       .headline, .subline{
+           min-width: 300px;
+           line-height: normal;
+       }
+    }

@@ -52,6 +52,9 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+        content: `https://pulseforgood.com/img/metaImage.jpg`       },
+        {
           name: `twitter:card`,
           content: `summary`,
         },

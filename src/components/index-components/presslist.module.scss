@@ -37,12 +37,12 @@ h1, h2{
     justify-content: center;
     align-items: center;
     color: white;
-    text-transform: capitalize !important;
+    text-transform: capitalize ;
     margin: 5px;
     font-size: small;
     text-decoration: none;
     white-space: nowrap;
-   
+   cursor: pointer;
 }
 
 
@@ -67,4 +67,20 @@ h1, h2{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .seemore{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .quote{
+        padding-right: 0px;
+    }
+}
+
+.seemore:hover{
+    color: #c32c5c;
+    background-color: #d4d0d0;
+    border: 1px solid #fff;
 }

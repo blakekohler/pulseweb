@@ -20,16 +20,10 @@
     padding-right: 0%;
     padding-top: 2%;
 }
+.responsiveVideo{
+    display: none;
+}
 
-@media only screen and (max-width: 600px) {
-    .container{
-        flex-direction: row-reverse;
-
-    }
-    .leftHolder{
-        min-width: 100%;
-    }
-  }
 .rightHolder{
     flex: 1;
 
@@ -79,13 +73,15 @@ line-height: initial;
     border-radius: 41px;
     height: 60px;
     display: flex;
-    padding: 7px !important;
+    padding: 7px ;
     justify-content: center;
     align-items: center;
     color:  #C32B5C;
-    text-transform: capitalize !important;
+    text-transform: capitalize ;
     margin-top: 5px;
-    width: 150px !important;
+    width: 150px;
+    cursor: pointer;
+
     min-width: 100px;
     text-decoration: none;
 
@@ -93,18 +89,19 @@ line-height: initial;
 
   .demo{
     border: 1px solid #fff;
-    color: #fff !important;
+    color: #fff;
     background-color: #C32B5C;
     border-radius: 41px;
     height: 60px;
     display: flex;
-    padding: 7px !important;
+    padding: 7px;
     justify-content: center;
     align-items: center;
-    text-transform: capitalize !important;
+    text-transform: capitalize;
     margin-top: 5px;
-    width: 250px !important;
+    width: 250px;
     margin-right: 20px;
+    cursor: pointer;
     text-decoration: none;
 
   }
@@ -136,3 +133,51 @@ line-height: initial;
       font-size: small;
       color: #C32B5C;
   }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: row-reverse;
+
+    }
+    .leftHolder{
+        min-width: 100%;
+    }
+    .rightHolder{
+        display: none;
+    }
+    .detailRow{
+        min-width: 200px;
+    }
+    .headline{
+        font-size: xx-large;
+    }
+    .demo, .tryit{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .responsiveVideo{
+        display: block;
+        margin-bottom: 40px;
+        width: 100%;
+        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+   
+    .rightHolder{
+        display: none;
+    }
+
+  }
+
+  .demo:hover{
+    color: #C32B5C;
+    background-color: #8080801c;
+    border: 1px solid #C32B5C;
+}
+.tryit:hover{
+    color: #C32B5C;
+    background-color: #8080801c;
+    border: 1px solid #C32B5C;
+}

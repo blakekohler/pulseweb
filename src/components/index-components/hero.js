@@ -4,7 +4,8 @@ import style from "./hero.module.scss"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
+import OverviewVid from "../../videos/overview-small.mp4";
+import VideoCover from "../../images/cover.png"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -27,6 +28,12 @@ const Hero = () => {
   return (
     <div className={style.container}>
       <div className={style.leftHolder}>
+      <div className={style.responsiveVideo}>
+      <video className={style.responsiveVideo} controls poster={VideoCover}>
+  <source src={OverviewVid} type="video/mp4"/>
+  Your browser does not support the video tag.
+</video>
+      </div>
         <div className={style.headline}>
           There's a better way to gather client feedback
         </div>

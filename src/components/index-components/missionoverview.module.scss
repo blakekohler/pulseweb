@@ -4,6 +4,7 @@
 }
 .featureRow{
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .container{
@@ -56,7 +57,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-perspective: 800;
+    
 
 }
 
@@ -86,4 +87,24 @@ h1{
     font-size: small;
     text-decoration: none;
     white-space: nowrap;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .videoCover{
+        height: 200px;
+    }
+   
+    
+}
+
+.seemore:hover{
+    color: #C32B5C;
+    background-color: #8080801c;
+    border: 1px solid #C32B5C;
 }
