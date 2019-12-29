@@ -21,6 +21,7 @@ h1, h2{
     flex: 1;
     padding-right: 50px;
     font-size: larger;
+    min-width: 300px;
 }
 .author{
     color: white;
@@ -45,41 +46,6 @@ h1, h2{
 }
 
 
-.cityweekly{
-    object-fit: cover;
-    padding: 25px;
-    height: 100px;
-    flex: 1 1;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.4;
-    max-width: 300px;
-    margin: 0;
-}
-
-.orgcode{
-    height: 100px;
-    flex: 1 1;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    object-fit: scale-down;
-    max-width: 300px;
-    object-position: center;
-    margin: 0;
-    opacity: 0.6;
-}
-
-.tribune{
-    height: 100px;
-    flex: 1 1;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    object-fit: scale-down;
-    max-width: 300px;
-    object-position: center;
-    margin: 0;
-    opacity: 0.6;
-}
 .forbespic{
     height: 120px;
     flex: 1 1;
@@ -100,4 +66,5 @@ h1, h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
