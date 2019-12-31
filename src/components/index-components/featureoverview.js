@@ -41,14 +41,14 @@ const FeatureOverview = () => {
             /></div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
-            <h2>Physical kiosks installed in your facility</h2>
+            <h2 className={style.featureHeader}>Physical kiosks installed in your facility</h2>
             We ship you a physical kiosk that is mounted within your building,
             providing your clients a quick, consistent way to leave feedback. No
             more dedicating resources to interviews, paper surveys, and
             spreadsheets.
           </div>
           <div className={style.detailRow}>
-            <h2>Online surveys available as well</h2>
+            <h2 className={style.featureHeader}>Online surveys available as well</h2>
             Want to reach even more people, no problem. The Pulse survey can be
             sent out digitally, allowing you to reach clients through email and
             outreach groups.
@@ -59,11 +59,11 @@ const FeatureOverview = () => {
         
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
-            <h2>Use the data dashboard to see trends</h2>
+            <h2 className={style.featureHeader}>Use the data dashboard to see trends</h2>
             Each survey is automatically consolidated into a data dashboard, which lets you filter and splice the data any way you see fit. You can see trends and anomalies in real time, allowing you to react and respond in a timely manner.
           </div>
           <div className={style.detailRow}>
-            <h2>Share your data</h2>
+            <h2 className={style.featureHeader}>Share your data</h2>
             Sharing your data is a simple as clicking a button. You can print, download, and send, helping you get the data to who needs to see it quickly.
           </div>
         </div>

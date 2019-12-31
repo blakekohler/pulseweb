@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import style from "./hero.module.scss"
 
 import { Link } from "gatsby"
@@ -6,7 +6,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import OverviewVid from "../../videos/overview-small.mp4";
 import VideoCover from "../../images/cover.png"
+import VideoPlayer from "../videoPlayer";
 const Hero = () => {
+  const [showVideo, setShowVideo] = useState(false);
   const data = useStaticQuery(graphql`
     query {
       kioskImage: file(relativePath: { eq: "kiosk.jpg" }) {
@@ -27,6 +29,8 @@ const Hero = () => {
   `)
   return (
     <div className={style.container}>
+    {showVideo ? <> <div className={style.close} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={OverviewVid}></VideoPlayer> </> : null}
+   
       <div className={style.leftHolder}>
       <div className={style.responsiveVideo}>
       <video className={style.responsiveVideo} controls poster={VideoCover}>
@@ -67,7 +71,7 @@ const Hero = () => {
       <div className={style.rightHolder}>
         <div className={style.imageHolder}>
         <div>
-        <i className={`fas fa-play ${style.bigplay}`}></i>
+        <i onClick={() => setShowVideo(true)} className={`fas fa-play ${style.bigplay}`}></i>
        
         </div>
        

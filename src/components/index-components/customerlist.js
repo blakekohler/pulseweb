@@ -31,7 +31,7 @@ const CustomerList = () => {
   `)
   return (
     <div className={style.container}>
-    <h1 className={style.trusted}>Trusted By:</h1>
+    <h1 className={style.trusted}>Trusted by:</h1>
       <div className={style.storyHolder}>
         <div className={style.story}>
           <div className={style.customerPicHolder}>
@@ -94,7 +94,7 @@ const CustomerList = () => {
               <div className={style.title}>Data Analyst</div>
             </div>
             <div className={style.buttonHolder}>
-              <div className={style.seemore}>Read Story</div>{" "}
+              <a className={style.seemore} target="_blank" href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb">Read Story</a>{" "}
               
             </div>
           </div>

@@ -19,32 +19,32 @@ const Header = ({ siteTitle }) => {
   return (
     <header>
       <nav className={style.topnav} >
-        <Img
+      <Link to="/"> <Img
           className={style.logo}
           fluid={data.placeholderImage.childImageSharp.fluid}
-        />
-       
-        <a href="#news">Pricing</a>
-        <a href="#contact">Features</a>
-        <a href="#about">Customers</a>
-        <a href="#about">Markets</a>
-        <a href="#about">Contact</a>
-       
+        /></Link>
+       <Link className={style.link} to="/product/">Product</Link>
+       <Link className={style.link} to="/pricing/">Pricing</Link>
+       <Link className={style.link} to="/customers/">Customers</Link>
+       <Link className={style.link} to="/markets/">Markets</Link>
+       <Link className={style.link} to="/contact/">Contact</Link>
         <div className={style.buttonHolder}>
-        <a className={style.signin} href="#signIn">Sign In</a>
+        <a className={style.signin} href="https://kiosk.pulseforgood.com/">Sign In</a>
         <a className={style.demo} href="#schedule">Schedule Demo</a>
         </div>
-        <a href="javascript:void(0);" className={style.icon} onClick={openNav}>
+        <a  href="javascript:void(0);" className={`${style.icon} ${style.link}`} onClick={openNav}>
           <i className="fa fa-bars"></i>
         </a>
       </nav>
       <div className={style.hidden} id="responsiveNav">  
-      
-        <a href="#news">Pricing</a>
-        <a href="#contact">Features</a>
-        <a href="#about">Customers</a>
-        <a href="#about">Markets</a>
-        <a href="#about">Contact</a>
+      <div className={style.responsiveNavInner}>
+      <Link className={style.link} to="/product/">Product</Link>
+       <Link className={style.link} to="/pricing/">Pricing</Link>
+       <Link className={style.link} to="/customers/">Customers</Link>
+       <Link className={style.link} to="/markets/">Markets</Link>
+       <Link className={style.link} to="/contact/">Contact</Link>
+      </div>
+        
       </div>
     </header>
   )

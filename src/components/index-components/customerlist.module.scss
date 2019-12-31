@@ -89,6 +89,9 @@
     align-items: center;
     text-transform: capitalize !important;
     margin-top: 5px;
+   
+        border: 1px solid #C32B5C;
+    
     font-size: small;
     text-decoration: none;
 }
@@ -126,13 +129,12 @@
 
 
 .seemore:hover{
-    color: #C32B5C;
-    background-color: #8080801c;
+    color: #fff;
+    background-color: #C32B5C;
     border: 1px solid #C32B5C;
 }
 
 .play:hover{
-    color: #C32B5C;
-    background-color: #8080801c;
-    border: 1px solid #C32B5C;
+    color: white;
+    background-color: #972247;
 }

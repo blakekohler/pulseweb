@@ -4,6 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -188,6 +189,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  height: 100%;
 }
 * {
   box-sizing: inherit;
@@ -200,7 +202,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  height: 100%;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -619,4 +621,7 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+main{
+  min-height: 700px;
 }

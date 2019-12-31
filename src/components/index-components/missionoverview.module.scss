@@ -71,6 +71,7 @@ h1{
     padding: 20px;
     padding-left: 24px;
     opacity: 0.7;
+    cursor: pointer;
 }
 .seemore{
     border: 1px solid #C32B5C;
@@ -104,7 +105,16 @@ h1{
 }
 
 .seemore:hover{
-    color: #C32B5C;
-    background-color: #8080801c;
+    color: white;
+    background-color: #C32B5C;
     border: 1px solid #C32B5C;
+}
+.close{
+    z-index: 9999;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 30px; 
+    font-size: xx-large;
+    cursor: pointer;
 }

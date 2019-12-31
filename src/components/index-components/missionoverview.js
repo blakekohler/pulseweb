@@ -1,10 +1,13 @@
-import React from "react"
+import React, {useState} from "react"
 import style from "./missionoverview.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import VideoCover from "../../images/videocover.png";
+
+import VideoPlayer from "../videoPlayer";
+import OverviewVid from "../../videos/mission-video.mp4";
 
 const MissionOverview = () => {
+    const [showVideo, setShowVideo] = useState(false);
+
   const data = useStaticQuery(graphql`
     query {
       feature1: file(relativePath: { eq: "kioskdrawing.jpg" }) {
@@ -33,14 +36,16 @@ const MissionOverview = () => {
   return (
     <div className={style.container}>
     <div className={style.row}>
+    {showVideo ? <> <div className={style.close} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={OverviewVid}></VideoPlayer> </> : null}
+
       <h1 className={style.headline}>Our Mission & Impact</h1>
       
       <div className={style.featureRow}>
         
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
-            <p>Pulse For Good is devoted to helping vulnerable communities by supporting the groups that serve them. We help individuals have a safe place to share feedback regarding the assistance they receive without fear of retribution.  </p>
-          <p>As part of our mission we also ensure we have a secondary impact, on top of the services rendered by our feedback system, by making a small monitary donation for every survey that is completed using our system. </p>
+            <p>Pulse For Good is devoted to helping vulnerable communities by supporting those that serve them. We provide a safe place for individuals to share feedback regarding the assistance they receive without fear of retribution.</p>
+          <p>As part of our mission, we also ensure we have a secondary impact on top of the services rendered by our feedback system. For every survey response, we make a small monetary donation. </p>
           <div className={style.seemore}>Learn More</div>{" "}
 
           </div>
@@ -48,7 +53,7 @@ const MissionOverview = () => {
         </div>
         <div className={style.featureImageLeft}>
         <div className={style.videoCover}>
-        <i className={`fas fa-play ${style.bigplay}`}></i>
+        <i onClick={() => setShowVideo(true)} className={`fas fa-play ${style.bigplay}`}></i>
         {/* <img className={style.videoCover} src={VideoCover}/> */}
         </div>
        
