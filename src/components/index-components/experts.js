@@ -2,16 +2,16 @@ import React from "react"
 import style from "./experts.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Tamera from "../../images/tamera.png";
-import Iain from "../../images/iain.jpg";
-import Mark from "../../images/mark.png";
+import Tamera from "../../images/tamera-small.jpg";
+import Iain from "../../images/iain-small.jpg";
+import Mark from "../../images/mark-small.jpg";
 
-import Michelle from "../../images/michele.jpg";
+import Michelle from "../../images/michele-small.jpg";
 
-import Kathryn from "../../images/kathryn.jpg";
-import Jamison from "../../images/jamison.png";
+import Kathryn from "../../images/kathryn-small.jpg";
+import Jamison from "../../images/jamison-small.jpg";
 
-import Matt from "../../images/matt.png";
+import Matt from "../../images/mattt-small.jpg";
 
 import Amy from "../../images/amy.jpg";
 

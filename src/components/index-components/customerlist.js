@@ -6,21 +6,21 @@ import Img from "gatsby-image"
 const CustomerList = () => {
   const data = useStaticQuery(graphql`
     query {
-      customer1: file(relativePath: { eq: "matt.jpg" }) {
+      customer1: file(relativePath: { eq: "mattm-small.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      customer2: file(relativePath: { eq: "brit.png" }) {
+      customer2: file(relativePath: { eq: "brit-small.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      customer3: file(relativePath: { eq: "court.png" }) {
+      customer3: file(relativePath: { eq: "court-small.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
