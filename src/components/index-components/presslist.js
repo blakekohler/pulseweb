@@ -1,11 +1,7 @@
 import React from "react"
 import style from "./presslist.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import Forbes from "../../images/forbes.png";
-import Tribune from "../../images/tribune.png";
-import OrgCode from "../../images/orgcode.png";
-import CityWeekly from "../../images/cityweekly.png";
+
 
 
 const PressList = () => {
@@ -22,9 +18,7 @@ const PressList = () => {
     <div className={style.seemore}>
         See more Press
     </div>
-    {/* <img className={style.tribune} src={Tribune}/>
-    <img className={style.orgcode} src={OrgCode}/>
-    <img className={style.cityweekly} src={CityWeekly}/> */}
+ 
     </div>
     
     </div>
