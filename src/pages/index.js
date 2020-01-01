@@ -13,7 +13,7 @@ import MissionOverview from "../components/index-components/missionoverview";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Pulse For Good | Client satisfaction tracking for vulnerable populations" />
     <Hero></Hero>
   
     <CustomerList></CustomerList>

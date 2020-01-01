@@ -4,11 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
+import Contactform from "../components/contact-components/contactform";
 
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <Container> <h1>Contact</h1></Container>
+    <Container> <Contactform/></Container>
 
   </Layout>
 )
