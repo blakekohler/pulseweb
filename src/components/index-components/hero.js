@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import OverviewVid from "../../videos/overview-small.mp4";
-import VideoCover from "../../images/cover.png"
+import VideoCover from "../../images/cover.jpg"
 import VideoPlayer from "../videoPlayer";
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);

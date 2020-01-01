@@ -7,7 +7,7 @@ import style from "./header.module.css"
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
