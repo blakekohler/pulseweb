@@ -12,7 +12,7 @@ const Contactform = () => {
     <h2 className={style.midwidth}>Ready to get started? Need help or have a question? <br/>Do not hesitate to reach out.</h2></div>
        </div>
     <div className={style.left}>
-    <form className={style.form} name="contact" method="POST" data-netlify="true" action="/thanks">
+    <form className={style.form} name="contact" method="POST" data-netlify="true" action="/thanks" data-netlify-honeypot="bot-field">
     <p className={style.hidden}>
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
@@ -50,7 +50,7 @@ const Contactform = () => {
           <br />
           <input
             className={style.input}
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Email"
