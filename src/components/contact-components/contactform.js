@@ -37,8 +37,8 @@ const Contactform = () => {
           <input
             className={style.input}
             type="text"
-            id="name"
-            name="name"
+            id="organization"
+            name="organization"
             placeholder="Organization"
           />
         </div>
