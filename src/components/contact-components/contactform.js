@@ -21,6 +21,7 @@ const Contactform = () => {
             Name
           </label>
           <br />
+          <input className={style.hidden} name="contact"/>
           <input
             className={style.input}
             type="text"
