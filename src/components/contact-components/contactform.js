@@ -12,10 +12,10 @@ const Contactform = () => {
     <h2 className={style.midwidth}>Ready to get started? Need help or have a question? <br/>Do not hesitate to reach out.</h2></div>
        </div>
     <div className={style.left}>
-    <form className={style.form}>
+    <form className={style.form} name="contact" method="POST" data-netlify="true">
         
         <div className={style.row}>
-          <label className={style.label} for="name">
+          <label className={style.label} >
             Name
           </label>
           <br />
@@ -28,7 +28,7 @@ const Contactform = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} for="name">
+          <label className={style.label} >
             Organization
           </label>
           <br />
@@ -42,7 +42,7 @@ const Contactform = () => {
         </div>
 
         <div className={style.row}>
-          <label className={style.label} for="email">
+          <label className={style.label} >
             Email
           </label>
           <br />
@@ -55,7 +55,7 @@ const Contactform = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} for="phone">
+          <label className={style.label} >
             Phone
           </label>
           <br />
@@ -68,7 +68,7 @@ const Contactform = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} for="subject">
+          <label className={style.label} >
             Notes{" "}
           </label>
           <br />
