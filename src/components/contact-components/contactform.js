@@ -12,8 +12,10 @@ const Contactform = () => {
     <h2 className={style.midwidth}>Ready to get started? Need help or have a question? <br/>Do not hesitate to reach out.</h2></div>
        </div>
     <div className={style.left}>
-    <form className={style.form} name="contact" method="POST" data-netlify="true">
-        
+    <form className={style.form} name="contact" method="POST" data-netlify="true" action="/thanks">
+    <p className={style.hidden}>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
         <div className={style.row}>
           <label className={style.label} >
             Name
