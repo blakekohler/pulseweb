@@ -1,0 +1,105 @@
+.customerList{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.container{
+    padding-top: 50px;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.left{
+   
+    flex: 3;
+}
+.right{
+   
+    flex: 2;
+  
+}
+.storyHolder{
+    display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.story{
+    display: block;
+    width: 100%;
+    padding-right: 20%;
+    padding-bottom: 100px;
+}
+.close{
+    z-index: 9999;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 30px; 
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.partnername{
+    text-align: left;
+}
+.preview{
+    color: grey;
+    //max-width: 640px;
+}
+.clientVideo{
+    padding-bottom: 20px;
+    width: 100%;
+}
+.bigboy{
+    font-size: 60pt;
+}
+.customerPic{
+    width: 100px;
+    border-radius: 50px;
+    
+}
+.testimonial{
+    width: 100%;
+}
+.readmore{
+    border: 1px solid #C32B5C;
+    border-radius: 21px;
+    height: 40px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: #C32B5C;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100px;
+    cursor: pointer;
+}
+
+.smallstory{
+    display: flex;
+    align-content: center;
+    flex: 1;
+}
+.customerPicHolder{
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .storyHolder{
+        padding-left: 2%;
+        padding-right: 2%;
+        display: block;
+    }
+    .smallstory{
+        padding: 10px;
+    }
+    .story{
+        padding-right: 0px;
+    }
+}

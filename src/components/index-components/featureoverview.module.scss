@@ -30,7 +30,9 @@ h1{
 .featurePic{
     width: 100%;
 }
-
+.featurePicKiosk{
+    height: 300px;
+}
 .row{
     padding-left: 10%;
     padding-right: 10%;
@@ -47,6 +49,7 @@ h1{
 .featureImageLeft{
     min-width: 300px;
     max-width: 500px;
+    text-align: center;
 }
 @media only screen and (max-width: 600px) {
     .container{

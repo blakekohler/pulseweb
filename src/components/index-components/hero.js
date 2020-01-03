@@ -35,7 +35,7 @@ const Hero = () => {
       <div className={style.responsiveVideo}>
       <video className={style.responsiveVideo} controls poster={VideoCover}>
   <source src={OverviewVid} type="video/mp4"/>
-  Your browser does not support the video tag.s
+  Your browser does not support the video tag.
 </video>
       </div>
         <div className={style.headline}>

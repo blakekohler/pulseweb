@@ -2,43 +2,19 @@ import React from "react"
 import style from "./featureoverview.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import kiosk from "../../images/kiosk.jpg"
+import dashboardreal from "../../images/dashboardreal.jpg"
 
 const FeatureOverview = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      feature1: file(relativePath: { eq: "kioskdrawing.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      feature2: file(relativePath: { eq: "dashboard.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      customer3: file(relativePath: { eq: "court.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  
   return (
     <div className={style.container}>
     <div className={style.row}>
       <h1 className={style.headline}>Satisfaction gathering the easy way</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <Img
-              className={style.featurePic}
-              fluid={data.feature1.childImageSharp.fluid}
-            /></div>
+        <img className={style.featurePicKiosk} src={kiosk}/>
+       </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
             <h2 className={style.featureHeader}>Physical kiosks installed in your facility</h2>
@@ -68,10 +44,9 @@ const FeatureOverview = () => {
           </div>
         </div>
         <div className={style.featureImageLeft}>
-        <Img
-              className={style.featurePic}
-              fluid={data.feature2.childImageSharp.fluid}
-            /></div>
+        <img className={style.featurePic} src={dashboardreal}/>
+        
+        </div>
       </div>
       </div>
     </div>
