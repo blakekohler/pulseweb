@@ -7,13 +7,15 @@
   background-color: #322d2c;
   display: flex;
   height: 100%;
+  flex-wrap: wrap;
 }
 
-.column {
+.logoColumn, .column {
   flex: 1 1;
   height: 100%;
   margin: 5px;
   padding: 5px;
+  min-width: 140px;
 }
 .callToAction {
   display: flex;
@@ -79,6 +81,12 @@
   .subline {
     min-width: 300px;
     line-height: normal;
+  }
+  .logoColumn{
+    display: none;
+  }
+  .column{
+    width: 300px;
   }
 }
 

@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.container}>
-      <div className={style.column}>
+      <div className={style.logoColumn}>
           <div className={style.logo}>
           <img src={smallLogo}/></div>
           
