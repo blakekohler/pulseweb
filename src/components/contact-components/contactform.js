@@ -6,7 +6,7 @@ const Contactform = () => {
   return (
     <div className={style.container}>
     <div className={style.row}>
-    <h1>Let's get in touch</h1>
+    <h1 className={style.headline}>Let's get in touch</h1>
     <br></br>
     <div className={style.secondaryHeader}>
     <h2 className={style.midwidth}>Ready to get started? Need help or have a question? <br/>Do not hesitate to reach out.</h2></div>

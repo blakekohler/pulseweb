@@ -63,6 +63,7 @@ dfn {
 }
 h1 {
   font-size: 2em;
+  font-weight: 400;
   margin: 0.67em 0;
 }
 mark {
@@ -624,4 +625,10 @@ pre tt:after {
 }
 main{
   min-height: 600px;
+}
+.heroText{
+  color: #4E56A4;
+  padding-bottom: 40px;
+  font-size: xxx-large;
+  line-height: initial;
 }

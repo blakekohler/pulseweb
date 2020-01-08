@@ -13,7 +13,7 @@ const Features  = () => {
   return (
     <div className={style.container}>
     <div className={style.row}>
-      <h1 className={style.headline}>Features</h1>
+      <h1 className={style.headline}>What you get with Pulse</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
         <img  className={style.featurePic} src={kiosk}/>
