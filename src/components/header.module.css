@@ -14,10 +14,7 @@ header{
     padding: 10px;
    
 }
-  a, a:visited{
-    color: #C32B5C;
-  }
-  
+ 
 
   
 .link{
@@ -81,6 +78,10 @@ header{
     text-decoration: none;
     width: 100px !important;
     min-width: 100px;
+    color: #C32B5C;
+  }
+  .signin:visited{
+    color: #C32B5C;
   }
 
   .signin:hover{

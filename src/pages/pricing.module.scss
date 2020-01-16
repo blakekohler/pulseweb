@@ -1,0 +1,158 @@
+.leftHolder, .rightHolder{
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 40px;
+}
+.pricingflex{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+}
+.radios{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.radio{
+    color: blue;
+
+}
+.radioLabel{
+    font-size: x-large;
+    padding-left: 10px;
+    padding: 10px;
+}
+
+//RAdio buttons
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 44px;
+    padding-right: 34px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #c32b5c;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #cc9fad;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #c32b5c;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #c32b5c;
+  }
+
+  .subHeader{
+      font-weight: 400; 
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 40px;
+  }
+
+  .priceLevel{
+      padding: 10px;
+  }
+  .priceDetails{
+    padding: 10px;
+    font-size: x-large;
+}  
+
+.setupfee{
+    padding: 5px 10px;
+}
+.setupfeegreen{
+    padding: 5px 10px;
+    color: green;
+ 
+}
+
+.green{
+    color: green;
+}
+
+.valueAdd{
+    padding: 5px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.valueAdd:before{
+    content: '\2713';
+    padding: 5px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.demo{
+    margin-top: 50px;
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: #c32b5c;
+        border-radius: 41px;
+        height: 60px;
+        display: flex;
+        padding: 7px;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+       margin-bottom: 30px;
+        width: 250px;
+        margin-right: 20px;
+        text-decoration: none;
+        cursor: pointer;
+    
+}
+
+.demo:hover {
+    background-color: #972247;
+    color: #fff;
+    border: 1px solid #fff;
+  }
