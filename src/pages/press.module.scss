@@ -1,0 +1,136 @@
+h1{
+    font-weight: 400;
+}
+.pressContainer{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.itemList{
+    width: 100%;
+}
+.itemFilters{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dadad2;
+    margin-bottom: 10px;
+}
+.itemChip{
+    background-color: grey;
+    border: 1px solid pink;
+    color: pink;
+}
+.itemHeader{
+font-weight: 400;
+font-size: x-large;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-color: #edede952;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.itemPreview{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.readmore{
+    border: 1px solid #C32B5C;
+    border-radius: 21px;
+    height: 20px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: #C32B5C;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 130px;
+}
+.readmore:hover{
+    background-color: #C32B5C;
+color: white;
+    border: 1px solid #C32B5C;
+}
+.padright{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.icon{
+    color: #C32B5C;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemHolder{
+flex: 3;
+min-width: 300px;
+}
+.mediaKit{
+    flex: 1;
+    
+    margin-left: 20px;
+}
+.mediaKitHeader{
+    text-align: center;
+    font-size: large;
+    border-bottom: 1px solid #dadbd2;    padding-bottom: 13px;
+    padding-top: 13px;
+   
+}
+.mediaKitsub{
+    padding: 5px;
+font-size: smaller;
+font-weight: 600;
+}
+.info{
+    font-size: medium;
+    padding: 5px;
+}
+
+.active{
+    color: #fff;
+    background-color: #C32B5C;
+    border: 1px solid #C32B5C;
+    border-radius: 21px;
+    height: 20px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize !important;
+    margin: 5px;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 130px;
+}
+
+.active:hover{
+    color: white;
+    background-color: #972247;
+}
+
+.logo{
+    width: 100%;
+}
+.whitelogo{
+    background-color: #C32B5C;
+}

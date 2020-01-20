@@ -3,7 +3,7 @@ import style from "./marketsoverview.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-
+import { Link } from "gatsby"
 
 
 
@@ -53,7 +53,9 @@ const MarketsOverview = () => {
 
    </div>
    <div className={style.buttonHolder}>
-   <div className={style.seemore}>View More Markets & Solutions</div>
+   <Link to="/markets/" className={style.seemore}>
+   View More Markets & Solutions
+    </Link>
    </div>
    
     </div>

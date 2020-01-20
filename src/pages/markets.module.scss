@@ -37,6 +37,11 @@ padding: 20px;
     text-decoration: none;
     margin-top: 30px;
 }
+.learnmore:hover{
+    background-color: #C32B5C;
+color: white;
+    border: 1px solid #C32B5C;
+}
 
 .picture{
     max-width: 350px;
@@ -84,6 +89,6 @@ padding: 20px;
 }
 .marketList{
     display: flex;
-    
     flex-wrap: wrap;
 }
+
