@@ -66,7 +66,7 @@ const Hero = () => {
         </div>
         <div className={style.buttonHolder}>
         <a className={style.demo} href="#signIn">Schedule Demo</a>
-        <a className={style.tryit} href="#schedule">Try it out</a></div>
+        <a className={style.tryit} href="/tryitout">Try it out</a></div>
       </div>
       <div className={style.rightHolder}>
         <div className={style.imageHolder}>
