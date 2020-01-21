@@ -5358,7 +5358,7 @@ div {
 .survey-container[_ngcontent-c2] {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -5931,8 +5931,8 @@ textarea[_ngcontent-c2] {
 <script>
 const driver = new Driver({
     allowClose: false,
-    closeBtnText: 'Skip To Next Page',
-    doneBtnText: 'View Next Page',
+    closeBtnText: 'Skip',
+    doneBtnText: 'Next Page',
     onReset: () => {
       window.location.href = 'multiselect.html';
 
@@ -5945,7 +5945,7 @@ driver.defineSteps([
     popover: {
     title: 'Custom survey questions',
     description: "Customize your survey questions to fit the needs of your organization.",
-    position: 'top'
+    position: 'bottom'
   }
   },
   {
