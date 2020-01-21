@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
        <Link className={style.link} to="/contact/">Contact</Link>
         <div className={style.buttonHolder}>
         <a className={style.signin} href="https://kiosk.pulseforgood.com/">Sign In</a>
-        <a className={style.demo} href="#schedule">Schedule Demo</a>
+        <Link className={style.demo} to="/demo">Schedule Demo</Link>
         </div>
         <a  href="javascript:void(0);" className={`${style.icon} ${style.link}`} onClick={openNav}>
           <i className="fa fa-bars"></i>

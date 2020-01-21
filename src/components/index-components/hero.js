@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={style.buttonHolder}>
-        <a className={style.demo} href="#signIn">Schedule Demo</a>
+        <Link className={style.demo} to="/demo">Schedule Demo</Link>
         <a className={style.tryit} href="/tryitout">Try it out</a></div>
       </div>
       <div className={style.rightHolder}>

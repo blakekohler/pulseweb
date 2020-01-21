@@ -23,7 +23,7 @@ const Footer = () => {
           <div className={style.subline}>Schedule a 15 minute demo </div>
         </div>
         <div className={style.right}>
-          <div className={style.demo}>Schedule Demo</div>
+        <Link className={style.demo} to="/demo">Schedule Demo</Link>
         </div>
       </div>
       <div className={style.container}>
