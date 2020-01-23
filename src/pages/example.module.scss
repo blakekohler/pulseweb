@@ -1,4 +1,55 @@
 .container{
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+font-size: xx-large;
+font-weight: 400;
+font-family: 'Quicksand', sans-serif;
+color: #4E56A4;
+}
+.article{
+    flex: 4;
+    padding-top: 20px;
+    padding-right: 40px;
+   
+}
+.featured{
+    flex: 1;
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align: right;
+
+}
+.featuredHeader{
+    text-align: left;
+}
+.details{ display: flex;
+padding-top: 20px;
+padding-bottom: 20px;
+align-items: center;
+font-size: small;
+color: #757575;
+
+}
+.authorImg{ 
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-right: 10px;
+}
+.heroImg{ width: 100%;}
+.mainEvent{ display: block}
+.featuredItem{
+    }
+.featuredImg{ display: block}
+.featuredText{ 
+    text-align: left;
+    padding-left: 20px;
+    color: #4e4e4e;
+    width: 100%;
 }
