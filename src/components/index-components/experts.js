@@ -14,7 +14,7 @@ import Jamison from "../../images/jamison-small.jpg";
 import Matt from "../../images/mattt-small.jpg";
 
 import Amy from "../../images/amy.jpg";
-
+import { Link } from "gatsby"
 
 
 
@@ -31,7 +31,7 @@ const Experts = () => {
     <div className={style.headline}>
     <div>Backed by industry experts</div>
     
-    <div className={style.seemore}>Learn More</div></div>
+    <Link className={style.seemore} to="/about">Learn More</Link></div>
     
     <img src={Jamison} className={style.jamison}/>
     <img src={Amy} className={style.amy}/>

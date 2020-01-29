@@ -29,7 +29,7 @@ const Markets = () => (
 to vulnerable people</h1>
 
 Weather you serve the homeless or people seeking refuge from domestic violence we help you to collect your clients feedback so you can stay focused on what you do best.
-<Link className={style.learnmore}>Learn more about our mission</Link>
+<Link className={style.learnmore} to="/about">Learn more about our mission</Link>
 
 </div>
   <div className={style.right}>

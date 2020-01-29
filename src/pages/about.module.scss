@@ -1,0 +1,57 @@
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+}
+.missionHeader{
+    padding-top: 100px;
+font-weight: 400;
+}
+.missionSub{
+    font-weight: 400;
+    color: gray;
+}
+.missionText{
+    font-weight: 400;
+
+}
+.leadershipHolder{
+display: flex;
+flex-wrap: wrap;
+}
+.advisoryHolder{
+    padding-top: 50px;
+    display: flex;
+flex-wrap: wrap;
+}
+.leader{
+min-width: 300px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.leaderImg{
+border-radius: 100px;
+width: 100px;
+height: 100px;
+}
+.leaderName{
+font-size: x-large;
+}
+.leaderTitle{
+font-size: medium;
+}
+
+.left, .right{
+    width: 50%;
+    padding: 20px;
+
+}
+
+.impactHolder{
+    display: flex;
+}
+
+.impactHeader{
+    padding-top: 50px;
+}

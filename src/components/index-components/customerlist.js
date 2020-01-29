@@ -1,9 +1,15 @@
-import React from "react"
+import React, {useState} from "react"
 import style from "./customerlist.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import ccshomeless from "../../videos/ccshomeless.mp4"
+import ccsv from "../../videos/ccsv.mp4"
+import VideoPlayer from "../videoPlayer";
+
 
 const CustomerList = () => {
+  const [showVideo, setShowVideo] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState("");
   const data = useStaticQuery(graphql`
     query {
       customer1: file(relativePath: { eq: "mattm-small.jpg" }) {
@@ -28,9 +34,19 @@ const CustomerList = () => {
         }
       }
     }
-  `)
+  `);
+
+  const videoControl = (videosource) =>{
+    setSelectedVideo(videosource.toString()); 
+    setShowVideo(true);
+  }
+
+
   return (
+    
     <div className={style.container}>
+    {showVideo ? <> <div className={style.close} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={selectedVideo}></VideoPlayer> </> : null}
+    
     <h1 className={style.trusted}>Trusted by:</h1>
       <div className={style.storyHolder}>
         <div className={style.story}>
@@ -48,8 +64,8 @@ const CustomerList = () => {
               <div className={style.title}>Director of Homeless Services</div>
             </div>
             <div className={style.buttonHolder}>
-              <div className={style.seemore}>Read Story</div>{" "}
-              <div className={style.play}>
+              <a className={style.seemore} href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb" target="_blank">Read Story</a>{" "}
+              <div className={style.play} onClick={ (e) => { videoControl(ccshomeless)  }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
               </div>
@@ -72,7 +88,7 @@ const CustomerList = () => {
             </div>
             <div className={style.buttonHolder}>
               <div className={style.seemore}>Read Story</div>{" "}
-              <div className={style.play}>
+              <div className={style.play} onClick={(e) => { videoControl(ccsv) }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
               </div>

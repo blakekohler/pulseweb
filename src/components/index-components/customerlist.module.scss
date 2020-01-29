@@ -138,3 +138,13 @@
     color: white;
     background-color: #972247;
 }
+
+.close{
+    z-index: 9999;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 30px; 
+    font-size: xx-large;
+    cursor: pointer;
+}
