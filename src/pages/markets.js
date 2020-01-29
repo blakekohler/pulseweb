@@ -38,59 +38,59 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
 <div className={style.marketListHolder}>
   <h1 className={style.helpingHeader}>Markets we serve</h1>
   <div className={style.marketList}>
-  <Link className={style.marketItem}>
+  <div className={style.marketItem}>
   <img className={style.marketImage} src={homeless}/>
   <div className={style.marketTitle}> Homelessness
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={bh}/>
   <div className={style.marketTitle}> Behavioral health
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={ch}/>
   <div className={style.marketTitle}> Community health
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={healthcare}/>
   <div className={style.marketTitle}> Health care
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={corrections}/>
   <div className={style.marketTitle}> Corrections
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={rehab}/>
   <div className={style.marketTitle}> Rehab
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={housing}/>
   <div className={style.marketTitle}> Affordable housing
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={dv}/>
   <div className={style.marketTitle}> Domestic Violence
     </div>
-    </Link>
+    </div>
 
-    <Link className={style.marketItem}>
+    <div className={style.marketItem}>
   <img className={style.marketImage} src={mh}/>
   <div className={style.marketTitle}> Mental health
     </div>
-    </Link>
+    </div>
 
     
   </div>
