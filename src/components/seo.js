@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-        content: {metaImage}      },
+        content: `https://pulsemain-b6050.web.app/img/metaImage.jpg` },
         {
           name: `twitter:card`,
           content: `summary`,
