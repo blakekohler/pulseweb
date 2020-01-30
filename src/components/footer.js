@@ -34,13 +34,15 @@ const Footer = () => {
         </div>
         <div className={style.column}>
           <div className={style.header}>Product</div>
-          <div className={style.navitem}>Hardware</div>
-          <div className={style.navitem}>Software</div>
+          <div className={style.navitem}>Features</div>
+          <div className={style.navitem}>Pricing</div>
+          <div className={style.navitem}>Markets</div>
+          <div className={style.navitem}>Customers</div>
         </div>
         <div className={style.column}>
           <div className={style.header}>Use Cases</div>
-          <div className={style.navitem}>Career</div>
-          <div className={style.navitem}>Blog</div>
+          <div className={style.navitem}>Volunteers</div>
+          <div className={style.navitem}></div>
         </div>
         <div className={style.column}>
           <div className={style.header}>Resources</div>
@@ -51,9 +53,12 @@ const Footer = () => {
       
         <div className={style.column}>
           <div className={style.header}>Company</div>
-          <div className={style.navitem}>About</div>
-          <div className={style.navitem}>Career</div>
-          <div className={style.navitem}>Blog</div>
+          <Link to="/about" className={style.navitem}>About</Link><br/>
+          <Link to="/press" className={style.navitem}>Press</Link><br/>
+          <Link to="/about" className={style.navitem}>Mission</Link><br/>
+          <Link to="/press" className={style.navitem}>Media Kit</Link><br/>
+
+          <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a>
         </div>
         <div className={style.column}>
           

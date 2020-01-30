@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import logo from "../images/logo.jpg";
 import style from "./header.module.css"
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
@@ -19,10 +20,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header>
       <nav className={style.topnav} >
-      <Link to="/"> <Img
-          className={style.logo}
-          fluid={data.placeholderImage.childImageSharp.fluid}
-        /></Link>
+      <Link to="/"> <img className={style.logo} alt="Pulse Logo" src={logo}/></Link>
        <Link className={style.link} to="/product/">Product</Link>
        <Link className={style.link} to="/pricing/">Pricing</Link>
        <Link className={style.link} to="/customers/">Customers</Link>

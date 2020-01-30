@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./contactform.module.scss"
-import wes from "../../images/wes.jpg"
+import wes from "../../images/wesbig.jpg"
 
 const Contactform = () => {
   return (
@@ -32,6 +32,7 @@ const Contactform = () => {
             id="name"
             name="name"
             placeholder="Name"
+            required
           />
         </div>
         <div className={style.row}>
@@ -58,6 +59,7 @@ const Contactform = () => {
             type="email"
             id="email"
             name="email"
+            required
             placeholder="Email"
           />
         </div>
@@ -72,6 +74,7 @@ const Contactform = () => {
             id="phone"
             name="phone"
             placeholder="Phone #"
+            required
           />
         </div>
         <div className={style.row}>

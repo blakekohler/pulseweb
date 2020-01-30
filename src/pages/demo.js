@@ -37,6 +37,7 @@ const Demo = () => (
             id="name"
             name="name"
             placeholder="Name"
+            required
           />
         </div>
         <div className={style.row}>
@@ -64,6 +65,7 @@ const Demo = () => (
             id="email"
             name="email"
             placeholder="Email"
+            required
           />
         </div>
         <div className={style.row}>
@@ -77,6 +79,7 @@ const Demo = () => (
             id="phone"
             name="phone"
             placeholder="Phone #"
+            required
           />
         </div>
         <div className={style.row}>

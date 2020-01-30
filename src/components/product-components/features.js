@@ -7,7 +7,7 @@ import filters from "../../images/filters.jpg"
 import homelessguy from "../../images/homelessguy.jpg"
 import dashboardsmall from "../../images/dashboardsmall.jpg"
 import weeklyreview from "../../images/weeklyreview.jpg"
-
+import kioskanimation from "../../lottie/kioskAnimated.json";
 const Features  = () => {
 
   return (
@@ -16,7 +16,16 @@ const Features  = () => {
       <h1 className={style.headline}>What you get with Pulse</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={kiosk}/>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src="https://assets2.lottiefiles.com/packages/lf20_tNeHbt.json"
+  class={style.kioskanimation}
+>
+</lottie-player>
+        {/* <img  className={style.featurePic} src={kiosk}/> */}
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -47,7 +56,16 @@ const Features  = () => {
           </div>
         </div>
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={dashboardsmall}/>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src="https://assets4.lottiefiles.com/packages/lf20_asir3o.json"
+  class={style.kioskanimation}
+>
+</lottie-player>
+        {/* <img  className={style.featurePic} src={dashboardsmall}/> */}
         </div>
       </div>
       </div>
@@ -57,7 +75,16 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={weeklyreview}/>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src="https://assets2.lottiefiles.com/packages/lf20_A9N5eA.json"
+  class={style.kioskanimation}
+>
+</lottie-player>
+        {/* <img  className={style.featurePic} src={weeklyreview}/> */}
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -77,8 +104,18 @@ Row 2 */}
             <h2 className={style.featureHeader}>Aggregated view</h2>
             Pulse is designed to be installed in single locations and multiple locations within a single organization. If you have multiple Pulse kiosks you will be able to see scores and data for all your kiosks from a single page.          </div>
         </div>
+       
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={filters}/>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src=" https://assets10.lottiefiles.com/packages/lf20_z44xvs.json"
+  class={style.kioskanimation}
+>
+</lottie-player>
+        {/* <img  className={style.featurePic} src={filters}/> */}
         </div>
       </div>
       </div>
@@ -87,7 +124,17 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={homelessguy}/>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src=" https://assets9.lottiefiles.com/packages/lf20_LmRMVU.json"
+  class={style.kioskanimation}
+>
+</lottie-player>
+       
+        {/* <img  className={style.featurePic} src={homelessguy}/> */}
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>

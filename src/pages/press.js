@@ -14,25 +14,36 @@ const Press = () => {
     
   const items = [
     {
-      itemTitle: "Pulse selected for Kiln Startup Showcase",
+      itemTitle: "Forbes: Things Change When Providers Gather Feedback From Homeless People They Serve",
       itemType: "news",
       iconCode: "fas fa-quote-right",
       preview:
-        "Pulse for Good was honored to be selected as one of the startups selected by Kiln for the Startup Showcase at Silicon Slopes",
-      link: "/contact",
+        "In the homeless services arena, feedback isn’t always sought. When it is, it often is done by the staff. How honest is the feedback about the services likely to be when the service provider conducts the survey, watching as you answer questions on a written form?",
+      link: "forbes.com/sites/devinthorpe/2019/11/29/things-change-when-providers-gather-feedback-from-homeless-people-they-serve/#4a0bd1a830af",
       date: new Date(2020, 1, 20),
       external: false,
     },
+    // {
+    //   itemTitle: "National Health Foundation in LA & Pulse Partner",
+    //   itemType: "release",
+    //   iconCode: "fas fa-newspaper",
+    //   preview:
+    //     "Pulse for Good is excited to ",
+    //   link: "/contact",
+    //   date: new Date(2020, 1, 20),
+    //   external: false,
+    // },
     {
-      itemTitle: "National Health Foundation in LA & Pulse Partner",
-      itemType: "release",
-      iconCode: "fas fa-newspaper",
-      preview:
-        "Pulse for Good was honored to be selected as one of the startups selected by Kiln for the Startup Showcase at Silicon Slopes",
-      link: "/contact",
-      date: new Date(2020, 1, 20),
-      external: false,
-    },
+        itemTitle: "Salt Lake Tribune: Catholic Community Services, Pulse for Good aim to improve experience for homeless clients ",
+        itemType: "news",
+        iconCode: "fas fa-paragraph",
+        preview:
+          "Catholic Community Services was the first homeless service provider in Utah to try the new technology, which is part of a growing effort across the state and in the Salt Lake City area’s three new homeless resource centers to give homeless people a voice they’ve often lacked in the services that affect them.",
+        link:
+          "https://www.cityweekly.net/utah/taking-clients-vitals/Content?oid=11167537",
+        date: new Date(2020, 1, 20),
+        external: true,
+      },
     {
       itemTitle: "For Good: How the UX process helped us do something positive",
       itemType: "blog",
@@ -45,6 +56,21 @@ const Press = () => {
       date: new Date(2020, 1, 20),
       external: true,
     },
+
+    {
+        itemTitle: "City Weekly: Taking Clients' Vitals ",
+        itemType: "news",
+        iconCode: "fas fa-paragraph",
+        preview:
+          "New digital survey gives homeless people a say in how five Utah organizations can better tailor their services.",
+  
+        link:
+          "https://www.cityweekly.net/utah/taking-clients-vitals/Content?oid=11167537",
+        date: new Date(2020, 1, 20),
+        external: true,
+      },
+
+   
   ];
   const [itemList, setItemList] = useState(items);
   const [itemType, setItemType] = useState('all');
