@@ -9,6 +9,7 @@ import marc from "../images/marc.jpg"
 import rem from "../images/rem.jpg"
 import ty from "../images/ty.jpg"
 import travis from "../images/travis.jpg"
+import { Link } from "gatsby"
 //Advisors
 import mark from "../images/mark.jpg"
 import iain from "../images/iain.jpg"
@@ -152,6 +153,7 @@ As part of our mission, we also ensure we have a secondary impact on top of the 
 </p></div>
 </div>
 <h1>Locations</h1>
+<h3 className={style.befirst}>No locations in your state yet?  <Link className={style.demo} to="/demo">Be the first!</Link></h3>
 <img alt="Pulse Map" src={map} />
 
 
