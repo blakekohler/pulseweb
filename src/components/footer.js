@@ -34,20 +34,22 @@ const Footer = () => {
         </div>
         <div className={style.column}>
           <div className={style.header}>Product</div>
-          <div className={style.navitem}>Features</div>
-          <div className={style.navitem}>Pricing</div>
-          <div className={style.navitem}>Markets</div>
-          <div className={style.navitem}>Customers</div>
+          <Link to="/product" className={style.navitem}>Features</Link><br/>
+          <Link to="/pricing" className={style.navitem}>Pricing</Link><br/>
+          <Link to="/markets" className={style.navitem}>Markets</Link><br/>
+          <Link to="/customers" className={style.navitem}>Customers</Link><br/>
+          
         </div>
         <div className={style.column}>
           <div className={style.header}>Use Cases</div>
-          <div className={style.navitem}>Volunteers</div>
+          <Link to="/volunteers" className={style.navitem}>Volunteers</Link><br/>
           <div className={style.navitem}></div>
         </div>
         <div className={style.column}>
           <div className={style.header}>Resources</div>
-          <div className={style.navitem}>Privacy Policy</div>
-          <div className={style.navitem}>Install Guide</div>
+          <Link to="/privacy" className={style.navitem}>Privacy Policy</Link><br/>
+          <Link to="/install" className={style.navitem}>Install Guide</Link><br/>
+          <div className={style.navitem}></div>
          
         </div>
       

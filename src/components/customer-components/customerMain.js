@@ -20,7 +20,7 @@ import kim from "../../images/kim.jpg"
 
 const CustomerMain = () => {
   const [showVideo, setShowVideo] = useState(false);
-  const [responseCount, setResponseCount] = useState(Math.floor((Math.random() * 1000) + 17000));
+  const [responseCount, setResponseCount] = useState(Math.floor((Math.random() * 1000) + 20000));
 
 
   return (
@@ -160,7 +160,7 @@ Orgcode</div>
            <img className={style.customerPic}  src={kim}/>
           </div>
           <div className={style.testimonial}>
-            "If you are serious about feedback from your service users or the organizations you fund, and you want a successful platform for doing so, then I strongly recommend you check out Pulse for Good"
+            "It is a wonderful survey tool created by Pulse for Good that allows us to get feedback from clients as they leave their appointments. It takes less than 2 minutes for them to complete (on an iPad placed in a private location in the office) and collects data on how they felt about our services. It is very helpful in tracking outcomes (and for providing funders data on program services used.)"
             <div className={style.details}>
               <div className={style.name}>-Kim Datwyler</div>
               <div className={style.title}>Executive Director
