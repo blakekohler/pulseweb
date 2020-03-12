@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <div className={style.column}>
           <div className={style.header}>Use Cases</div>
-          <Link to="/volunteers" className={style.navitem}>Volunteers</Link><br/>
+          <a href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" className={style.navitem}>Volunteers</a><br/>
           <div className={style.navitem}></div>
         </div>
         <div className={style.column}>
