@@ -14,7 +14,11 @@ header{
     padding: 10px;
    height: 75px;
 }
- 
+ .banner{
+  background-color: #C32B5C;
+  color: white;
+  padding: 10px;
+ }
 
   
 .link{
@@ -42,6 +46,7 @@ header{
   }
   
   @media screen and (max-width: 600px) {
+    .banner{display: none}
     .topnav a:not(:first-child) {display: none;}
     .buttonHolder, .signin{ display: none !important;}
     .topnav a.icon {
@@ -155,3 +160,8 @@ color: white !important;
   background-color: #ffffffa3;
 }
 
+.bannerText{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

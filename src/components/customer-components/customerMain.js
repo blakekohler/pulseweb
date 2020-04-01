@@ -1,13 +1,15 @@
 import React, { useState } from "react"
 import style from "./customerMain.module.scss"
 import { Link } from "gatsby"
-import sth from "../../images/sth.png"
+import austin from "../../images/austin.png"
 import wv from "../../images/westvirginia.png"
 import vbh from "../../images/vbh.png"
 import switchpoint from "../../images/switchpoint.png"
 import roadhome from "../../images/roadhome.png"
 import nnp from "../../images/nnp.png"
-import lantern from "../../images/lanternhouse.png"
+import ccsinc from "../../images/ccsinc.png"
+import sth from "../../images/sth.png"
+import nhf from "../../images/nhf.png"
 import capsa from "../../images/capsa.png"
 import ccshomeless from "../../videos/ccshomeless.mp4"
 import cssv from "../../videos/ccsv.mp4"
@@ -27,13 +29,16 @@ const CustomerMain = () => {
     <div className={style.container}>
       <h1 className={style.bigboy}>Over {responseCount} voices heard</h1>
       <div className={style.customerList}>
+        <img src={austin} />
         <img src={sth} />
         <img src={vbh} />
         <img src={switchpoint} />
         <img src={wv} />
+        <img src={nnp} />
         <img src={roadhome} />
         <img src={nnp} />
-        <img src={lantern} />
+        <img src={nhf} />
+        <img src={ccsinc} />
         <img src={capsa} />
       </div>
       <div className={style.storyHolder}>

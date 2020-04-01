@@ -19,6 +19,7 @@ const Header = ({ siteTitle }) => {
   `)
   return (
     <header>
+      <div className={style.banner}><Link className={style.bannerText} to="/covid">Learn how to use Pulse to fight COVID-19 <i class='fas fa-arrow-circle-right'></i></Link></div>
       <nav className={style.topnav} >
       <Link to="/"> <img className={style.logo} alt="Pulse Logo" src={logo}/></Link>
        <Link className={style.link} to="/product/">Product</Link>
