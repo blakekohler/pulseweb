@@ -2,6 +2,7 @@ import React from "react"
 import style from "./covid.module.scss"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
+import heroes from "../images/heroes.jpg"
 
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
@@ -15,7 +16,7 @@ import blake from "../images/blake.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse Heroes" />
+      <SEO title="Tackling COVID-19 with Pulse" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
@@ -73,6 +74,21 @@ const Example = () => {
                     Worried about keeping your kiosk safe to use? We understand. Learn about how we suggest you sanitize your kiosk and keep it safe for your clients. 
                   </p>
                   <a href="https://medium.com/pulse-for-good/sanitizing-a-pulse-kiosk-e5e507565876?source=friends_link&sk=d05bfc6759e50fc99d911236dd81338e" className={style.learnmore}>Learn more</a>
+                </div>
+              </div>
+
+              <div className={style.row}>
+                <div className={style.rowImage}>
+                  <img src={heroes} /> 
+                </div>
+                <div className={style.rowDetails}>
+                  <div className={style.rowHeader}>
+                    Help us award your heroes
+                  </div>
+                  <p>
+                  Help us find and reward examples of extraordinary efforts to help those experiencing crisis. 
+                  </p>
+                  <Link to="/heroes" className={style.learnmore}>Learn more</Link>
                 </div>
               </div>
 
