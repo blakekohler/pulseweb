@@ -17,6 +17,11 @@
   padding: 5px;
   min-width: 140px;
 }
+
+
+.bigColumn {
+flex: 2;
+}
 .callToAction {
   display: flex;
   padding: 30px;
@@ -87,6 +92,7 @@
   }
   .column{
     width: 300px;
+    flex: none;
   }
 }
 
@@ -105,4 +111,43 @@
   font-size: small;
   color: white;
   text-decoration: none;
+}
+
+
+.hideAway{
+  position: absolute;
+  left: -5000px;
+}
+
+.newsletter{
+  font-size: small;
+  color: white;
+}
+
+.emailInput{
+  background-color: #615a59;
+  border: 0;
+  padding: 7px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+  font-size: small;
+  height: 33px;
+}
+.subscribe{
+  color: #fff;
+  background-color: #c32b5c;
+  border-radius: 41px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 5px;
+  width: 80px;
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: small;
 }

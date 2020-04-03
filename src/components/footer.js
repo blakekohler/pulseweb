@@ -62,15 +62,27 @@ const Footer = () => {
 
           <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a>
         </div>
-        <div className={style.column}>
-          
+        <div className={style.bigColumn}>
+<div id="mc_embed_signup">
+<form action="https://pulseforgood.us19.list-manage.com/subscribe/post?u=232cb66eeaba1029ba1937bdf&amp;id=9fb73702d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div className="mc-field-group">
+	<label className={style.newsletter} >Subscribe to Newsletter </label>
+	<input type="email" name="EMAIL" className={style.emailInput} id="mce-EMAIL"/>
+</div>
+	<div id="mce-responses" className="clear">
+		<div className="response" id="mce-error-response" style={{display:"none"}}></div>
+		<div className="response" id="mce-success-response" style={{display:"none"}}></div>
+	</div>   
+    <div className={style.hideAway} aria-hidden="true"><input type="text" name="b_232cb66eeaba1029ba1937bdf_9fb73702d5" tabIndex="-1" value=""/></div>
+    <div className="clear">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className={style.subscribe}/></div>
+    </div>
+</form>
+</div>
         </div>
-        <div className={style.column}>
-          
-        </div>
-        <div className={style.column}>
-          
-        </div>
+        
       </div>
     </footer>
   )
