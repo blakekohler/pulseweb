@@ -60,7 +60,7 @@ When people are dealing with anxiety, depression, drug abuse, or other mental an
                   </div>
                   <p>
                  Partnering with the right people can help your organization free up resources and maximize potential.  </p><p>Service providers are already maxed out on resources, time, and people. Using more of those resources to have an internal staff member create a survey, administer that survey, aggregate and analyze that data is often more than providers can do and spare.</p>
-                  <a href="https://www.youtube.com/watch?v=vcrMfQ02g0c" className={style.learnmore}>Read more</a>
+                  <a target="_blank" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 

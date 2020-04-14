@@ -12,6 +12,8 @@ import sth from "../../images/sth.png"
 import nhf from "../../images/nhf.png"
 import capsa from "../../images/capsa.png"
 import ccshomeless from "../../videos/ccshomeless.mp4"
+import vbhvideo from "../../videos/vbhvideo.mp4"
+
 import cssv from "../../videos/ccsv.mp4"
 import matt from "../../images/mattsquare.jpg"
 import court from "../../images/court.png"
@@ -19,10 +21,13 @@ import greg from "../../images/greg.jpg"
 import ccsutah from "../../images/ccsUtah.jpg"
 import iain from "../../images/iain-small.jpg"
 import kim from "../../images/kim.jpg"
+import julie from "../../images/julie.jpg"
+import melissa from "../../images/melissa.jpg"
+import becky from "../../images/becky.jpg"
 
 const CustomerMain = () => {
   const [showVideo, setShowVideo] = useState(false);
-  const [responseCount, setResponseCount] = useState(Math.floor((Math.random() * 1000) + 20000));
+  const [responseCount, setResponseCount] = useState(Math.floor((Math.random() * 1000) + 21000));
 
 
   return (
@@ -75,6 +80,22 @@ const CustomerMain = () => {
 {/* VBH */}
 <div className={style.story}>
             <h2 className={style.partnername}>
+             Valley Behavioral Health 
+            </h2>
+
+            <video className={style.clientVideo} controls>
+              <source src={vbhvideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h4>Having the right people at the table</h4>
+            <p className={style.preview}>
+            When we started Pulse a few years ago we had a seemingly simple goal in mind: we wanted to help vulnerable populations have their voices heard. Our solution consisted of physical kiosks mounted in locations where vulnerable populations are served. We wanted to use our experience in software development, usability, and human-computer interaction to do something good. We recognized that individuals in vulnerable situations struggled to give honest feedback out of fear of repercussions for their responses.
+             
+            </p>
+            <a className={style.readmore} href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb">Read More</a>
+          </div>
+<div className={style.story}>
+            <h2 className={style.partnername}>
               Catholic Community Services Volunteers - SLC
             </h2>
 
@@ -93,6 +114,19 @@ const CustomerMain = () => {
 
         </div>
         <div className={style.right}>
+        <div className={style.smallstory}>
+          <div className={style.customerPicHolder}>
+           <img className={style.customerPic}  src={becky}/>
+          </div>
+          <div className={style.testimonial}>
+          "Pulse For Good has allowed us opportunites to see deep down to see where there are wins that have been missed in the past."
+            <div className={style.details}>
+              <div className={style.name}>-Becky Brown </div>
+              <div className={style.title}>COO - Valley Behavioral Health</div>
+            </div>
+            
+          </div>
+        </div>
        <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
            <img className={style.customerPic}  src={matt}/>
@@ -135,17 +169,18 @@ State Of Utah House of Representatives</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={court}/>
+           <img className={style.customerPic}  src={melissa}/>
           </div>
           <div className={style.testimonial}>
-            "It has been an amazing tool for us."
+          "If you need to gather satisifaction surveys the Pulse kiosks are the way to go."
             <div className={style.details}>
-              <div className={style.name}>-Courtney Cooper </div>
-              <div className={style.title}>AmeriCorps VISTA</div>
+              <div className={style.name}>-Melissa Edgeworth </div>
+              <div className={style.title}>Director of Admin Services - Valley Behavioral Health</div>
             </div>
             
           </div>
         </div>
+     
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
            <img className={style.customerPic}  src={iain}/>
@@ -156,6 +191,19 @@ State Of Utah House of Representatives</div>
               <div className={style.name}>-Iain De Jong</div>
               <div className={style.title}>CEO - 
 Orgcode</div>
+            </div>
+            
+          </div>
+        </div>
+        <div className={style.smallstory}>
+          <div className={style.customerPicHolder}>
+           <img className={style.customerPic}  src={court}/>
+          </div>
+          <div className={style.testimonial}>
+            "It has been an amazing tool for us."
+            <div className={style.details}>
+              <div className={style.name}>-Courtney Cooper </div>
+              <div className={style.title}>AmeriCorps VISTA</div>
             </div>
             
           </div>
@@ -174,7 +222,19 @@ Neightborhood Nonprofit Housing</div>
             
           </div>
         </div>
-
+        <div className={style.smallstory}>
+          <div className={style.customerPicHolder}>
+           <img className={style.customerPic}  src={julie}/>
+          </div>
+          <div className={style.testimonial}>
+          "(Pulse) creates a safe environment, gets in time data, and cuts out extra administrative time."
+            <div className={style.details}>
+              <div className={style.name}>-Julie Rael </div>
+              <div className={style.title}>CCO- Valley Behavioral Health</div>
+            </div>
+            
+          </div>
+        </div>
 
 
 
