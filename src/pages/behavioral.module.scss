@@ -24,8 +24,8 @@
 .article{
     flex: 4;
     padding-top: 20px;
-    
-   
+    width: 100%;
+
 }
 .featured{
     flex: 1;
@@ -58,7 +58,8 @@ color: #757575;
         width: 100%;
     }
     width: 100%;}
-.mainEvent{ display: flex}
+.mainEvent{ display: flex;
+flex-wrap: wrap}
 .featuredItem{
     }
 .featuredImg{ display: block}
@@ -223,11 +224,13 @@ width: 100%;
     .left{
         flex: 1;
         padding: 5px;
+        min-width: 300px;
     }
     .right{
         flex: 1;
         padding-left: 30px;
         padding-right: 30px;
+        min-width: 300px;
     }
 
     .video{
@@ -281,6 +284,7 @@ border-radius: 75px;
     .featuresList{
         display: flex;
         padding: 20px;
+        flex-wrap: wrap;
     }
     .feature > h3{
         color: #C32B5C;
