@@ -4,7 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ccshomeless from "../../videos/ccshomeless.mp4"
 import ccsv from "../../videos/ccsv.mp4"
+import bvhv from "../../videos/melissa-vbh.mp4"
 import VideoPlayer from "../videoPlayer";
+import melissa from "../../images/melissa.jpg"
 
 
 const CustomerList = () => {
@@ -26,7 +28,7 @@ const CustomerList = () => {
           }
         }
       },
-      customer3: file(relativePath: { eq: "court-small.jpg" }) {
+      customer3: file(relativePath: { eq: "melissa.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -75,6 +77,29 @@ const CustomerList = () => {
 
         <div className={style.story}>
           <div className={style.customerPicHolder}>
+          <Img
+              className={style.customerPic}
+              fluid={data.customer3.childImageSharp.fluid}
+            />
+          </div>
+          <div className={style.testimonial}>
+            "If you need to gather satisifaction surveys the Pulse kiosks are the way to go."
+            <div className={style.details}>
+              <div className={style.name}>-Melissa Edgeworth</div>
+              <div className={style.title}> Director of Admin Services</div>
+            </div>
+            <div className={style.buttonHolder}>
+            <a className={style.seemore} href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" target="_blank">Read Story</a>{" "}
+              <div className={style.play} onClick={(e) => { videoControl(bvhv) }}>
+                {" "}
+                <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={style.story}>
+          <div className={style.customerPicHolder}>
             <Img
               className={style.customerPic}
               fluid={data.customer2.childImageSharp.fluid}
@@ -87,6 +112,8 @@ const CustomerList = () => {
               <div className={style.title}> Engagement Coordinator</div>
             </div>
             <div className={style.buttonHolder}>
+            <a className={style.seemore} href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" target="_blank">Read Story</a>{" "}
+
               <div className={style.seemore}>Read Story</div>{" "}
               <div className={style.play} onClick={(e) => { videoControl(ccsv) }}>
                 {" "}
@@ -96,7 +123,7 @@ const CustomerList = () => {
           </div>
         </div>
 
-        <div className={style.story}>
+        {/* <div className={style.story}>
           <div className={style.customerPicHolder}>
             <Img
               className={style.customerPic}
@@ -114,7 +141,7 @@ const CustomerList = () => {
               
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

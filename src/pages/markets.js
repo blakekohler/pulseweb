@@ -45,9 +45,11 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
     </div>
 
     <div className={style.marketItem}>
+      <Link className={style.link} to="behavioral">
   <img className={style.marketImage} src={bh}/>
   <div className={style.marketTitle}> Behavioral health
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
