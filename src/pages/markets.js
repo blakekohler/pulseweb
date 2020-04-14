@@ -33,63 +33,63 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
 
 </div>
   <div className={style.right}>
-  <img className={style.picture} src={chair}/></div>
+  <img className={style.picture} alt='person in chair' src={chair}/></div>
 </div>
 <div className={style.marketListHolder}>
   <h1 className={style.helpingHeader}>Markets we serve</h1>
   <div className={style.marketList}>
   <div className={style.marketItem}>
-  <img className={style.marketImage} src={homeless}/>
+  <img className={style.marketImage} src={homeless} alt='homeless'/>
   <div className={style.marketTitle}> Homelessness
     </div>
     </div>
 
     <div className={style.marketItem}>
       <Link className={style.link} to="behavioral">
-  <img className={style.marketImage} src={bh}/>
+  <img className={style.marketImage} alt='behavioral' src={bh}/>
   <div className={style.marketTitle}> Behavioral health
     </div>
     </Link>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={ch}/>
+  <img className={style.marketImage} alt='Community health' src={ch}/>
   <div className={style.marketTitle}> Community health
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={healthcare}/>
+  <img className={style.marketImage} alt='Healthcare' src={healthcare}/>
   <div className={style.marketTitle}> Health care
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={corrections}/>
+  <img className={style.marketImage} alt='Corrections' src={corrections}/>
   <div className={style.marketTitle}> Corrections
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={rehab}/>
+  <img className={style.marketImage} alt='Rehab' src={rehab}/>
   <div className={style.marketTitle}> Rehab
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={housing}/>
+  <img className={style.marketImage} alt='Affordable housing' src={housing}/>
   <div className={style.marketTitle}> Affordable housing
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={dv}/>
+  <img className={style.marketImage} alt='Domestic Violence' src={dv}/>
   <div className={style.marketTitle}> Domestic Violence
     </div>
     </div>
 
     <div className={style.marketItem}>
-  <img className={style.marketImage} src={mh}/>
+  <img className={style.marketImage} alt='Mental health' src={mh}/>
   <div className={style.marketTitle}> Mental health
     </div>
     </div>

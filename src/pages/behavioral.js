@@ -40,7 +40,7 @@ When people are dealing with anxiety, depression, drug abuse, or other mental an
               <p>Use feedback to improve your organization and provide better services for those going through some of life's worst experiences.   </p>
               </div>
               <div className={style.right}>
-              <iframe className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+              <iframe className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             
 

@@ -21,7 +21,7 @@ const Contactform = () => {
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
         <div className={style.row}>
-          <label className={style.label} >
+          <label for="name" className={style.label} >
             Name
           </label>
           <br />
@@ -36,7 +36,7 @@ const Contactform = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} >
+          <label for="organization" className={style.label} >
             Organization
           </label>
           <br />
@@ -50,7 +50,7 @@ const Contactform = () => {
         </div>
 
         <div className={style.row}>
-          <label className={style.label} >
+          <label for="email" className={style.label} >
             Email
           </label>
           <br />
@@ -64,7 +64,7 @@ const Contactform = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} >
+          <label for="phone" className={style.label}  >
             Phone
           </label>
           <br />

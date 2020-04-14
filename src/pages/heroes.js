@@ -3,9 +3,8 @@ import style from "./heroes.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
 import heroes from "../images/heroes.jpg"
-import blake from "../images/blake.jpg"
+
 const Example = () => {
   return (
     <Layout>
@@ -16,7 +15,7 @@ const Example = () => {
           
          
             <div className={style.heroImg}>
-              <img src={heroes} />
+              <img src={heroes} alt="heroes do extrodinary things" />
             </div>
 
             <div className={style.header}>
@@ -38,22 +37,24 @@ const Example = () => {
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
         <div className={style.row}>
-          <label className={style.label} >
+        <input type="hidden" name="form-name" value="heroes" />
+          <label for="name" className={style.label} >
             Your Name
           </label>
-          <br />
-          <input type="hidden" name="form-name" value="heroes" />
+          
+         
           <input
             className={style.input}
             type="text"
             id="name"
             name="yourname"
+            aria-label="Your name"
             placeholder="Your name"
             required
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} >
+          <label for="organization" className={style.label}   >
             Organization
           </label>
           <br />
@@ -61,12 +62,13 @@ const Example = () => {
             className={style.input}
             type="text"
             id="organization"
-            name="organization"
+            name="organization" 
+            aria-label="Organization"
             placeholder="Organization"
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} >
+          <label className={style.label}  for="heroesname" >
             Hero's Name
           </label>
           <br />
@@ -80,7 +82,7 @@ const Example = () => {
         </div>
 
         <div className={style.row}>
-          <label className={style.label} >
+          <label className={style.label}  for="email" >
             Your Email
           </label>
           <br />
@@ -94,7 +96,7 @@ const Example = () => {
           />
         </div>
         <div className={style.row}>
-          <label className={style.label} >
+          <label className={style.label}  for="heroesemail" >
             Hero's Email
           </label>
           <br />
@@ -109,7 +111,7 @@ const Example = () => {
         </div>
       
         <div className={style.row}>
-          <label className={style.label} >
+          <label className={style.label}   for="herosstory">
             Hero's Story{" "}
           </label>
           <br />

@@ -193,12 +193,12 @@ const Press = () => {
   const [itemType, setItemType] = useState('all');
 const filterItem = (type) =>{
     if(type){
-        if(type == 'all'){
+        if(type === 'all'){
             setItemList(items);
             setItemType('all');
         }
         else{
-            setItemList(items.filter(x => x.itemType == type));
+            setItemList(items.filter(x => x.itemType === type));
             setItemType(type);
         }
     }
@@ -233,18 +233,18 @@ const filterItem = (type) =>{
             <div className={style.row}>
               <div className={style.itemHolder}>
               <div className={style.itemFilters}>
-              <div className={itemType == 'all' ? style.active : style.readmore} onClick={(e) => filterItem('all')}>Show All</div>
-              <div className={itemType == 'blog' ? style.active : style.readmore} onClick={(e) => filterItem('blog')}>
+              <div className={itemType === 'all' ? style.active : style.readmore} onKeyDown={(e) => filterItem('all')} onClick={(e) => filterItem('all')}>Show All</div>
+              <div className={itemType === 'blog' ? style.active : style.readmore} onClick={(e) => filterItem('blog')}>
                 {" "}
                 <i className={`fas fa-paragraph ${style.padright}`}></i>Blog
                 Posts
               </div>
-              <div className={itemType == 'news' ? style.active : style.readmore} onClick={(e) => filterItem('news')} >
+              <div className={itemType === 'news' ? style.active : style.readmore} onClick={(e) => filterItem('news')} >
                 {" "}
                 <i className={`fas fa-quote-right ${style.padright}`}></i> In
                 the News
               </div>
-              <div className={itemType == 'release' ? style.active : style.readmore} onClick={(e) => filterItem('release')}>
+              <div className={itemType === 'release' ? style.active : style.readmore} onClick={(e) => filterItem('release')}>
                 <i className={`far fa-newspaper ${style.padright}`}></i>Press
                 Releases
               </div>

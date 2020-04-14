@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
+
 import screener from "../images/covidscreening.jpg"
-import blake from "../images/blake.jpg"
+
 const Example = () => {
   return (
     <Layout>

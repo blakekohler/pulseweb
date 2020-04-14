@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './thanksmessage.module.scss'
-import kioskred from '../../images/kioskredback.jpg'
 import { Link } from "gatsby"
 
 const Thanksmessage  = () => {
