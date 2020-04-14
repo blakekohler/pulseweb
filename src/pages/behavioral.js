@@ -24,7 +24,7 @@ const Example = () => {
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <div className={style.header}>Automated feedback for Behavioral Health providers  </div>
+            <p className={style.header}>Automated feedback for Behavioral Health providers  </p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
