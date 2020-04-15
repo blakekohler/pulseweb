@@ -18,9 +18,9 @@ const Example = () => {
               <img src={magnet} alt="heroes do extrodinary things" />
             </div>
 
-            <div className={style.header}>
+            <p className={style.header}>
             Get a reminder that love starts with listening 
-            </div>
+            </p>
             <div className={style.subheader}>
             There's no such things as a free magnet... oh, wait.
             </div>

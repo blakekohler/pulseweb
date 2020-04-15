@@ -56,14 +56,14 @@ color: #757575;
 }
 .heroImg{
     img{
-        width: 300px;
+        max-width: 400px;
+        margin-top: -62px;
     }
     float: right;
     padding: 30px;
     margin-top: 20px;}
 .mainEvent{ display: block}
-.featuredItem{
-    }
+
 .featuredImg{ display: block}
 .featuredText{ 
     text-align: left;
@@ -127,3 +127,21 @@ color: #757575;
        text-decoration: none;
    
      }
+
+     @media only screen and (max-width: 600px) {
+        .heroImg{
+            img{
+                max-width: 400px;
+            }
+            float: none;
+            padding: 0px;
+            margin-top: 20px;}
+      }
+      @media only screen and (max-width: 800px) {
+        .heroImg{
+            img{
+                max-width: 400px;
+            }
+            width: 100%;
+        }
+      }
