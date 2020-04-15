@@ -26,7 +26,9 @@ const Example = () => {
             </div>
             <div className={style.mainEvent}>
               <p>
-             At Pulse For Good we believe strongly that the first duty of love is to listen. Listening is the start of transformational changes in individuals, organizations and communities. <br/><br/>Help us share our favorite saying by requesting a magnet. We will get you one sent right away. Help share the awesome power of listening by putting this beauty somewhere everyone can see and read it's amazing message.
+             At Pulse For Good we believe strongly that the first duty of love is to listen. Listening is the start of transformational changes in individuals, organizations and communities. 
+             <br/><br/> As we've traveled the country visiting conferences and events we bring with us our stack of magnets to share with everyone we meet. These magnets have become super popular, popping up on fridges, desks, filing cabients and other metal objects around the country. We figure that if the people we interact with in the wild love them then the internet will love them as well. 
+             <br/><br/>You can do your part to help us share our favorite saying by requesting a magnet. We will get you one sent right away. Help share the awesome power of listening by putting this beauty somewhere everyone can see and read it's amazing message. Post a picture of it to your favorite social media platforma and tag us and we might just send you some other great Pulse For Good swag.
               </p>
               <form className={style.form}  name="magnets"
         method="post"
