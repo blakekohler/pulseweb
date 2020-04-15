@@ -36,7 +36,7 @@ const Example = () => {
 When people are dealing with anxiety, depression, drug abuse, or other mental and behavioral challenges their entire life is affected.  So too are the lives of those around us.  We understand the complexity involved in collecting feedback from such a diverse group.  
                   </p>
                   <p>
-                  The Pulse solution takes every bit of feedback and transforms it into actionable data that can be used to improve services.  Data from Pulse can meet the metrics required by the Federal Government for Medicare.  The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders.                  </p>
+                  The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services.  Data from Pulse can meet the metrics required by the Federal Government for Medicare.  The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders.                  </p>
               <p>Use feedback to improve your organization and provide better services for those going through some of life's worst experiences.   </p>
               </div>
               <div className={style.right}>
