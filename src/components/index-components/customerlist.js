@@ -114,7 +114,7 @@ const CustomerList = () => {
             <div className={style.buttonHolder}>
             <a className={style.seemore} href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" target="_blank">Read Story</a>{" "}
 
-              <div className={style.seemore}>Read Story</div>{" "}
+             
               <div className={style.play} onClick={(e) => { videoControl(ccsv) }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
