@@ -15,6 +15,7 @@ import rehab from "../images/rehab.jpg"
 import housing from "../images/housing.jpg"
 import dv from "../images/Domestic.jpg"
 import mh from "../images/mh.jpg"
+import ed from "../images/school.jpeg"
 
 
 
@@ -48,6 +49,14 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
       <Link className={style.link} to="behavioral">
   <img className={style.marketImage} alt='behavioral' src={bh}/>
   <div className={style.marketTitle}> Behavioral health
+    </div>
+    </Link>
+    </div>
+
+    <div className={style.marketItem}>
+      <Link className={style.link} to="highered">
+  <img className={style.marketImage} alt='Education' src={ed}/>
+  <div className={style.marketTitle}> Education
     </div>
     </Link>
     </div>

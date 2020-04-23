@@ -85,13 +85,13 @@ The fear that is introduced creates a new class of people. Empowered individuals
     </ul>
   </div>
   <div className={style.feature}>
-    <h3>Improve decision making</h3>
+    <h3>Automatic compliance </h3>
 
     <ul>
-      <li>Share student concerns</li>
-      <li>Use reports in discussions</li>
-      <li>Track key indicators</li>
-      <li>Meet reporting requirements</li>
+      <li>Follows prevailing institutional policies</li>
+      <li>Data not personally identifiable</li>
+      <li>Data collected for operational purposes</li>
+      <li>Compliant with all fed/state laws</li>
     </ul>
   </div>
 </div>
