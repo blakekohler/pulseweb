@@ -32,7 +32,7 @@ const Example = () => {
 
                   </p>
                   <p>
-                  Students receive hundreds of emails every day, including numerous emails from your university asking for feedback. Because of the vulnerability students face, Students might be uncomfortable providing feedback because of the ease of identifying them from their email. Getting an honest answer in this situation is nearly impossible. </p>
+                  Students receive hundreds of emails every day, including numerous emails from your university asking for feedback, that remain unopened. Vulnerable students are reluctant to provide feedback via email with their lack of anonymity. Getting an honest answer in this situation is nearly impossible. </p>
               <p>For those students to share how they feel, they need the psychological safety that comes with being anonymous. Pulse feedback kiosks allow for a convenient way for students to provide feedback while protecting their identity.</p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link></div>
               <div className={style.right}>
