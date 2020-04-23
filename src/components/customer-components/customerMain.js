@@ -119,7 +119,7 @@ const CustomerMain = () => {
            <img className={style.customerPic}  src={becky}/>
           </div>
           <div className={style.testimonial}>
-          "Pulse For Good has allowed us opportunites to see deep down to see where there are wins that have been missed in the past."
+          "Pulse For Good has allowed us opportunities to see deep down to see where there are wins that have been missed in the past."
             <div className={style.details}>
               <div className={style.name}>-Becky Brown </div>
               <div className={style.title}>COO - Valley Behavioral Health</div>

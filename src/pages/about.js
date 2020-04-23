@@ -43,7 +43,7 @@ const About  = () => {
     },
     {
         name: "Remington Rainey",
-        title: "Co-Founder & VP of Sales",
+        title: "Co-Founder & CRO",
         img: rem,
 
     },
@@ -55,7 +55,7 @@ const About  = () => {
     } ,
     {
         name: "Marc Weaver",
-        title: "Co-Founder & Design",
+        title: "Co-Founder & CFO",
         img: marc,
     }];
 

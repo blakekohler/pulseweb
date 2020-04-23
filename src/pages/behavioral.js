@@ -111,7 +111,7 @@ When people are dealing with anxiety, depression, drug abuse, or other mental an
   <div className={style.personName}>Becky Brown </div>
 <div className={style.personTitle}>COO - Valley Behavioral Health</div>
 <div className={style.quote}>
-  "Pulse For Good has allowed us opportunites to see deep down to see where there are wins that have been missed in the past.""
+  "Pulse For Good has allowed us opportunities to see deep down to see where there are wins that have been missed in the past."
 </div>
   </div>
 </div>
