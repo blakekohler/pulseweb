@@ -40,10 +40,15 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
   <h1 className={style.helpingHeader}>Markets we serve</h1>
   <div className={style.marketList}>
   <div className={style.marketItem}>
-  <img className={style.marketImage} src={homeless} alt='homeless'/>
+      <Link className={style.link} to="homeless">
+  <img className={style.marketImage} alt='homeless' src={homeless}/>
   <div className={style.marketTitle}> Homelessness
     </div>
+    </Link>
     </div>
+
+
+
 
     <div className={style.marketItem}>
       <Link className={style.link} to="behavioral">
