@@ -14,7 +14,7 @@ import blake from "../images/blake.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Homeless Service Providers" />
+      <SEO title="Pulse for Homeless Service Providers" description="Gather feedback from individuals experiencing homelessness in a way that helps them feel safe to share how they really feel." />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
