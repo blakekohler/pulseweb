@@ -33,11 +33,13 @@ const Example = () => {
             </div>
               <p>
           
-When people are dealing with anxiety, depression, drug abuse, or other mental and behavioral challenges their entire life is affected.  So too are the lives of those around us.  We understand the complexity involved in collecting feedback from such a diverse group.  
-                  </p>
+              athering client feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
                   <p>
-                  The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services.  Data from Pulse can meet the metrics required by the Federal Government for Medicare.  The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders.                  </p>
-              <p>Use feedback to improve your organization and provide better services for those going through some of life's worst experiences.   </p>
+                  Having focused our entire solution on gathering feedback from vulnerable populations we understand the complexity involved in collecting feedback from this diverse group.
+ </p>
+              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. Data from Pulse can meet the metrics required by the Federal Government for Medicare without expending any time on the part of the provider. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
+
+</p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
               <div className={style.right}>
               <iframe className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

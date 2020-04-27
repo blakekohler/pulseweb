@@ -19,6 +19,8 @@ import amy from "../images/amy.jpg"
 import fargo from "../images/jamison.jpg"
 import michele from "../images/michele.jpg"
 import mattthomas from "../images/mattt-small.jpg"
+import mitchell from "../images/mitchell.jpg"
+import stacy from "../images/stacy.jpg";
 import wheels from "../images/feedbackFromWheelChair.jpg"
 import map from "../images/map.png"
 
@@ -66,8 +68,14 @@ const About  = () => {
     },
     {
         name: "Kathryn Monet",
-        title: "National Homeless Expert",
+        title: "Veteran Homeless Expert",
         img: kat,
+
+    },
+    {
+        name: "Stacy Lloyd",
+        title: "Patient Experience Expert",
+        img: stacy,
 
     },
     {
@@ -76,6 +84,7 @@ const About  = () => {
         img: iain,
 
     },
+   
     {
         name: "Amy Daeschel",
         title: "Homeless Advocate",
@@ -92,6 +101,11 @@ const About  = () => {
         name: "Tamera Kohler",
         title: "National Homeless Expert",
         img: tamera,
+    },
+    {
+        name: "Mitchell Colver",
+        title: "Student Analytics  Expert",
+        img: mitchell,
     },
     {
         name: "Matt Thomas",

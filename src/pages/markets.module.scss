@@ -100,3 +100,18 @@ color: #322d2c;
 .link:hover{
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .marketList{
+        width: 300px;
+    }
+    .marketItem{
+        width: 100%;
+    }
+    .picture{
+        max-width: 300px;
+    }
+    .marketContainer{
+        padding-left: 1%;
+    }
+  }
