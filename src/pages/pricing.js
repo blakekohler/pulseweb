@@ -11,7 +11,7 @@ const Pricing = () => {
   const [monthly, setShowMonthly] = useState(true);
   return (
   <Layout>
-    <SEO title="Pricing" />
+    <SEO title="Pricing" description="Transparent pricing for the Pulse For Good feedback system" />
     <Container> 
       <div className={style.pricingflex}>
       <div className={style.leftHolder}>

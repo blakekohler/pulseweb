@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Oh boy! Something is wrong."  description="Let's get you out of here before you break something else!"/>
     <Container>
         <div  className={style.container}>
         <div className={style.holder}>

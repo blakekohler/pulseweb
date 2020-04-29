@@ -121,7 +121,7 @@ const About  = () => {
 
   return (
 <Layout>
-<SEO title="About Us" />
+<SEO title="About Us" description="Learn about the people and ideas behind Pulse For Good"/>
 <Container>
 <div className={style.container}>
 <h1 className={style.missionHeader}>Our Mission</h1>

@@ -7,7 +7,7 @@ import Features from "../components/product-components/features";
 
 const Product = () => (
   <Layout>
-    <SEO title="Product" />
+    <SEO title="Product" description="Learn more about the Pulse For Good product" />
     <Container> <Features></Features></Container>
    
   </Layout>

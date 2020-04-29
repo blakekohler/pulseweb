@@ -21,7 +21,7 @@ import ed from "../images/school.jpeg"
 
 const Markets = () => (
   <Layout>
-    <SEO title="Markets" />
+    <SEO title="Markets" description="Pulse For Good helps in many different industries - all of which serve vulernable individuals" />
     <Container> 
 <div className={style.marketContainer}>
 <div className={style.marketFlex}>

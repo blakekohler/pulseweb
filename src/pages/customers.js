@@ -7,7 +7,7 @@ import Container from "../components/contentContainer"
 import CustomerMain from "../components/customer-components/customerMain"
 const Customers = () => (
   <Layout>
-    <SEO title="Customers" />
+    <SEO title="Pulse For Good Partners" description="See some of the wonderful partners using Pulse For Good to engage their vulnerable clients" />
     <Container> <CustomerMain/></Container>
 
   </Layout>

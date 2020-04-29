@@ -8,7 +8,7 @@ import Contactform from "../components/contact-components/contactform";
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact" description="Contact Pulse For Good"/>
     <Container> <Contactform/></Container>
 
   </Layout>

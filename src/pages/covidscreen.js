@@ -11,7 +11,7 @@ import screener from "../images/covidscreening.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Simple COVID-19 Screening using Kiosks" />
+      <SEO title="Simple COVID-19 Screening using Kiosks" description="Pulse For Good kiosks can be used as a simple screening tool for COVID-19" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>

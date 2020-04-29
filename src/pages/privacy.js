@@ -7,7 +7,7 @@ import Container from "../components/contentContainer"
 import style from "./privacy.module.scss"
 const Privacy = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact" description="Pulse For Good privacy policy"/>
     <Container> 
 
       <div className={style.container}>

@@ -208,7 +208,7 @@ const filterItem = (type) =>{
 
   return (
     <Layout>
-      <SEO title="Press" />
+      <SEO title="Press" description="Hear what people are saying about Pulse For Good" />
       <Container>
         <div className={style.pressContainer}>
           <h1>Press / Media</h1>

@@ -19,12 +19,12 @@ import blake from "../images/blake.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Behavioral Health providers" />
+      <SEO title="Pulse for Behavioral Health providers" description="Pulse for Good helps Behavioral Health providers get feedback from the people they serve" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Automated feedback for Behavioral Health providers  </p>
+            <p className={style.header}>Our customers see a 330% increase in Medicaid compliance  </p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
@@ -33,7 +33,7 @@ const Example = () => {
             </div>
               <p>
           
-              athering client feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
+              Gathering client feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
                   <p>
                   Having focused our entire solution on gathering feedback from vulnerable populations we understand the complexity involved in collecting feedback from this diverse group.
  </p>

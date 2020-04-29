@@ -7,7 +7,7 @@ import Container from "../components/contentContainer"
 
 const Demo = () => (
   <Layout>
-    <SEO title="Schedule Demo" />
+    <SEO title="Schedule Demo" description="Schedule a time to see the Pulse For Good system in action" />
     <Container> 
     <div className={style.container}>
     <div className={style.row}>
