@@ -10,8 +10,10 @@
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
     color: #4e56a4;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     line-height: 53px;
+    text-align: center;
+    margin-top: 20px;
 }
 .subheader{
     font-size: xx-large;
@@ -289,8 +291,8 @@ border-radius: 75px;
         flex-wrap: wrap;
     }
     .feature > h3{
-        color: #C32B5C;
-        text-align: center;
+        color: #4E56A4;
+        text-align: left;
         font-weight: 400;
         margin-bottom: 10px;
         font-family: 'Quicksand'
@@ -301,8 +303,10 @@ border-radius: 75px;
         padding: 30px;
     }
     .feature > ul > li {
-        list-style: none;
         margin-bottom: 5px;
+        text-align: left;
+        margin: 12px;
+        margin-left: -2px;
     }
 
     .secondaryContent{

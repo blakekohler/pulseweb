@@ -82,11 +82,11 @@ const Example = () => {
     <h3>Save time and money</h3>
 
     <ul>
-      <li>Reduce staff hours</li>
+      <li>Save staff hours</li>
       <li>Eliminate data entry</li>
-      <li>Aggregate responses</li>
-      <li>Visualize real time data</li>
-      <li>Compare trends</li>
+      <li>Aggregate responses in real time</li>
+      <li>Visualize and filter data</li>
+      <li>Monitor trends</li>
     </ul>
   </div>
   <div className={style.feature}>
@@ -94,9 +94,10 @@ const Example = () => {
 
     <ul>
       <li>Share client concerns</li>
-      <li>Use reports in discussions</li>
+      <li>UBring real data to discussions</li>
       <li>Track key indicators</li>
       <li>Meet reporting requirements</li>
+      <li>Highlight your strengths</li>
     </ul>
   </div>
 </div>
@@ -104,7 +105,7 @@ const Example = () => {
 
 
             <div className={style.midHeader}>
-            Build a culture of listening-Automatically
+            Build a culture of listening - Automatically
             </div>
 <div className={style.testimonials}>
 <div className={style.testSection}>
