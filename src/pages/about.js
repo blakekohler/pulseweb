@@ -11,16 +11,17 @@ import ty from "../images/ty.jpg"
 import travis from "../images/travis.jpg"
 import { Link } from "gatsby"
 //Advisors
-import mark from "../images/mark.jpg"
-import iain from "../images/iain.jpg"
-import tamera from "../images/tamera.jpg"
-import kat from "../images/kathryn.jpg"
-import amy from "../images/amy.jpg"
-import fargo from "../images/jamison.jpg"
-import michele from "../images/michele.jpg"
-import mattthomas from "../images/mattt-small.jpg"
-import mitchell from "../images/mitchell.jpg"
-import stacy from "../images/stacy.jpg";
+import mark from "../images/advisors/mark.jpg"
+import iain from "../images/advisors/iain.jpg"
+import tamera from "../images/advisors/tamera.jpg"
+import kat from "../images/advisors/kathryn.jpg"
+import amy from "../images/advisors/amy.jpg"
+import fargo from "../images/advisors/jamison.jpg"
+import michele from "../images/advisors/michelle.jpg"
+import mattthomas from "../images/advisors/matt.jpg"
+import mitchell from "../images/advisors/mitchell.jpg"
+import jim from "../images/advisors/jim.jpg"
+import stacy from "../images/advisors/stacy.jpg";
 import wheels from "../images/feedbackFromWheelChair.jpg"
 import map from "../images/map.png"
 
@@ -116,6 +117,11 @@ const About  = () => {
         name: "Michele S. Williams",
         title: "National Homeless Expert",
         img: michele,
+    },
+    {
+        name: "Colonel Jim D. McDonough",
+        title: "National Veterans Expert",
+        img: jim,
     }];
 
 
@@ -125,7 +131,7 @@ const About  = () => {
 <Container>
 <div className={style.container}>
 <h1 className={style.missionHeader}>Our Mission</h1>
-<h2 className={style.missionSub}>Helping difference makers listen, act, and love</h2>
+<h2 className={style.missionSub}>Improve the world's most important organizations</h2>
 <p className={style.missionText}>
 Our mission at Pulse is to provide data to decision makers that empowers them to make the best choices they can for the people they serve. We believe that decisions backed by accurate, quality, and timely data will make services better for customers. We also believe that everyone, no matter their situation in life, deserves to have their voice heard and feel like they are being listened to. We hold true the words of twentieth-century philosopher Paul Tillich when he said, “The first duty of love is to listen.” We add that the second duty of love is to act. We strive to help organizations listen, act, and love.</p>
 <h1>Leadership</h1>
