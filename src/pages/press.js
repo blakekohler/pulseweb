@@ -233,18 +233,18 @@ const filterItem = (type) =>{
             <div className={style.row}>
               <div className={style.itemHolder}>
               <div className={style.itemFilters}>
-              <div className={itemType === 'all' ? style.active : style.readmore} onKeyDown={(e) => filterItem('all')} onClick={(e) => filterItem('all')}>Show All</div>
-              <div className={itemType === 'blog' ? style.active : style.readmore} onClick={(e) => filterItem('blog')}>
+              <div  role= "button" tabIndex='0'   className={itemType === 'all' ? style.active : style.readmore} onKeyDown={(e) => filterItem('all')} onClick={(e) => filterItem('all')}>Show All</div>
+              <div  role= "button" tabIndex='0'   className={itemType === 'blog' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('blog')}>
                 {" "}
                 <i className={`fas fa-paragraph ${style.padright}`}></i>Blog
                 Posts
               </div>
-              <div className={itemType === 'news' ? style.active : style.readmore} onClick={(e) => filterItem('news')} >
+              <div  role = "button" tabIndex='0'   className={itemType === 'news' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('news')} >
                 {" "}
                 <i className={`fas fa-quote-right ${style.padright}`}></i> In
                 the News
               </div>
-              <div className={itemType === 'release' ? style.active : style.readmore} onClick={(e) => filterItem('release')}>
+              <div  role = "button" tabIndex='0'   className={itemType === 'release' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('release')}>
                 <i className={`far fa-newspaper ${style.padright}`}></i>Press
                 Releases
               </div>
@@ -260,7 +260,7 @@ const filterItem = (type) =>{
                       </div>
                       <div className={style.itemPreview}>{i.preview}</div>
                       {i.external ? (
-                        <a href={i.link} target="_blank" className={style.readmore}>
+                        <a href={i.link} target="_blank" rel="noopener noreferrer"  className={style.readmore}>
                           Read More
                         </a>
                       ) : (
@@ -278,9 +278,9 @@ const filterItem = (type) =>{
               <div className={style.info}>Pulse For Good is a social good company dedicated to helping the voices of vulnerable people change the way organizations, communities and groups provide services. We utilize technology to help individuals have a safe place to share feedback about the services they receive without fear of retribution.
 </div>
               <div className={style.mediaKitsub}>Logos</div>
-              <img className={style.logo} src={pulseLogo}/>
-              <img className={style.logo} src={pinkLogo}/>
-              <img className={style.whitelogo} src={whiteLogo}/>
+              <img alt="Pulse Logo" className={style.logo} src={pulseLogo}/>
+              <img alt="Pulse Pink Logo" className={style.logo} src={pinkLogo}/>
+              <img alt="Pulse White Logo" className={style.whitelogo} src={whiteLogo}/>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import kioskstraight from "../../images/kioskstraight.jpg"
 import dashboardAnimated from "../../images/dashboard-animated.gif"
 import userAnimated from "../../images/user-animation.gif"
 import emailAnimated from "../../images/email-animated.gif"
-import filterAnimated from "../../images/filter-animations.gif"
+import filterAnimated from "../../videos/filter-animations.mp4"
 
 const Features  = () => {
 
@@ -79,7 +79,7 @@ Row 2 */}
         </div>
        
         <div className={style.featureImageLeft}>
-        <img alt="Animated display of report filtering" className={style.kioskanimation} src={filterAnimated}/>
+        <video alt="Animated display of report filtering" className={style.kioskanimation} src={filterAnimated} autoPlay loop muted/>
         </div>
       </div>
       </div>
@@ -112,7 +112,7 @@ Row 2 */}
             If anything happens to your kiosk we will work with you to get it back up and running. If the kiosk needs to be replace, you simply pay a $100 deductible and we will replace everything.          </div>
         </div>
         <div className={style.featureImageLeft}>
-        <img  className={style.featurePic} src={kioskstraight}/>
+        <img alt="kiosk"  className={style.featurePic} src={kioskstraight}/>
         </div>
       </div>
       </div>

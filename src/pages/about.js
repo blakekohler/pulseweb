@@ -145,7 +145,7 @@ Our mission at Pulse is to provide data to decision makers that empowers them to
 <div className={style.leadershipHolder}>
 { leaders.map(l => {
     return (<div className={style.leader} key={l.name}>
-        <img className={style.leaderImg} src={l.img} />
+        <img alt={l.name} className={style.leaderImg} src={l.img} />
         <div className={style.leaderName}>{l.name}</div>
         <div className={style.leaderTitle}>{l.title}</div>
         </div>)
@@ -157,7 +157,7 @@ Our mission at Pulse is to provide data to decision makers that empowers them to
 <div className={style.advisoryHolder}>
 { advisors.map(l => {
     return (<div className={style.leader} key={l.name}>
-        <img className={style.leaderImg} src={l.img} />
+        <img alt={l.name} className={style.leaderImg} src={l.img} />
         <div className={style.leaderName}>{l.name}</div>
         <div className={style.leaderTitle}>{l.title}</div>
         </div>)
@@ -168,7 +168,7 @@ Our mission at Pulse is to provide data to decision makers that empowers them to
 <h1 className={style.impactHeader}>Impact</h1>
 <div className={style.impactHolder}>
     <div className={style.left}>
-    <img src={wheels}/>
+    <img alt="wheels" src={wheels}/>
     </div>
     <div className={style.right}>
     <p>

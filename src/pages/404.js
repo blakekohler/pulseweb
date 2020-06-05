@@ -12,7 +12,7 @@ const NotFoundPage = () => (
     <Container>
         <div  className={style.container}>
         <div className={style.holder}>
-        <img className={style.sadguy} src={sadkiosk}></img>
+        <img alt="Sad Kiosk" className={style.sadguy} src={sadkiosk}></img>
          <h1>Whoa! Something has wrong horribly wrong.... </h1>
          <h2>okay, maybe not horribly but something is definitely not right.</h2>
         <p>

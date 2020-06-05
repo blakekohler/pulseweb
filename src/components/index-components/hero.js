@@ -1,40 +1,22 @@
 import React, {useState} from "react"
 import style from "./hero.module.scss"
-
 import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import OverviewVid from "../../videos/overview-verysmall.mp4";
 import VideoCover from "../../images/cover.jpg"
 import VideoPlayer from "../videoPlayer";
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
-  const data = useStaticQuery(graphql`
-    query {
-      kioskImage: file(relativePath: { eq: "kiosk.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      kioskIcon: file(relativePath: { eq: "kioskdrawing.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+
   return (
     <div className={style.container}>
-    {showVideo ? <> <div className={style.close} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={OverviewVid}></VideoPlayer> </> : null}
+    {showVideo ? <> <div className={style.close} role="button" tabIndex="0" onKeyPress={() =>''} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={OverviewVid} track="../../videos/overviewCap.vtt"></VideoPlayer> </> : null}
    
       <div className={style.leftHolder}>
       <div className={style.responsiveVideo}>
       <video className={style.responsiveVideo} controls poster={VideoCover}>
+        
   <source src={OverviewVid} type="video/mp4"/>
+  <track src="../../videos/overviewCap.vtt" kind="captions" srclang="en" label="English"/>
   Your browser does not support the video tag. Please view our video on Youtube @ Pulse For Good.
 </video>
       </div>
@@ -71,7 +53,7 @@ const Hero = () => {
       <div className={style.rightHolder}>
         <div className={style.imageHolder}>
         <div>
-        <i onClick={() => setShowVideo(true)} className={`fas fa-play ${style.bigplay}`}></i>
+        <i onClick={() => setShowVideo(true)} role="button" tabIndex="0" onKeyPress={() =>''} className={`fas fa-play ${style.bigplay}`}></i>
        
         </div>
        

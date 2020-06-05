@@ -4,18 +4,13 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
+
 import becky from "../images/becky.jpg"
-import filters from "../images/filters.jpg"
-import homelessguy from "../images/homelessguy.jpg"
-import dashboardsmall from "../images/dashboardsmall.jpg"
-import weeklyreview from "../images/weeklyreview.jpg"
-import kiosk from "../images/kiosk.jpg"
+
 import valleykiosk from "../images/valleykiosk.png"
 import julie from "../images/julie.jpg"
 import melissa from "../images/melissa.jpg"
 
-import blake from "../images/blake.jpg"
 const Example = () => {
   return (
     <Layout>
@@ -42,7 +37,7 @@ const Example = () => {
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
               <div className={style.right}>
-              <iframe className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe title="Pulse For Good + Valley Behavioral Health" className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             
 
@@ -54,7 +49,7 @@ const Example = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={valleykiosk} />
+                  <img alt="Valley Kiosk" src={valleykiosk} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -62,7 +57,7 @@ const Example = () => {
                   </div>
                   <p>
                  Partnering with the right people can help your organization free up resources and maximize potential.  </p><p>Service providers are already maxed out on resources, time, and people. Using more of those resources to have an internal staff member create a survey, administer that survey, aggregate and analyze that data is often more than providers can do and spare.</p>
-                  <a target="_blank" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
@@ -109,7 +104,7 @@ const Example = () => {
             </div>
 <div className={style.testimonials}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={becky}/></div>
+  <div><img alt="becky" className={style.personPic} src={becky}/></div>
   <div>
   <div className={style.personName}>Becky Brown </div>
 <div className={style.personTitle}>COO - Valley Behavioral Health</div>
@@ -120,7 +115,7 @@ const Example = () => {
 </div>
 <div className={style.testSection}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={melissa}/></div>
+  <div><img alt="melissa" className={style.personPic} src={melissa}/></div>
   <div>
   <div className={style.personName}>Melissa Edgeworth </div>
 <div className={style.personTitle}>Director of Admin Services - Valley Behavioral Health</div>
@@ -132,7 +127,7 @@ const Example = () => {
 </div>
 <div className={style.testSection}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={julie}/></div>
+  <div><img alt="julie" className={style.personPic} src={julie}/></div>
   <div>
   <div className={style.personName}>Jule Rael </div>
 <div className={style.personTitle}>CCO- Valley Behavioral Health</div>

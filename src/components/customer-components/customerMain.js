@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import style from "./customerMain.module.scss"
-import { Link } from "gatsby"
 import austin from "../../images/austin.png"
 import wv from "../../images/westvirginia.png"
 import vbh from "../../images/vbh.png"
@@ -26,25 +25,25 @@ import melissa from "../../images/melissa.jpg"
 import becky from "../../images/becky.jpg"
 
 const CustomerMain = () => {
-  const [showVideo, setShowVideo] = useState(false);
-  const [responseCount, setResponseCount] = useState(Math.floor((Math.random() * 1000) + 21000));
+
+  const responseCount = useState(Math.floor((Math.random() * 1000) + 21000));
 
 
   return (
     <div className={style.container}>
       <h1 className={style.bigboy}>Over {responseCount} voices heard</h1>
       <div className={style.customerList}>
-        <img src={austin} />
-        <img src={sth} />
-        <img src={vbh} />
-        <img src={switchpoint} />
-        <img src={wv} />
-        <img src={nnp} />
-        <img src={roadhome} />
-        <img src={nnp} />
-        <img src={nhf} />
-        <img src={ccsinc} />
-        <img src={capsa} />
+        <img alt="Austin Street Clinic" src={austin} />
+        <img alt="Shelter the Homeless" src={sth} />
+        <img alt="Valley Behavioral Health" src={vbh} />
+        <img alt="Switchpoint" src={switchpoint} />
+        <img alt="West Virginia Coalition to End Homelessness" src={wv} />
+        <img alt="Neighborhood Nonprofit" src={nnp} />
+        <img alt="The Road Home" src={roadhome} />
+        <img alt="Neighborhood housgin" src={nnp} />
+        <img alt="National Health Foundation" src={nhf} />
+        <img alt="Community Crisis Services Inc" src={ccsinc} />
+        <img alt="CAPSA" src={capsa} />
       </div>
       <div className={style.storyHolder}>
         <div className={style.left}>
@@ -56,6 +55,7 @@ const CustomerMain = () => {
 
             <video className={style.clientVideo} controls>
               <source src={ccshomeless} type="video/mp4" />
+              <track src="../../videos/ccscap.vtt" kind="captions" srclang="en" label="English"/>
               Your browser does not support the video tag.
             </video>
             <h4>The second duy of love</h4>
@@ -85,6 +85,7 @@ const CustomerMain = () => {
 
             <video className={style.clientVideo} controls>
               <source src={vbhvideo} type="video/mp4" />
+              <track src="../../videos/valleycap.vtt" kind="captions" srclang="en" label="English"/>
               Your browser does not support the video tag.
             </video>
             <h4>Having the right people at the table</h4>
@@ -101,6 +102,7 @@ const CustomerMain = () => {
 
             <video className={style.clientVideo} controls>
               <source src={cssv} type="video/mp4" />
+              <track src="../../videos/ccsVolcap.vtt" kind="captions" srclang="en" label="English"/>
               Your browser does not support the video tag.
             </video>
             <h4>Beyond their means</h4>
@@ -116,7 +118,7 @@ const CustomerMain = () => {
         <div className={style.right}>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={becky}/>
+           <img alt="becky" className={style.customerPic}  src={becky}/>
           </div>
           <div className={style.testimonial}>
           "Pulse For Good has allowed us opportunities to see deep down to see where there are wins that have been missed in the past."
@@ -129,7 +131,7 @@ const CustomerMain = () => {
         </div>
        <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={matt}/>
+           <img alt="matt" className={style.customerPic}  src={matt}/>
           </div>
           <div className={style.testimonial}>
             "Working with Pulse for Good has been an incredibly positive experience for us at Catholic Community Services of Utah (CCS) and has changed the way we think about client feedback"
@@ -142,7 +144,7 @@ const CustomerMain = () => {
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={greg}/>
+           <img alt="greg" className={style.customerPic}  src={greg}/>
           </div>
           <div className={style.testimonial}>
             "These surveys have been amazing. Everyone should be required to do these. It humanizes the problem by providing a way to hear stories and empathize with the homeless individual.."
@@ -156,7 +158,7 @@ State Of Utah House of Representatives</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={ccsutah}/>
+           <img alt="CCS Utah" className={style.customerPic}  src={ccsutah}/>
           </div>
           <div className={style.testimonial}>
             "We are loving working with @PulseForGood to find out how our client's are receiving our services and what we can do better to help everyone that walks in our door reach self-sufficiency!"
@@ -169,7 +171,7 @@ State Of Utah House of Representatives</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={melissa}/>
+           <img alt="Melissa" className={style.customerPic}  src={melissa}/>
           </div>
           <div className={style.testimonial}>
           "If you need to gather satisifaction surveys the Pulse kiosks are the way to go."
@@ -183,7 +185,7 @@ State Of Utah House of Representatives</div>
      
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={iain}/>
+           <img alt="Iain" className={style.customerPic}  src={iain}/>
           </div>
           <div className={style.testimonial}>
             "If you are serious about feedback from your service users or the organizations you fund, and you want a successful platform for doing so, then I strongly recommend you check out Pulse for Good"
@@ -197,7 +199,7 @@ Orgcode</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={court}/>
+           <img alt="Court" className={style.customerPic}  src={court}/>
           </div>
           <div className={style.testimonial}>
             "It has been an amazing tool for us."
@@ -210,7 +212,7 @@ Orgcode</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={kim}/>
+           <img alt="Kim" className={style.customerPic}  src={kim}/>
           </div>
           <div className={style.testimonial}>
             "It is a wonderful survey tool created by Pulse for Good that allows us to get feedback from clients as they leave their appointments. It takes less than 2 minutes for them to complete (on an iPad placed in a private location in the office) and collects data on how they felt about our services. It is very helpful in tracking outcomes (and for providing funders data on program services used.)"
@@ -224,7 +226,7 @@ Neightborhood Nonprofit Housing</div>
         </div>
         <div className={style.smallstory}>
           <div className={style.customerPicHolder}>
-           <img className={style.customerPic}  src={julie}/>
+           <img alt="Julie" className={style.customerPic}  src={julie}/>
           </div>
           <div className={style.testimonial}>
           "(Pulse) creates a safe environment, gets in time data, and cuts out extra administrative time."

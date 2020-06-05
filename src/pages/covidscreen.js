@@ -16,7 +16,7 @@ const Example = () => {
         <div className={style.container}>
           <div className={style.article}>
             <div className={style.heroImg}>
-              <img src={screener} />
+              <img alt="screener" src={screener} />
             </div>
 
             <div className={style.header}>

@@ -23,7 +23,7 @@ const Contactform = () => {
         <div className={style.row}>
           <label for="name" className={style.label} >
             Name
-          </label>
+          
           <br />
           <input type="hidden" name="form-name" value="contact" />
           <input
@@ -34,11 +34,12 @@ const Contactform = () => {
             placeholder="Name"
             required
           />
+          </label>
         </div>
         <div className={style.row}>
           <label for="organization" className={style.label} >
             Organization
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -47,12 +48,13 @@ const Contactform = () => {
             name="organization"
             placeholder="Organization"
           />
+           </label>
         </div>
 
         <div className={style.row}>
           <label for="email" className={style.label} >
             Email
-          </label>
+          
           <br />
           <input
             className={style.input}
@@ -62,11 +64,12 @@ const Contactform = () => {
             required
             placeholder="Email"
           />
+          </label>
         </div>
         <div className={style.row}>
           <label for="phone" className={style.label}  >
             Phone
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -76,11 +79,12 @@ const Contactform = () => {
             placeholder="Phone #"
             required
           />
+           </label>
         </div>
         <div className={style.row}>
           <label className={style.label} >
             Notes{" "}
-          </label>
+         
           <br />
           <textarea
             className={style.textarea}
@@ -88,13 +92,14 @@ const Contactform = () => {
             name="subject"
             placeholder="Anything you'd like to let us know before we reach out.."
           ></textarea>
+           </label>
         </div>
         <div className={style.buttonRow}>
         <input className={style.submit} type="submit" value="Submit" />
         </div>
       </form></div>
     <div className={style.right}>
-    <img className={style.washout} src={wes} /></div>
+    <img alt="Wes" className={style.washout} src={wes} /></div>
     
     </div>
   )

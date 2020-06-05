@@ -4,14 +4,10 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
 import mitchell from "../images/advisors/mitchell.jpg"
 import school from "../images/school.jpeg"
-import valleykiosk from "../images/valleykiosk.png"
-import julie from "../images/julie.jpg"
-import melissa from "../images/melissa.jpg"
+import valleykiosk from "../images/valleykiosk.jpg"
 
-import blake from "../images/blake.jpg"
 const Example = () => {
   return (
     <Layout>
@@ -36,7 +32,7 @@ const Example = () => {
               <p>For those students to share how they feel, they need the psychological safety that comes with being anonymous. Pulse feedback kiosks allow for a convenient way for students to provide feedback while protecting their identity.</p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link></div>
               <div className={style.right}>
-             <img src={valleykiosk} className={style.schoolPic}/>
+             <img src={valleykiosk} className={style.schoolPic} alt="Person taking survey"/>
               </div>
             
 
@@ -48,7 +44,7 @@ const Example = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={school} />
+                  <img alt="Student in a library" src={school} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -57,7 +53,7 @@ const Example = () => {
                   <p>
                   What happens when you are afraid to give your honest opinion?
 The fear that is introduced creates a new class of people. Empowered individuals become vulnerable individuals. Empowered individuals give feedback that is honest, actionable and often negative. </p><p>Vulnerable individuals share feedback that is often calculated, reserved and often overly positive. When you fear retribution for your feedback the quality of the feedback drops dramatically. </p>
-                  <a target="_blank" href="https://medium.com/pulse-for-good/the-vulnerability-gap-8d9058664b73?source=friends_link&sk=fbe7122c0e4c758c20ffd4bbc6af8493" className={style.learnmore}>Read more</a>
+                  <a target="_blank" rel="noopener noreferrer"  href="https://medium.com/pulse-for-good/the-vulnerability-gap-8d9058664b73?source=friends_link&sk=fbe7122c0e4c758c20ffd4bbc6af8493" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
@@ -103,7 +99,7 @@ The fear that is introduced creates a new class of people. Empowered individuals
             </div>
 <div className={style.testimonials}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={mitchell}/></div>
+  <div><img alt="Mitchell Colver - Student Analytics expert" className={style.personPic} src={mitchell}/></div>
   <div>
   <div className={style.personName}>Mitchell Colver</div>
 <div className={style.personTitle}>Founding Manager of the Center for Student Analytics - Utah State University</div>

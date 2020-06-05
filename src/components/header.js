@@ -18,9 +18,9 @@ const Header = ({ siteTitle }) => {
         <a className={style.signin} href="https://kiosk.pulseforgood.com/">Sign In</a>
         <Link className={style.demo} to="/demo">Schedule Demo</Link>
         </div>
-        <a   className={`${style.icon} ${style.link}`} onClick={openNav}>
+        <div  className={`${style.icon} ${style.link}`} role="button" tabIndex="0" onKeyPress={() =>''} onClick={openNav}>
           <i className="fa fa-bars"></i>
-        </a>
+        </div>
       </nav>
       <div className={style.hidden} id="responsiveNav">  
       <div className={style.responsiveNavInner}>

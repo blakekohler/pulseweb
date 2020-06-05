@@ -1,20 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+
 import style from "./footer.module.scss"
 import smallLogo from "../images/smalllogo.png"
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+
   return (
     <footer>
       <div className={style.callToAction}>
@@ -29,7 +19,7 @@ const Footer = () => {
       <div className={style.container}>
       <div className={style.logoColumn}>
           <div className={style.logo}>
-          <img src={smallLogo}/></div>
+          <img alt="Pulse Logo" src={smallLogo}/></div>
           
         </div>
         <div className={style.column}>
@@ -68,8 +58,9 @@ const Footer = () => {
     <div id="mc_embed_signup_scroll">
 	
 <div className="mc-field-group">
-	<label className={style.newsletter} >Subscribe to Newsletter </label>
+	<label className={style.newsletter} >Subscribe to Newsletter
 	<input type="email" name="EMAIL" className={style.emailInput} id="mce-EMAIL"/>
+  </label>
 </div>
 	<div id="mce-responses" className="clear">
 		<div className="response" id="mce-error-response" style={{display:"none"}}></div>

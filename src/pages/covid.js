@@ -6,13 +6,13 @@ import heroes from "../images/heroes.jpg"
 
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
+
 import kioskuser from "../images/kioskuser.gif"
 import rhbuild from "../images/roadhomelbuilding.jpg"
 
 import cleankiosk from "../images/cleankiosk.jpeg"
 
-import blake from "../images/blake.jpg"
+
 const Example = () => {
   return (
     <Layout>
@@ -35,7 +35,7 @@ const Example = () => {
 
               <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={kioskuser} />
+                  <img alt="Kiosk user" src={kioskuser} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -49,7 +49,7 @@ const Example = () => {
 
               <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={rhbuild} />
+                  <img alt="Roadhome building" src={rhbuild} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -64,7 +64,7 @@ const Example = () => {
 
               <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={cleankiosk} /> 
+                  <img alt="clean kiosk" src={cleankiosk} /> 
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -79,7 +79,7 @@ const Example = () => {
 
               <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={heroes} /> 
+                  <img alt="heroes are orinary people who take extraordinary actions" src={heroes} /> 
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>

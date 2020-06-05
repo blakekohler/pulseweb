@@ -1,7 +1,6 @@
 import React from "react"
 import style from "./marketsoverview.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+
 
 import { Link } from "gatsby"
 

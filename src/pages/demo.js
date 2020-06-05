@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import style from "./demo.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -28,7 +28,7 @@ const Demo = () => (
         <div className={style.row}>
           <label className={style.label} >
             Name
-          </label>
+         
           <br />
           <input type="hidden" name="form-name" value="demo" />
           <input
@@ -39,11 +39,12 @@ const Demo = () => (
             placeholder="Name"
             required
           />
+           </label>
         </div>
         <div className={style.row}>
           <label className={style.label} >
             Organization
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -52,12 +53,13 @@ const Demo = () => (
             name="organization"
             placeholder="Organization"
           />
+           </label>
         </div>
 
         <div className={style.row}>
           <label className={style.label} >
             Email
-          </label>
+        
           <br />
           <input
             className={style.input}
@@ -67,11 +69,12 @@ const Demo = () => (
             placeholder="Email"
             required
           />
+            </label>
         </div>
         <div className={style.row}>
           <label className={style.label} >
             Phone
-          </label>
+          
           <br />
           <input
             className={style.input}
@@ -81,11 +84,12 @@ const Demo = () => (
             placeholder="Phone #"
             required
           />
+          </label>
         </div>
         <div className={style.row}>
           <label className={style.label} >
             Notes{" "}
-          </label>
+         
           <br />
           <textarea
             className={style.textarea}
@@ -93,6 +97,7 @@ const Demo = () => (
             name="subject"
             placeholder="How do you see your organization using our feedback platform? What questions do you have?"
           ></textarea>
+           </label>
         </div>
         <div className={style.buttonRow}>
         <input className={style.submit} type="submit" value="Submit" />
@@ -100,7 +105,7 @@ const Demo = () => (
       </form></div>
     <div className={style.right}>
     <h3 className={style.surveyheader}>Try out a survey below!</h3>
-    <iframe className={style.demoSurvey} src="https://kiosk.pulseforgood.com/survey/demo"></iframe>
+    <iframe title="Try one of our surveys!" className={style.demoSurvey} src="https://kiosk.pulseforgood.com/survey/demo"></iframe>
     
     </div>
     

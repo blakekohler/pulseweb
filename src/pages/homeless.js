@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import logo from "../images/logo.png"
+
 import matt from "../images/mattm-square.png"
 import wheelchair from "../images/wheelchair.png"
 import julie from "../images/julie.jpg"
 import melissa from "../images/melissa.jpg"
 
-import blake from "../images/blake.jpg"
+
 const Example = () => {
   return (
     <Layout>
@@ -33,7 +33,7 @@ const Example = () => {
               <Link className={style.demo} to="/demo">Schedule Demo</Link>
               </div>
               <div className={style.right}>
-              <iframe className={style.video} src="https://www.youtube.com/embed/OO6dIughacg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe title="Pulse Youtube Homeless Video"  className={style.video} src="https://www.youtube.com/embed/OO6dIughacg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             
 
@@ -45,7 +45,7 @@ const Example = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img src={wheelchair} />
+                  <img alt="Individual in the wheelchair taking a survey" src={wheelchair} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -55,7 +55,7 @@ const Example = () => {
                   <p>
                   In the homeless services arena, feedback isn’t always sought. When it is, it often is done by the staff. How honest is the feedback about the services likely to be when the service provider conducts the survey, watching as you answer questions on a written form?
                 </p>
-                  <a target="_blank" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ const Example = () => {
             </div>
 <div className={style.testimonials}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={matt}/></div>
+  <div><img alt="Pulse customer Matt" className={style.personPic} src={matt}/></div>
   <div>
   <div className={style.personName}>Matt Melville</div>
 <div className={style.personTitle}>Director of Homeless Services</div>
@@ -112,7 +112,7 @@ const Example = () => {
 </div>
 <div className={style.testSection}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={melissa}/></div>
+  <div><img alt="Pulse customer Melissa" className={style.personPic} src={melissa}/></div>
   <div>
   <div className={style.personName}>Melissa Edgeworth </div>
 <div className={style.personTitle}>Director of Admin Services - Valley Behavioral Health</div>
@@ -124,7 +124,7 @@ const Example = () => {
 </div>
 <div className={style.testSection}>
 <div className={style.testSection}>
-  <div><img className={style.personPic} src={julie}/></div>
+  <div><img alt="Pulse customer Julie" className={style.personPic} src={julie}/></div>
   <div>
   <div className={style.personName}>Jule Rael </div>
 <div className={style.personTitle}>CCO- Valley Behavioral Health</div>

@@ -1,7 +1,5 @@
 import React from "react"
 import style from "./featureoverview.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import kiosk from "../../images/kiosk.jpg"
 import dashboardreal from "../../images/dashboardreal.jpg"
 
@@ -13,7 +11,7 @@ const FeatureOverview = () => {
       <h1 className={style.headline}>Satisfaction gathering the easy way</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img className={style.featurePicKiosk} src={kiosk}/>
+        <img alt="kiosk" className={style.featurePicKiosk} src={kiosk}/>
        </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -44,7 +42,7 @@ const FeatureOverview = () => {
           </div>
         </div>
         <div className={style.featureImageLeft}>
-        <img className={style.featurePic} src={dashboardreal}/>
+        <img alt="dashboard" className={style.featurePic} src={dashboardreal}/>
         
         </div>
       </div>

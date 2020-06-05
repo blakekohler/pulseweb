@@ -6,7 +6,7 @@ import ccshomeless from "../../videos/ccshomeless.mp4"
 import ccsv from "../../videos/ccsv.mp4"
 import bvhv from "../../videos/melissa-vbh.mp4"
 import VideoPlayer from "../videoPlayer";
-import melissa from "../../images/melissa.jpg"
+
 
 
 const CustomerList = () => {
@@ -47,7 +47,7 @@ const CustomerList = () => {
   return (
     
     <div className={style.container}>
-    {showVideo ? <> <div className={style.close} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={selectedVideo}></VideoPlayer> </> : null}
+    {showVideo ? <> <div className={style.close} role="button" tabIndex="0" onKeyPress={() =>''} onClick={() => setShowVideo(false)}> <i className={`fas fa-times`}></i></div> <VideoPlayer video={selectedVideo}></VideoPlayer> </> : null}
     
     <h1 className={style.trusted}>Trusted by:</h1>
       <div className={style.storyHolder}>
@@ -66,8 +66,8 @@ const CustomerList = () => {
               <div className={style.title}>Director of Homeless Services</div>
             </div>
             <div className={style.buttonHolder}>
-              <a className={style.seemore} href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb" target="_blank">Read Story</a>{" "}
-              <div className={style.play} onClick={ (e) => { videoControl(ccshomeless)  }}>
+              <a className={style.seemore} href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb" target="_blank" rel="noopener noreferrer" >Read Story</a>{" "}
+              <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={ (e) => { videoControl(ccshomeless)  }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
               </div>
@@ -89,8 +89,8 @@ const CustomerList = () => {
               <div className={style.title}> Director of Admin Services</div>
             </div>
             <div className={style.buttonHolder}>
-            <a className={style.seemore} href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" target="_blank">Read Story</a>{" "}
-              <div className={style.play} onClick={(e) => { videoControl(bvhv) }}>
+            <a className={style.seemore} href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
+              <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={(e) => { videoControl(bvhv) }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
               </div>
@@ -112,10 +112,10 @@ const CustomerList = () => {
               <div className={style.title}> Engagement Coordinator</div>
             </div>
             <div className={style.buttonHolder}>
-            <a className={style.seemore} href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" target="_blank">Read Story</a>{" "}
+            <a className={style.seemore} href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
 
              
-              <div className={style.play} onClick={(e) => { videoControl(ccsv) }}>
+              <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={(e) => { videoControl(ccsv) }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
               </div>

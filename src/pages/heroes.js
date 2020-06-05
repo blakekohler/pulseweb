@@ -40,7 +40,7 @@ const Example = () => {
         <input type="hidden" name="form-name" value="heroes" />
           <label for="name" className={style.label} >
             Your Name
-          </label>
+         
           
          
           <input
@@ -52,11 +52,12 @@ const Example = () => {
             placeholder="Your name"
             required
           />
+           </label>
         </div>
         <div className={style.row}>
           <label for="organization" className={style.label}   >
             Organization
-          </label>
+       
           <br />
           <input
             className={style.input}
@@ -66,11 +67,12 @@ const Example = () => {
             aria-label="Organization"
             placeholder="Organization"
           />
+             </label>
         </div>
         <div className={style.row}>
           <label className={style.label}  for="heroesname" >
             Hero's Name
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -79,12 +81,13 @@ const Example = () => {
             name="heroesname"
             placeholder="Hero's name"
           />
+           </label>
         </div>
 
         <div className={style.row}>
           <label className={style.label}  for="email" >
             Your Email
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -94,11 +97,12 @@ const Example = () => {
             required
             placeholder="Email"
           />
+           </label>
         </div>
         <div className={style.row}>
           <label className={style.label}  for="heroesemail" >
             Hero's Email
-          </label>
+         
           <br />
           <input
             className={style.input}
@@ -108,6 +112,7 @@ const Example = () => {
             required
             placeholder="Hero's email"
           />
+           </label>
         </div>
       
         <div className={style.row}>
