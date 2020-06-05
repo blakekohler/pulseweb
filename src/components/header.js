@@ -1,22 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import logo from "../images/logo.jpg";
 import style from "./header.module.css"
 const Header = ({ siteTitle }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <header>
       <div className={style.banner}><Link className={style.bannerText} to="/covid">Learn how to use Pulse to fight COVID-19 <i className='fas fa-arrow-circle-right'></i></Link></div>

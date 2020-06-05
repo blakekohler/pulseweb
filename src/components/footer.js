@@ -75,7 +75,7 @@ const Footer = () => {
 		<div className="response" id="mce-error-response" style={{display:"none"}}></div>
 		<div className="response" id="mce-success-response" style={{display:"none"}}></div>
 	</div>   
-    <div className={style.hideAway} aria-hidden="true"><input type="text" name="b_232cb66eeaba1029ba1937bdf_9fb73702d5" tabIndex="-1" value=""/></div>
+    {/* <div className={style.hideAway} aria-hidden="true"><input type="text" name="b_232cb66eeaba1029ba1937bdf_9fb73702d5" tabIndex="-1" value=""/></div> */}
     <div className="clear">
       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className={style.subscribe}/></div>
     </div>

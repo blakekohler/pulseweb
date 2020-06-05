@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     ><link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand&display=swap" rel="stylesheet"/>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.2.0/dist/lottie-player.js"></script>
+   
 
 
 
