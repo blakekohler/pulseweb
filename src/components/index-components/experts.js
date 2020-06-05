@@ -8,8 +8,8 @@ import Mark from "../../images/advisors/mark-min.jpg";
 
 import Michelle from "../../images/advisors/michelle-min.jpg";
 
-import Kathryn from "../../images/advisors/kathryn-minjpg";
-import Jamison from "../../images/advisors/jamison-minjpg";
+import Kathryn from "../../images/advisors/kathryn-min.jpg";
+import Jamison from "../../images/advisors/jamison-min.jpg";
 
 import Matt from "../../images/advisors/matt-min.jpg";
 
