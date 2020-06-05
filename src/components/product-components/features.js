@@ -1,13 +1,12 @@
 import React from 'react';
 import style from './features.module.scss'
-import { useStaticQuery, graphql } from "gatsby"
-import kiosk from "../../images/kioskdrawing.jpg"
+import kioskgif from "../../images/kiosk.gif"
 import kioskstraight from "../../images/kioskstraight.jpg"
-import filters from "../../images/filters.jpg"
-import homelessguy from "../../images/homelessguy.jpg"
-import dashboardsmall from "../../images/dashboardsmall.jpg"
-import weeklyreview from "../../images/weeklyreview.jpg"
-import kioskanimation from "../../lottie/kioskAnimated.json";
+import dashboardAnimated from "../../images/dashboard-animated.gif"
+import userAnimated from "../../images/user-animation.gif"
+import emailAnimated from "../../images/email-animated.gif"
+import filterAnimated from "../../images/filter-animations.gif"
+
 const Features  = () => {
 
   return (
@@ -16,16 +15,8 @@ const Features  = () => {
       <h1 className={style.headline}>What you get with Pulse</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <lottie-player
-  autoplay
-  
-  loop
-  mode="normal"
-  src="https://assets2.lottiefiles.com/packages/lf20_tNeHbt.json"
-  class={style.kioskanimation}
->
-</lottie-player>
-        {/* <img  className={style.featurePic} src={kiosk}/> */}
+        <img alt="Animated survey" className={style.kioskanimation} src={kioskgif}/>
+      
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -56,16 +47,7 @@ const Features  = () => {
           </div>
         </div>
         <div className={style.featureImageLeft}>
-        <lottie-player
-  autoplay
-  
-  loop
-  mode="normal"
-  src="https://assets4.lottiefiles.com/packages/lf20_asir3o.json"
-  class={style.kioskanimation}
->
-</lottie-player>
-        {/* <img  className={style.featurePic} src={dashboardsmall}/> */}
+        <img alt="Animated dashboard report" className={style.kioskanimation} src={dashboardAnimated}/>
         </div>
       </div>
       </div>
@@ -75,16 +57,7 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <lottie-player
-  autoplay
-  
-  loop
-  mode="normal"
-  src="https://assets2.lottiefiles.com/packages/lf20_A9N5eA.json"
-  class={style.kioskanimation}
->
-</lottie-player>
-        {/* <img  className={style.featurePic} src={weeklyreview}/> */}
+        <img alt="Animated email report" className={style.kioskanimation} src={emailAnimated}/>
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -106,16 +79,7 @@ Row 2 */}
         </div>
        
         <div className={style.featureImageLeft}>
-        <lottie-player
-  autoplay
-  
-  loop
-  mode="normal"
-  src=" https://assets10.lottiefiles.com/packages/lf20_z44xvs.json"
-  class={style.kioskanimation}
->
-</lottie-player>
-        {/* <img  className={style.featurePic} src={filters}/> */}
+        <img alt="Animated display of report filtering" className={style.kioskanimation} src={filterAnimated}/>
         </div>
       </div>
       </div>
@@ -124,17 +88,7 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <lottie-player
-  autoplay
-  
-  loop
-  mode="normal"
-  src=" https://assets9.lottiefiles.com/packages/lf20_LmRMVU.json"
-  class={style.kioskanimation}
->
-</lottie-player>
-       
-        {/* <img  className={style.featurePic} src={homelessguy}/> */}
+        <img alt="Animated user taking survey" className={style.kioskanimation} src={userAnimated}/>
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
