@@ -22,6 +22,7 @@ import mattthomas from "../images/advisors/matt.jpg"
 import mitchell from "../images/advisors/mitchell.jpg"
 import jim from "../images/advisors/jim.jpg"
 import stacy from "../images/advisors/stacy.jpg";
+import stacey from "../images/advisors/stacey.jpg";
 import wheels from "../images/feedbackFromWheelChair.jpg"
 import map from "../images/map.png"
 
@@ -122,7 +123,13 @@ const About  = () => {
         name: "Colonel Jim D. McDonough",
         title: "National Veterans Expert",
         img: jim,
-    }];
+    },
+    {
+        name: "Stacey Tinianov",
+        title: "Patient Experience Expert",
+        img: stacey,
+    },
+];
 
 
   return (
