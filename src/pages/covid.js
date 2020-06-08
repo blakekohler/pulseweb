@@ -2,15 +2,15 @@ import React from "react"
 import style from "./covid.module.scss"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-import heroes from "../images/heroes.jpg"
+import heroes from "../images/heroes-small.jpg"
 
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
 
-import kioskuser from "../images/kioskuser.gif"
+import kioskuser from "../images/kiosk-user.jpg"
 import rhbuild from "../images/roadhomelbuilding.jpg"
 
-import cleankiosk from "../images/cleankiosk.jpeg"
+import cleankiosk from "../images/cleankiosk.jpg"
 
 
 const Example = () => {

@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './features.module.scss'
-import kioskgif from "../../images/kiosk.gif"
+import kioskgif from "../../videos/kiosk-animation.mp4"
 import kioskstraight from "../../images/kioskstraight.jpg"
-import dashboardAnimated from "../../images/dashboard-animated.gif"
-import userAnimated from "../../images/user-animation.gif"
-import emailAnimated from "../../images/email-animated.gif"
+import dashboardAnimated from "../../videos/dashboard-animation.mp4"
+import userAnimated from "../../videos/user-animation.mp4"
+import emailAnimated from "../../videos/weeklyemail-animation.mp4"
 import filterAnimated from "../../videos/filter-animations.mp4"
 
 const Features  = () => {
@@ -15,7 +15,8 @@ const Features  = () => {
       <h1 className={style.headline}>What you get with Pulse</h1>
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img alt="Animated survey" className={style.kioskanimation} src={kioskgif}/>
+        <video alt="Animated survey" className={style.kioskanimation} src={kioskgif} autoPlay loop muted/>
+      
       
         </div>
         <div className={style.featureDetails}>
@@ -47,7 +48,8 @@ const Features  = () => {
           </div>
         </div>
         <div className={style.featureImageLeft}>
-        <img alt="Animated dashboard report" className={style.kioskanimation} src={dashboardAnimated}/>
+        <video alt="Animated dashboard report" className={style.kioskanimation} src={dashboardAnimated} autoPlay loop muted/>
+        
         </div>
       </div>
       </div>
@@ -57,7 +59,7 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img alt="Animated email report" className={style.kioskanimation} src={emailAnimated}/>
+        <video alt="Animated email report" className={style.kioskanimation} src={emailAnimated} autoPlay loop muted/>
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
@@ -88,7 +90,7 @@ Row 2 */}
      
       <div className={style.featureRow}>
         <div className={style.featureImageLeft}>
-        <img alt="Animated user taking survey" className={style.kioskanimation} src={userAnimated}/>
+        <video alt="Animated display of someone using the kiosk" className={style.kioskanimation} src={userAnimated} autoPlay loop muted/>
         </div>
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
