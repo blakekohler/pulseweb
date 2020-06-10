@@ -16,7 +16,7 @@ const Hero = () => {
       <video className={style.responsiveVideo} controls poster={VideoCover}>
         
   <source src={OverviewVid} type="video/mp4"/>
-  <track src="../../videos/overviewCap.vtt" kind="captions" srclang="en" label="English"/>
+  <track src="../../videos/overviewCap.vtt" kind="captions" srcLang="en" label="English"/>
   Your browser does not support the video tag. Please view our video on Youtube @ Pulse For Good.
 </video>
       </div>
