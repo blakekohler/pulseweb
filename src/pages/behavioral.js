@@ -7,7 +7,7 @@ import Container from "../components/contentContainer"
 
 import becky from "../images/becky.jpg"
 
-import valleykiosk from "../images/valleykiosk.png"
+import bhuser from "../images/bhuser.jpg"
 import julie from "../images/julie.jpg"
 import melissa from "../images/melissa.jpg"
 
@@ -49,7 +49,7 @@ const Example = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img alt="Valley Kiosk" src={valleykiosk} />
+                  <img alt="Valley Kiosk" src={bhuser} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>

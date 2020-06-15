@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Container from "../components/contentContainer"
 
 import matt from "../images/mattm-square.png"
-import wheelchair from "../images/wheelchair.png"
+import wheelchair from "../images/wheelchair.jpg"
 import julie from "../images/julie.jpg"
 import melissa from "../images/melissa.jpg"
 

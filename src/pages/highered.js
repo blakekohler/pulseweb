@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
 import mitchell from "../images/advisors/mitchell.jpg"
-import school from "../images/school.jpeg"
-import valleykiosk from "../images/valleykiosk.jpg"
+import school from "../images/markets/ed.jpg"
+import valleykiosk from "../images/bhuser.jpg"
 
 const Example = () => {
   return (
