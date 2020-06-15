@@ -5,17 +5,17 @@ import style from "./markets.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import chair from "../images/feedbackFromWheelChair.jpg"
-import homeless from "../images/Homeless.jpg"
-import bh from "../images/bh.jpg"
-import ch from "../images/ch.jpg"
-import healthcare from "../images/healthcare.jpg"
-import corrections from "../images/corrections.jpg"
-import rehab from "../images/rehab.jpg"
-import housing from "../images/housing.jpg"
-import dv from "../images/Domestic.jpg"
-import mh from "../images/mh.jpg"
-import ed from "../images/school.jpeg"
+import chair from "../images/markets/feedback.jpg"
+import homeless from "../images/markets/homeless.jpg"
+import bh from "../images/markets/bh.jpg"
+import ch from "../images/markets/ch.jpg"
+import healthcare from "../images/markets/hc.jpg"
+import corrections from "../images/markets/correction.jpg"
+import rehab from "../images/markets/rehab.jpg"
+import housing from "../images/markets/ah.jpg"
+import dv from "../images/markets/dv.jpg"
+import mh from "../images/markets/mh.jpg"
+import ed from "../images/markets/ed.jpg"
 
 
 
@@ -46,10 +46,6 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
     </div>
     </Link>
     </div>
-
-
-
-
     <div className={style.marketItem}>
       <Link className={style.link} to="behavioral">
   <img className={style.marketImage} alt='behavioral' src={bh}/>

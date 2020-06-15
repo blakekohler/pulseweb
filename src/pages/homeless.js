@@ -36,11 +36,6 @@ const Example = () => {
               <iframe loading="lazy" title="Pulse Youtube Homeless Video"  className={style.video} src="https://www.youtube.com/embed/OO6dIughacg?rel=0&showinfo=0&autohide=1&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
              
               </div>
-            
-
-              
-
-             
             </div>
             <div className={style.secondaryContent}>
 
