@@ -355,7 +355,7 @@ border-radius: 75px;
       }
 
       h1{
-          text-align: left;
+          text-align: left !important;
           margin: 0px;
           font-weight: 600;
       }
@@ -364,7 +364,7 @@ border-radius: 75px;
         margin: 0px;
         margin-top: 5px;
         margin-bottom: 5px;
-          text-align: left;
+          text-align: left !important;
           font-weight: 200;
           font-size: x-large;
       }
