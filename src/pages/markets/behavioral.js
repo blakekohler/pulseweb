@@ -1,15 +1,15 @@
 import React from "react"
 import style from "./behavioral.module.scss"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { Link } from "gatsby"
-import SEO from "../components/seo"
-import Container from "../components/contentContainer"
+import SEO from "../../components/seo"
+import Container from "../../components/contentContainer"
 
-import becky from "../images/becky.jpg"
+import becky from "../../images/becky.jpg"
 
-import bhuser from "../images/bhuser.jpg"
-import julie from "../images/julie.jpg"
-import melissa from "../images/melissa.jpg"
+import bhuser from "../../images/bhuser.jpg"
+import julie from "../../images/julie.jpg"
+import melissa from "../../images/melissa.jpg"
 
 const Example = () => {
   return (

@@ -17,6 +17,21 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -28,6 +43,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lx9bvy74ql0s`,
+        accessToken: `cc43ffeebefc5ffe498917dcbbb35b458faafb0cc6032b786ea87296a16fc4a6`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,

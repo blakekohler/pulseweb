@@ -1,12 +1,12 @@
 import React from "react"
 import style from "./highered.module.scss"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { Link } from "gatsby"
-import SEO from "../components/seo"
-import Container from "../components/contentContainer"
-import mitchell from "../images/advisors/mitchell.jpg"
-import school from "../images/markets/ed.jpg"
-import valleykiosk from "../images/bhuser.jpg"
+import SEO from "../../components/seo"
+import Container from "../../components/contentContainer"
+import mitchell from "../../images/advisors/mitchell.jpg"
+import school from "../../images/markets/ed.jpg"
+import valleykiosk from "../../images/bhuser.jpg"
 
 const Example = () => {
   return (
