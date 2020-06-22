@@ -7,17 +7,17 @@ import style from "./blogpost.module.scss"
 
 const BlogPost = ({ data }) => {
   const { title, body, description, heroImage, author } = data.contentfulBlog;
-  console.log(data.allContentfulBlog);
+ 
   return (
     <Layout>
-       <SEO title={title} description="Help us honor the heroes inside of your organization by sharing how they have used feedback to improve your organization." />
+       <SEO title={title} description={description.toString()} img={heroImage.file.url}  />
 <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
           <div className={style.blogPost}>
-        <h1>{title}</h1>
-        <h2>{description.description}</h2>
+        <h1 className={style.header}>{title}</h1>
+        <h2 className={style.description}>{description.description}</h2>
         <div className={style.authorHolder}>
         <img alt={author.name} className={style.authorImage} src={author.image.file.url} />
         <div className={style.authorName}> {author.name}</div>
@@ -31,7 +31,7 @@ const BlogPost = ({ data }) => {
     __html: body.childMarkdownRemark.html,
   }}></div>
   <div className={style.buttonholder}>
-  <Link className={style.learnmore} to="/blogposts">View more posts</Link>
+  <Link className={style.learnmore} to="/blog/">View more posts</Link>
         <Link className={style.learnmore} to="/">Back to Home</Link>
   </div>
         
@@ -40,14 +40,14 @@ const BlogPost = ({ data }) => {
           <div className={style.sideBar}>
             {
               data.allContentfulBlog.edges.map(b => {
-                return ( b.node.title == title ? "" : <Link className={style.blogblock}  to={'/blogpost/' + b.node.slug }><div key={b.node.id} className={style.blogPreview}>
+                return ( b.node.title == title ? "" : <Link key={b.node.id} className={style.blogblock}  to={'/blogpost/' + b.node.slug }><div  className={style.blogPreview}>
                   <img className={style.previewImg} src={b.node.heroImage.file.url}/>
                   <div className={style.previewInfo}>
                   <div className={style.previewTitle}>{b.node.title}</div>
                   <div className={style.previewDescription}>{b.node.description.description}</div>
                   <div className={style.previewAuthorBlock}>
-                  <img className={style.previewAuthorImage} src={b.node.author.image.file.url} />
-                  <div className={style.previewAuthorName}> {b.node.author.name}</div>
+                  { b.node.author == null ? " " : <img className={style.previewAuthorImage} src={b.node.author.image.file.url} /> } 
+                  <div className={style.previewAuthorName}> {b.node.author?.name}</div>
                   </div>
                   
                  <div className={style.previewlearnmore}> View Post</div>

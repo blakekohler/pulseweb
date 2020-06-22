@@ -5,16 +5,7 @@
     flex-wrap: wrap;
 }
 
-.header{
-    font-size: 2.75em;
-    font-weight: 400;
-    font-family: 'Quicksand', sans-serif;
-    color: #4e56a4;
-    margin-bottom: 60px;
-    line-height: 53px;
-    text-align: center;
-    margin-top: 20px;
-}
+
 .subheader{
     font-size: xx-large;
     font-weight: 400;
@@ -340,9 +331,7 @@ border-radius: 75px;
       }
 
 
-      .heroImage{
-        
-      }
+      
 
       .blogPost{
           padding-left: 2%;
@@ -354,13 +343,13 @@ border-radius: 75px;
         padding-right: 0px;
       }
 
-      h1{
+    .header{
           text-align: left !important;
           margin: 0px;
           font-weight: 600;
       }
 
-      h2{
+      .description{
         margin: 0px;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -368,7 +357,11 @@ border-radius: 75px;
           font-weight: 200;
           font-size: x-large;
       }
-     
+     h3{
+        font-family: Quicksand,sans-serif;
+        color: #3a3a3a9e;
+        font-size: large;
+     }
 
       blockquote{
           font-size: x-large;
@@ -420,10 +413,12 @@ border-radius: 40px;
         width: 350px;
         margin-top: 35px;
         margin-bottom: 15px;
+        box-shadow: #00000029 -1px 2px 4px 1px;
       }
 
       .previewImg{
           height: 250px;
+          width: 100%;
           margin: 0;
       }
 
@@ -487,3 +482,18 @@ border-radius: 40px;
         text-decoration: none;
     }
     
+
+    @media only screen and (max-width: 600px) {
+        .sideBar{
+          
+            padding-left: 0%;
+            margin-top: 0px;
+        }
+    
+
+        .blogPreview{
+            width: 100%;
+        }
+    }
+
+ 

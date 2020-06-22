@@ -49,8 +49,8 @@ const Footer = () => {
           <Link to="/press" className={style.navitem}>Press</Link><br/>
           <Link to="/about" className={style.navitem}>Mission</Link><br/>
           <Link to="/press" className={style.navitem}>Media Kit</Link><br/>
-
-          <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a>
+          <Link to="/blog" className={style.navitem}>Blog</Link>
+          {/* <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a> */}
         </div>
         <div className={style.bigColumn}>
 <div id="mc_embed_signup">
