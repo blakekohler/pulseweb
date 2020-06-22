@@ -94,6 +94,9 @@ flex: 2;
     width: 300px;
     flex: none;
   }
+  .navitem{
+    height: 48px;
+  }
 }
 
 
@@ -107,10 +110,15 @@ flex: 2;
 }
 
 .navitem {
+  display: block;
   font-weight: 300;
   font-size: small;
   color: white;
   text-decoration: none;
+ 
+  padding-top: 9px; 
+  margin-top: 10px;
+  padding-left: 4px;
 }
 
 
