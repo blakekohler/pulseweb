@@ -49,11 +49,11 @@ header{
     .banner{display: none}
     .topnav a:not(:first-child) {display: none;}
     .buttonHolder, .signin{ display: none !important;}
-    .topnav a.icon {
+    .topnav .icon {
       float: right;
-      display: block;
+      display: block !important;
       position: absolute;
-    right: 0px;
+    right: 30px;
     }
   }
   .hidden{
