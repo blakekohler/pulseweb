@@ -13,9 +13,13 @@ import rhbuild from "../images/roadhomelbuilding.jpg"
 import cleankiosk from "../images/cleankiosk.jpg"
 
 
-const Example = ({ data }) => {
-  const posts = data.allContentfulBlog.nodes;
-  console.log(posts)
+const Example = (props) => {
+  const posts = props.data.allContentfulBlog.nodes;
+  const { currentPage, numPages } = props.pageContext
+  const isFirst = currentPage === 1
+  const isLast = currentPage === numPages
+  const prevPage = currentPage - 1 === 1 ? "/blog" : (currentPage - 1).toString()
+  const nextPage = (currentPage + 1).toString()
 
   return (
     <Layout>
@@ -52,10 +56,22 @@ return ( <div className={style.row}>
   </div>
 </div>)
   })
+
+  
 }
 
              
-
+{!isFirst && (
+    <Link className={style.learnmore} to={prevPage} rel="prev">
+      ← Previous Page
+    </Link>
+  )}
+  {!isLast && (
+    <Link className={style.learnmore}  to={nextPage} rel="next">
+      Next Page →
+    </Link>
+  )}
+<br></br>
               
              
             </div>
