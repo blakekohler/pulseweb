@@ -132,6 +132,15 @@
         justify-content: center;
        
     }
+
+    .buttonHolder{
+        flex-wrap: wrap;
+    }
+    .play, .seemore{
+        width: 100%;
+        height: 50px;
+        font-size: large;
+    }
 }
 
 
