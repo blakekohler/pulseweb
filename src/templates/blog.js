@@ -18,7 +18,7 @@ const Example = (props) => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? "/blog" : (currentPage - 1).toString()
+  const prevPage = currentPage - 1 === 1 ? "" : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
 
   return (
@@ -62,12 +62,12 @@ return ( <div className={style.row}>
 
              
 {!isFirst && (
-    <Link className={style.learnmore} to={prevPage} rel="prev">
+    <Link className={style.learnmore} to={'/blog/' + prevPage} rel="prev">
       ← Previous Page
     </Link>
   )}
   {!isLast && (
-    <Link className={style.learnmore}  to={nextPage} rel="next">
+    <Link className={style.learnmore}  to={'/blog/' + nextPage} rel="next">
       Next Page →
     </Link>
   )}
