@@ -2,15 +2,10 @@ import React from "react"
 import style from "./blog.module.scss"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
-import heroes from "../images/heroes-small.jpg"
-
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
+import writingforgood from "../images/writingforgood.png"
 
-import kioskuser from "../images/kiosk-user.jpg"
-import rhbuild from "../images/roadhomelbuilding.jpg"
-
-import cleankiosk from "../images/cleankiosk.jpg"
 
 
 const Example = (props) => {
@@ -23,7 +18,7 @@ const Example = (props) => {
 
   return (
     <Layout>
-      <SEO title="Tackling COVID-19 with Pulse" description="Pulse For Good helps organizations improve their COVID-19 response." />
+      <SEO title="Writing For Good" description="Stories, thoughts, and tidbits from the fight to help change the worlds most important organizations for the better" img={writingforgood} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
