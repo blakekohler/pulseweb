@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
  
   return (
     <Layout>
-       <SEO title={title} description={description.toString()} img={heroImage.file.url}  />
+       <SEO title={title} description={description.description} img={heroImage.file.url}  />
 <Container>
         <div className={style.container}>
           <div className={style.article}>
