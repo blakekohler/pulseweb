@@ -5,13 +5,15 @@ import style from "./pricing.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
+import pricingSeo from "../images/pricing.png"
+
 
 const Pricing = () => {
 
   const [monthly, setShowMonthly] = useState(true);
   return (
   <Layout>
-    <SEO title="Pricing" description="Transparent pricing for the Pulse For Good feedback system" />
+    <SEO title="Pricing" description="Transparent pricing for the Pulse For Good feedback system" img={pricingSeo} />
     <Container> 
       <div className={style.pricingflex}>
       <div className={style.leftHolder}>
