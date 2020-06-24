@@ -8,7 +8,7 @@ import heroes from "../images/heroes.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse Heroes" description="Help us honor the heroes inside of your organization by sharing how they have used feedback to improve your organization." />
+      <SEO title="Pulse Heroes" description="Help us honor the heroes inside of your organization by sharing how they have used feedback to improve your organization." img={heroes} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>

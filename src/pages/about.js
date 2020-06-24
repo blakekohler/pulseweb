@@ -141,7 +141,7 @@ const About  = () => {
 <h2 className={style.missionSub}>Improve the world's most important organizations</h2>
 <p className={style.missionText}>
 Our mission at Pulse is to provide data to decision makers that empowers them to make the best choices they can for the people they serve. We believe that decisions backed by accurate, quality, and timely data will make services better for customers. We also believe that everyone, no matter their situation in life, deserves to have their voice heard and feel like they are being listened to. We hold true the words of twentieth-century philosopher Paul Tillich when he said, “The first duty of love is to listen.” We add that the second duty of love is to act. We strive to help organizations listen, act, and love.</p>
-<h1>Leadership</h1>
+<h1>Meet our team</h1>
 <div className={style.leadershipHolder}>
 { leaders.map(l => {
     return (<div className={style.leader} key={l.name}>

@@ -85,6 +85,7 @@ const image = img || `https://pulsemain-b6050.web.app/img/metaImage.jpg`
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
+  img: null,
   description: ``,
 }
 
@@ -93,6 +94,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  img: PropTypes.string
 }
 
 export default SEO
