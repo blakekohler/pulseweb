@@ -11,11 +11,16 @@ font-weight: 400;
 font-family: 'Quicksand', sans-serif;
 color: #4E56A4;
 margin-top: 30px;
+padding: 10px;
 }
 
 .subheader{
     padding-top: 20px;
     text-align: left;
+    font-weight: 400;
+font-family: 'Quicksand', sans-serif;
+font-size: larger;
+color: #4E56A4;
 }
 .article{
     flex: 4;
@@ -23,7 +28,11 @@ margin-top: 30px;
     padding-right: 40px;
    
 }
-
+.explainer{
+    padding: 15px;
+    font-weight: 500;
+    color: gray;
+}
 .item{
     padding-left: 20px;
     background-color: rgba(237,237,233,.32);

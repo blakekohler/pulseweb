@@ -14,7 +14,9 @@ const Example = () => {
             <div className={style.header}>
               Sales Info
             </div>
-           
+           <div className={style.explainer}>
+             Basic information to help the sales team at Pulse For Good
+           </div>
            
             <div className={style.mainEvent}>
             <div className={style.item}> 
