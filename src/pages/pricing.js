@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import { Link } from "gatsby"
 import style from "./pricing.module.scss"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"

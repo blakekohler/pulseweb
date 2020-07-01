@@ -1,0 +1,32 @@
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+font-size: xx-large;
+font-weight: 400;
+font-family: 'Quicksand', sans-serif;
+color: #4E56A4;
+margin-top: 30px;
+}
+
+.subheader{
+    padding-top: 20px;
+    text-align: left;
+}
+.article{
+    flex: 4;
+    padding-top: 20px;
+    padding-right: 40px;
+   
+}
+
+.item{
+    padding-left: 20px;
+    background-color: rgba(237,237,233,.32);
+    margin-top: 25px;
+    margin-bottom: 5px;
+}

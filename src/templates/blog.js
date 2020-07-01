@@ -54,9 +54,7 @@ return ( <div className={style.row}>
 
   
 }
-
-             
-{!isFirst && (
+<div className={style.buttonRow}>{!isFirst && (
     <Link className={style.learnmore} to={'/blog/' + prevPage} rel="prev">
       ← Previous Page
     </Link>
@@ -65,7 +63,9 @@ return ( <div className={style.row}>
     <Link className={style.learnmore}  to={'/blog/' + nextPage} rel="next">
       Next Page →
     </Link>
-  )}
+  )}</div>
+             
+
 <br></br>
               
              
