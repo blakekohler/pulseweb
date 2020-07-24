@@ -14,25 +14,25 @@ import melissa from "../../images/melissa.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Behavioral Health providers" description="Pulse for Good helps Behavioral Health providers get feedback from the people they serve" />
+      <SEO title="Pulse for Correctional system service providers" description="Pulse for Good helps Correctional system providers get feedback from the people they serve" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Our customers see a 330% increase in Medicaid compliance  </p>
+            <p className={style.header}>Get feedback from the individuals that interact with your organization   </p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
               <div className={style.subheader}>
-            Gain immediate insight into your client satisfaction 
+            Gain immediate insight into the opinion of your organization
             </div>
               <p>
           
-              Gathering client feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
+              Gathering feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
                   <p>
                   Having focused our entire solution on gathering feedback from vulnerable populations we understand the complexity involved in collecting feedback from this diverse group.
  </p>
-              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. Data from Pulse can meet the metrics required by the Federal Government for Medicare without expending any time on the part of the provider. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
+              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
 
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
@@ -63,10 +63,10 @@ const Example = () => {
 
 <div className={style.featuresList}>
   <div className={style.feature}>
-    <h3>Increase client engagement</h3>
+    <h3>Increase citizen engagement</h3>
 
     <ul>
-      <li>Engage clients on their terms</li>
+      <li>Engage people on their terms</li>
       <li>Receive 3 - 5 Submissions daily</li>
       <li>Learn what is working</li>
       <li>Resolve unseen concerns</li>

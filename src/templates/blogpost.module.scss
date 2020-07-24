@@ -481,6 +481,10 @@ border-radius: 40px;
         color: hsla(0, 0%, 0%, 0.8);;
         text-decoration: none;
     }
+
+    .bodyText > h2{
+       text-align: left;
+    }
     
 
     @media only screen and (max-width: 600px) {

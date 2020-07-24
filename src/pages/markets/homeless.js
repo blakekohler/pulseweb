@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./homeless.module.scss"
+import style from "./marketLanding.module.scss"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"

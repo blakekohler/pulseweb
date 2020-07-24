@@ -1,0 +1,124 @@
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  padding-top: 40px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 44px;
+  padding-right: 34px;
+}
+.calcHeader{
+  color: #4E56A4;
+    padding-bottom: 40px;
+    font-size: 2.75em;
+    line-height: initial;
+    font-weight: 400;
+}
+
+.h2{
+  color: #4E56A4;
+    padding-bottom: 5px;
+    line-height: initial;
+    font-weight: 400;
+    text-align: left;
+}
+
+.calcholder{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.valueLevels{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+}
+
+.level{
+  flex: 1;
+}
+
+.level label{
+ 
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcda;
+  margin: 10px;
+  display: block;
+}
+
+.levelheader{
+  color: #4E56A4;
+  font-size: x-large;
+  text-align: center;
+  margin: 10px;
+}
+.leveldetail{
+  font-size: medium;
+}
+
+.levellist{
+  font-size: small;
+}
+
+.hiddenInput{
+  display: none;
+  cursor: pointer;
+}
+
+.level input[type="radio"]:checked + label {
+  background: #f3f3f3;
+
+}
+
+.level input[type="checkbox"]:checked + label {
+  background: #f3f3f3;
+
+}
+
+.slidecontainer{
+  width: 100%;
+}
+
+.moredetails{
+  display: flex;
+}
+
+.locationNumber{
+  width: 100%;
+  /* height: 162px; */
+  font-size: 26pt;
+  border: 1px solid #dcdcda;
+  border-radius: 5px;
+  text-align: center;
+  color: #3c3b3b;
+
+}
+
+.costs{
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.dollarbillsyo{
+  color: green;
+  font-size: xxx-large;
+}
+
+.bad{
+  color: red;
+}
+.yellow{
+  color: #ffc107;
+}
+.savedmoney{
+  color: green;
+}
+.riskHeader{
+  margin-left: 10px;
+}

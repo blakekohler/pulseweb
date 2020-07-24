@@ -14,12 +14,12 @@ import melissa from "../../images/melissa.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Behavioral Health providers" description="Pulse for Good helps Behavioral Health providers get feedback from the people they serve" />
+      <SEO title="Pulse for Domestic Violence providers" description="Pulse for Good helps Domestic Violence providers get feedback from the people they serve" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Our customers see a 330% increase in Medicaid compliance  </p>
+            <p className={style.header}>Get feedback from individuals during times of crisis  </p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
@@ -32,7 +32,7 @@ const Example = () => {
                   <p>
                   Having focused our entire solution on gathering feedback from vulnerable populations we understand the complexity involved in collecting feedback from this diverse group.
  </p>
-              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. Data from Pulse can meet the metrics required by the Federal Government for Medicare without expending any time on the part of the provider. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
+              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
 
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>

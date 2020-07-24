@@ -63,45 +63,59 @@ Weather you serve the homeless or people seeking refuge from domestic violence w
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="community">
   <img className={style.marketImage} alt='Community health' src={ch}/>
   <div className={style.marketTitle}> Community health
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="community">
   <img className={style.marketImage} alt='Healthcare' src={healthcare}/>
   <div className={style.marketTitle}> Health care
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="corrections">
   <img className={style.marketImage} alt='Corrections' src={corrections}/>
   <div className={style.marketTitle}> Corrections
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="mental">
   <img className={style.marketImage} alt='Rehab' src={rehab}/>
   <div className={style.marketTitle}> Rehab
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="affordablehousing">
   <img className={style.marketImage} alt='Affordable housing' src={housing}/>
   <div className={style.marketTitle}> Affordable housing
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="domesticviolence">
   <img className={style.marketImage} alt='Domestic Violence' src={dv}/>
   <div className={style.marketTitle}> Domestic Violence
     </div>
+    </Link>
     </div>
 
     <div className={style.marketItem}>
+    <Link className={style.link} to="mental">
   <img className={style.marketImage} alt='Mental health' src={mh}/>
   <div className={style.marketTitle}> Mental health
     </div>
+    </Link>
     </div>
 
     

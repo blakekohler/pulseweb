@@ -14,7 +14,7 @@ import melissa from "../../images/melissa.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Behavioral Health providers" description="Pulse for Good helps Behavioral Health providers get feedback from the people they serve" />
+      <SEO title="Pulse for Mental Health providers" description="Pulse for Good helps Mental Health providers get feedback from the people they serve" />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
