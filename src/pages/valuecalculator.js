@@ -101,7 +101,7 @@ const Pricing = () => {
                     checked={calc.quality === "duct"}
                     onChange={e => setCalc({...calc, quality: e.target.value})}
                   />
-                  <label for="control_01">
+                  <label class="bigBut" for="control_01">
                     <h3 className={style.levelheader}>Duct Tape</h3>
                     <div className={style.leveldetail}>
                       Different software pieces loosly held together by duct
@@ -109,19 +109,19 @@ const Pricing = () => {
                     </div>
                     <ul>
                     <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Online survey provider + Refurbished tablets
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Someone builds reports for you when they remember
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Staff has to give tablet to each client
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        You get less responses over time as staff forget to ask clients to take the survey
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Tablets get lost, stolen and broken :(
                       </li>
                     </ul>
                   </label>
@@ -138,27 +138,26 @@ const Pricing = () => {
                     checked={calc.quality === "diy"}
                     onChange={e => setCalc({...calc, quality: e.target.value})}
                   />
-                  <label for="control_02">
+                  <label class="bigBut" for="control_02">
                     <h3 className={style.levelheader}>DIY</h3>
                     <div className={style.leveldetail}>
-                      Different software pieces loosly held together by duct
-                      tape
+                      Your IT team wants to build a feedback system themselves. They weren't very busy already.
                     </div>
                     <ul>
                     <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Powered by enterprise survey solution 
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Tablets are mounted to wall using kiosks from amazon
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Client find ways to use tablets to watch netflix
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        System started out amazing and then IT head left
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        You wish you knew how you compared to other providers
                       </li>
                     </ul>
                   </label>
@@ -175,26 +174,24 @@ const Pricing = () => {
                     checked={calc.quality === "dev"}
                     onChange={e => setCalc({...calc, quality: e.target.value})}
                   />
-                  <label for="control_03">
+                  <label class="bigBut" for="control_03">
                     <h3 className={style.levelheader}>Development Team</h3>
                     <div className={style.leveldetail}>
-                      Using a professional development team 
+                      Using a professional development team to develop your own feedback system
                     </div>
                     <ul>
                     <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Amazing software built to gather feedback from vulnerable individuals
+                      </li>
+                    
+                      <li className={style.levellist}>
+                        Software runs on tablets but you have to pay for and setup the hardware
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                       IT team spends an annoying amount of time supporting solution
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
-                      </li>
-                      <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
-                      </li>
-                      <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        It's everything you always imagined but you no longer have money to run your organization
                       </li>
                     </ul>
                   </label>
@@ -210,27 +207,29 @@ const Pricing = () => {
                     checked={calc.quality === "pulse"}
                     onChange={e => setCalc({...calc, quality: e.target.value})}
                   />
-                  <label for="control_04">
+                  <label class="bigBut" for="control_04">
                     <h3 className={style.levelheader}>Pulse</h3>
                     <div className={style.leveldetail}>
-                      Different software and hardware loosly held together by
-                      duct tape
+                     World class feedback system built specifically for vulnernable individuals
                     </div>
                     <ul>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                       Hardware, Software and Services included
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Kiosks gather feedback without staff effort
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Powerful data dashboard & reporting tools
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Multi language support, Weekly Emails Reports, & Organizational Data Views
                       </li>
                       <li className={style.levellist}>
-                        Survey Monkey/Qualtrics + Refurbished Ipads
+                        Peer benchmarking show you how compare to others
+                      </li>
+                      <li className={style.levellist}>
+                        Offline kiosks support & Hardware warranty
                       </li>
                     </ul>
                   </label>
