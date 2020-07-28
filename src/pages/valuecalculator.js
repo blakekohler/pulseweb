@@ -78,20 +78,14 @@ const Pricing = () => {
           <div className={style.calcholder}>
             <h1 className={style.calcHeader}>Value Calculator</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+             Organizations have often started some form of client feedback gathering before discovering the ability to automate the process. It can be tempting to try to build your own automated feedback system. Below we've created a calculator to help you understand the costs and risks associated with building your own system as well as the benefits of using a world class feedback system.
             </p>
             <div className={style.qualitylevel}>
-              <h3 >Quality Level</h3>
+              <h3 >Select your quality level</h3>
               <div className={style.valueLevels}>
                 {/* Duct Tape */}
 
-                <div className={style.level}>
+                <div className={style.biglevel}>
                   <input
                     className={style.hiddenInput}
                     type="radio"
@@ -128,7 +122,7 @@ const Pricing = () => {
                 </div>
 
                 {/* DIY */}
-                <div className={style.level}>
+                <div className={style.biglevel}>
                   <input
                     className={style.hiddenInput}
                     type="radio"
@@ -164,7 +158,7 @@ const Pricing = () => {
                 </div>
 
                 {/* Prof. Tech */}
-                <div className={style.level}>
+                <div className={style.biglevel}>
                   <input
                     className={style.hiddenInput}
                     type="radio"
@@ -197,7 +191,7 @@ const Pricing = () => {
                   </label>
                 </div>
                 {/* Pulse  */}
-                <div className={style.level}>
+                <div className={style.biglevel}>
                   <input
                     className={style.hiddenInput}
                     type="radio"

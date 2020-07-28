@@ -7,6 +7,9 @@ import blake from "../images/blakegray.jpg"
 import wes from "../images/wes.jpg"
 import marc from "../images/marc.jpg"
 import rem from "../images/rem.jpg"
+import rebekah from "../images/rebekah.jpg"
+import sheen from "../images/sheen.jpg"
+import bri from "../images/bri.jpg"
 import ty from "../images/ty.jpg"
 import travis from "../images/travis.jpg"
 import { Link } from "gatsby"
@@ -40,15 +43,33 @@ const About  = () => {
 
     },
     {
+        name: "Bri Field",
+        title: "Content Specialist",
+        img: bri,
+
+    },
+    {
         name: "Travis Marble",
         title: "Co-Founder & Development",
         img: travis,
 
     },
     {
+        name: "Rebekah Holt",
+        title: "Content Specialist",
+        img: rebekah,
+
+    },
+    {
         name: "Remington Rainey",
         title: "Co-Founder & CRO",
         img: rem,
+
+    },
+    {
+        name: "Sheena White",
+        title: "Account Executive",
+        img: sheen,
 
     },
     {

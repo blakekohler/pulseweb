@@ -38,8 +38,21 @@
   margin-left: -10px;
 }
 
-.level{
+.level, .biglevel{
   flex: 1;
+}
+
+
+
+.biglevel label{
+ 
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcda;
+  margin: 10px;
+  height: 400px;
+  display: block;
 }
 
 .level label{
@@ -78,6 +91,11 @@
 
 }
 
+.biglevel input[type="radio"]:checked + label {
+  background: #f3f3f3;
+
+}
+
 .level input[type="checkbox"]:checked + label {
   background: #f3f3f3;
 
@@ -89,6 +107,7 @@
 
 .moredetails{
   display: flex;
+  margin-top: 15px;
 }
 
 .locationNumber{
