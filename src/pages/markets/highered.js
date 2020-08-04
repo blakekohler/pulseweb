@@ -53,7 +53,7 @@ const Example = () => {
                   <p>
                   What happens when you are afraid to give your honest opinion?
 The fear that is introduced creates a new class of people. Empowered individuals become vulnerable individuals. Empowered individuals give feedback that is honest, actionable and often negative. </p><p>Vulnerable individuals share feedback that is often calculated, reserved and often overly positive. When you fear retribution for your feedback the quality of the feedback drops dramatically. </p>
-                  <a target="_blank" rel="noopener noreferrer"  href="https://medium.com/pulse-for-good/the-vulnerability-gap-8d9058664b73?source=friends_link&sk=fbe7122c0e4c758c20ffd4bbc6af8493" className={style.learnmore}>Read more</a>
+                  <a target="_blank" rel="noopener noreferrer"  href="https://www.pulseforgood.com/blogpost/the-vulnerability-gap" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
