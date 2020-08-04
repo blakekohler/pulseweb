@@ -66,7 +66,7 @@ const CustomerList = () => {
               <div className={style.title}>Director of Homeless Services</div>
             </div>
             <div className={style.buttonHolder}>
-              <a className={style.seemore} href="https://medium.com/pulse-for-good/the-second-duty-of-love-e666982c61bb" target="_blank" rel="noopener noreferrer" >Read Story</a>{" "}
+              <a className={style.seemore} href="https://www.pulseforgood.com/blogpost/the-second-duty-of-love/" target="_blank" rel="noopener noreferrer" >Read Story</a>{" "}
               <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={ (e) => { videoControl(ccshomeless)  }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
@@ -89,7 +89,7 @@ const CustomerList = () => {
               <div className={style.title}> Director of Admin Services</div>
             </div>
             <div className={style.buttonHolder}>
-            <a className={style.seemore} href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
+            <a className={style.seemore} href="https://www.pulseforgood.com/blogpost/having-the-right-people-at-the-table" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
               <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={(e) => { videoControl(bvhv) }}>
                 {" "}
                 <i className={`fas fa-play ${style.playicon}`}></i> Play Video{" "}
@@ -112,7 +112,7 @@ const CustomerList = () => {
               <div className={style.title}> Engagement Coordinator</div>
             </div>
             <div className={style.buttonHolder}>
-            <a className={style.seemore} href="https://medium.com/pulse-for-good/beyond-their-means-3d61ea553103?source=friends_link&sk=3068b40166e680cffeb16bde19f35b9a" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
+            <a className={style.seemore} href="http://www.pulseforgood.com/blogpost/beyond-their-means" target="_blank" rel="noopener noreferrer">Read Story</a>{" "}
 
              
               <div className={style.play} role="button" tabIndex="0" onKeyPress={() =>''} onClick={(e) => { videoControl(ccsv) }}>

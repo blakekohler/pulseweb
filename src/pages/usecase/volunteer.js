@@ -57,7 +57,7 @@ const Volunteer = () => {
                   </div>
                   <p>
                   How one organization understood the value of volunteers and invested in them.  </p><p>For many service providers — funding tight, resources stretched, and staff pushed — volunteers are the lifeline of their organization. They allow these organizations to go beyond their means and try new and innovative approaches while making sure that current needs are met.</p>
-                  <a target="_blank" rel="noopener noreferrer" href="http://localhost:8000/blogpost/beyond-their-means" className={style.learnmore}>Read more</a>
+                  <a target="_blank" rel="noopener noreferrer" href="http://www.pulseforgood.com/blogpost/beyond-their-means" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
