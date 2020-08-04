@@ -69,7 +69,7 @@ The fear that is introduced creates a new class of people. Empowered individuals
 
     <ul>
       <li>Engage employees on their terms</li>
-      <li>Receive up to 3 - 5 Submissions daily</li>
+      <li>Receive as many as 3 - 5 Submissions daily</li>
       <li>Learn what is working</li>
       <li>Resolve unseen concerns</li>
       <li>Uncover new solutions</li>
