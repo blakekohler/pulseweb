@@ -33,7 +33,7 @@ const Volunteer = () => {
                   <p>
                   Having focused our entire solution on gathering feedback from groups who are reluctant to share feedback, we understand the complexity of collecting input from teams with diverse needs.
  </p>
-              <p>The Pulse solution captures staff feedback without effort on your part. It transforms feedback into actionable data to improve the volunteer experience. The data dashboard also gives you an easy way to share what your teams are doing with the board or other stakeholders, allowing your organization to improve your service and provide better experiences for both your staff and clients.   
+              <p>The Pulse solution captures staff feedback without effort on your part. It transforms feedback into actionable data to improve the employee experience. The data dashboard also gives you an easy way to share what your teams are doing with the board or other stakeholders, allowing your organization to improve your service and provide better experiences for both your staff and clients.   
 
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>

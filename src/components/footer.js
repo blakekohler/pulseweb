@@ -32,9 +32,10 @@ const Footer = () => {
         </div>
         <div className={style.column}>
           <div className={style.header}>Use Cases</div>
-          <Link to="/usecase/volunteer" className={style.navitem}>Volunteers</Link>
-          <Link to="/usecase/staff" className={style.navitem}>Employees</Link>
-          <Link to="/usecase/landlord" className={style.navitem}>Landlords</Link>
+          <Link to="/usecase/volunteer" className={style.navitem}>Volunteer surveys</Link>
+          <Link to="/usecase/staff" className={style.navitem}>Employees surveys</Link>
+          <Link to="/usecase/housingauthority" className={style.navitem}>Housing Authorities</Link>
+          <Link to="/usecase/landlord" className={style.navitem}>Landlord surveys</Link>
           
           <div className={style.navitem}></div>
         </div>

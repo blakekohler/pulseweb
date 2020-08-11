@@ -6,38 +6,38 @@ import SEO from "../../components/seo"
 import Container from "../../components/contentContainer"
 
 import brit from "../../images/brit-square.jpg"
-import landlord from "../../images/landlord.jpeg"
-import landlord2 from "../../images/landlord2.jpeg"
+import apartment from "../../images/apartment.jpeg"
+import tenant from "../../images/tenant.jpeg"
 import julie from "../../images/julie.jpg"
 import melissa from "../../images/melissa.jpg"
 
-const Volunteer = () => {
+const HousingAuthority = () => {
   return (
     <Layout>
-      <SEO title="Automated landlord feedback gathering" description="Pulse for Good helps you get feedback from your landlords" img={landlord} />
+      <SEO title="Automated landlord feedback gathering" description="Pulse for Good helps you get feedback from your landlords" img={apartment} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Collect feedback from landlords - automatically.  </p>
+            <p className={style.header}>Feedback collection for housing authorities  </p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
               <div className={style.subheader}>
-            Gain immediate insight into your landlord satisfaction 
+            Gain immediate insight into your landlord, tenant and employee satisfaction 
             </div>
               <p>
           
-              Understanding how your landlords feel is hard in the best of situations.   Today's challenges amplify the need for an easy way to understand the challenges your landlords, particularly those part of the section 8 housing program.  </p>
+              Understanding how your landlords, tenants, and employees feel is hard in the best of situations.   Today's challenges amplify the need for an easy way to understand and share the challenges your tenants, landlords and staff face.  </p>
                   <p>
                   Having focused our entire solution on gathering feedback from groups who are reluctant to share feedback, we understand the complexity of collecting input from organizations with diverse needs.
  </p>
-              <p>The Pulse solution captures feedback without effort on your part. It transforms feedback into actionable data to improve the experiences of those who intereact with your organization. The data dashboard also gives you an easy way to share what your teams are doing with the board or other stakeholders, allowing your organization to improve your service and provide better experiences for your landlords and tenants.  
+ <p>The Pulse solution captures feedback without effort on your part. It transforms feedback into actionable data to improve the experiences of those who intereact with your organization. The data dashboard also gives you an easy way to share what your teams are doing with the board or other stakeholders, allowing your organization to improve your service and provide better experiences for your employees, landlords and tenants.  
 
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
               <div className={style.right}>
-              <img src={landlord2} className={style.schoolPic} alt="Apartment"/>
+              <img src={apartment} className={style.schoolPic} alt="Apartment"/>
               </div>
             
 
@@ -49,7 +49,7 @@ const Volunteer = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img alt="For rent sign" src={landlord} />
+                  <img alt="For rent sign" src={tenant} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
@@ -64,10 +64,10 @@ The fear that is introduced creates a new class of people. Empowered individuals
 
 <div className={style.featuresList}>
   <div className={style.feature}>
-    <h3>Increase landlord engagement</h3>
+    <h3>Increase engagement</h3>
 
     <ul>
-      <li>Engage landlord on their terms</li>
+      <li>Engage individuals on their terms</li>
       <li>Receive as many as 3 - 5 Submissions daily</li>
       <li>Learn what is working</li>
       <li>Resolve unseen concerns</li>
@@ -89,7 +89,7 @@ The fear that is introduced creates a new class of people. Empowered individuals
     <h3>Enhance funding discussions</h3>
 
     <ul>
-      <li>Share landlord concerns</li>
+      <li>Share concerns</li>
       <li>Bring real data to discussions</li>
       <li>Track key indicators</li>
       <li>Meet reporting requirements</li>
@@ -148,4 +148,4 @@ The fear that is introduced creates a new class of people. Empowered individuals
     </Layout>
   )
 }
-export default Volunteer
+export default HousingAuthority
