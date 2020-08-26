@@ -134,3 +134,30 @@ font-weight: 600;
 .whitelogo{
     background-color: #C32B5C;
 }
+.buttonRow{
+    display: flex;
+    justify-content: space-between;
+}
+.learnmore{
+    border: 1px solid #C32B5C;
+    border-radius: 21px;
+    height: 30px;
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    color: #C32B5C;
+    text-transform: capitalize !important;
+    margin-top: 5px;
+   
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 120px;
+    cursor: pointer;
+ }
+ .learnmore:hover{
+    background-color: #C32B5C;
+color: white;
+    border: 1px solid #C32B5C;
+}

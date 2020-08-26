@@ -8,7 +8,7 @@ import writingforgood from "../images/writingforgood.png"
 
 
 
-const Example = (props) => {
+const Blog = (props) => {
   const posts = props.data.allContentfulBlog.nodes;
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
@@ -76,7 +76,7 @@ return ( <div className={style.row}>
     </Layout>
   )
 }
-export default Example
+export default Blog
 
 
 export const blogListQuery = graphql`

@@ -8,12 +8,18 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(
     `
     {
-  
         allContentfulBlog {
           edges {
             node {
               id
               slug
+            }
+          }
+        }
+        allContentfulPress {
+          edges {
+            node {
+              id
             }
           }
         }
@@ -41,6 +47,24 @@ Array.from({ length: numPages }).forEach((_, i) => {
     },
   })
 });
+
+//Create press pages
+const pressPosts = result.data.allContentfulPress.edges
+const pressPostsPerPage = 6
+const pressNumPages = Math.ceil(pressPosts.length / pressPostsPerPage)
+Array.from({ length: pressNumPages }).forEach((_, i) => {
+  createPage({
+    path: i === 0 ? `/press` : `/press/${i + 1}`,
+    component: path.resolve("./src/templates/press.js"),
+    context: {
+      limit: pressPostsPerPage,
+      skip: i * pressPostsPerPage,
+      pressNumPages,
+      currentPage: i + 1,
+    },
+  })
+});
+
 
 
       // Resolve the paths to our template
