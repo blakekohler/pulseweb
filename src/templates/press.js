@@ -64,11 +64,10 @@ const filterItem = (type) =>{
               <div className={style.itemHolder}>
               <div className={style.itemFilters}>
               <div  role= "button" tabIndex='0'   className={itemType === 'all' ? style.active : style.readmore} onKeyDown={(e) => filterItem('all')} onClick={(e) => filterItem('all')}>Show All</div>
-              {/* <div  role= "button" tabIndex='0'   className={itemType === 'blog' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('blog')}>
+              <div  role= "button" tabIndex='0'   className={itemType === 'blog' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('podcast')}>
                 {" "}
-                <i className={`fas fa-paragraph ${style.padright}`}></i>Blog
-                Posts
-              </div> */}
+                <i className={`fas fa-file-audio ${style.padright}`}></i> Podcasts 
+              </div>
               <div  role = "button" tabIndex='0'   className={itemType === 'news' ? style.active : style.readmore} onKeyPress={(e) => '' } onClick={(e) => filterItem('news')} >
                 {" "}
                 <i className={`fas fa-quote-right ${style.padright}`}></i> In
