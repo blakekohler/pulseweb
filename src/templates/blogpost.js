@@ -13,6 +13,7 @@ const BlogPost = ({ data }) => {
        <SEO title={title} description={description.description} img={heroImage.file.url}  />
 <Container>
         <div className={style.container}>
+          {/* This image is here so that it's the first image so places like Linkedin pick this image instead of the author image when showing content. It is hidden from the user on the website. */}
         <img alt={title} className={style.heroImageHidden} src={heroImage.file.url} />
           <div className={style.article}>
           <br></br>
