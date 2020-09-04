@@ -13,6 +13,7 @@ const BlogPost = ({ data }) => {
        <SEO title={title} description={description.description} img={heroImage.file.url}  />
 <Container>
         <div className={style.container}>
+        <img alt={title} className={style.heroImageHidden} src={heroImage.file.url} />
           <div className={style.article}>
           <br></br>
           <div className={style.blogPost}>

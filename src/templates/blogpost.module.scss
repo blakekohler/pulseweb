@@ -500,4 +500,9 @@ border-radius: 40px;
         }
     }
 
- 
+ .heroImageHidden{
+     opacity: 0;
+     position: absolute;
+     left: -1500px;
+     top: -1500px;
+ }
