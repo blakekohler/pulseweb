@@ -25,7 +25,7 @@ import melissa from "../../images/melissa.jpg"
 import becky from "../../images/becky.jpg"
 
 const CustomerMain = () => {
-  const responseCount = useState(Math.floor((Math.random() * 1000) + 21000));
+  const responseCount = useState(Math.floor((Math.random() * 1000) + 27000));
   return (
     <div className={style.container}>
       <h1 className={style.bigboy}>Over {responseCount} voices heard</h1>
@@ -55,7 +55,7 @@ const CustomerMain = () => {
               <track src="../../videos/ccscap.vtt" kind="captions" srclang="en" label="English"/>
               Your browser does not support the video tag.
             </video>
-            <h4>The second duy of love</h4>
+            <h4>The second duty of love</h4>
             <p className={style.preview}>
               Paul Tillich, a twentieth century philosopher and theologian, once
               said that, “the first duty of love is to listen.” I’ve come to
