@@ -1,0 +1,225 @@
+.hero_banner{
+    background: linear-gradient(-150deg,#c12f5c 0,#4E56A4 98%);
+    background-color: #c12f5c;
+    background-size: cover;
+    background-position: center bottom;
+    justify-content: center;
+    padding-top: 65px;
+}
+
+.header{
+   position: absolute;
+   top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headerLeft{display: flex;}
+.headerLeft > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1{
+    font-size: 2.75em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    // color: #4E56A4;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 53px;
+}
+.logo{
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    margin: 0;
+}
+
+.helplink{
+    color: white;
+    text-decoration: none;
+}
+
+.helpLinkHolder{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+.helphero{
+    display:flex;
+    justify-content: center;
+}
+
+.helpCenter{
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 110px;
+}
+.helpSearch{
+    border: 0;
+    padding: 20px 20px 20px 60px;
+    line-height: 22px;
+    font-size: 17.1px;
+    box-shadow: 0 9px 14px 0 rgba(0,0,0,.1);
+    border-radius: 8px;
+    color: #1d1c1d;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: left;
+    transition-property: all;
+    transition-duration: 120ms;
+    margin-bottom: 30px;
+}
+
+.searchText{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.searchText > a{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: 900;
+}
+.supportRequest{
+    border: 1px solid #ffffff;
+    border-radius: 41px;
+    height: 40px;
+    display: flex;
+    padding: 7px !important;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-decoration: none;
+    width: 100px;
+    min-width: 100px;
+    color: #ffffff;
+    width: 10%;
+    float: right;
+
+}
+
+.helpTopics{
+    background-color: #f4f7fa;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 50px;
+}
+
+.topicsHolder{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topicRow{
+    display: flex;
+    align-content: center;
+}
+
+.topLeft{
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+    border-right: 1px solid #e2dcdc;
+    border-bottom: 1px solid #e2dcdc;
+    width: 33%;
+}
+.topMiddle{
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+    border-bottom: 1px solid #e2dcdc;
+    width: 33%;
+}
+.topRight{
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+    border-left: 1px solid #e2dcdc;
+    border-bottom: 1px solid #e2dcdc;
+    width: 33%;
+}
+
+.bottomLeft{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-right: 1px solid #e2dcdc;
+   
+    width: 33%;
+}
+.bottomMiddle{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+    
+    width: 33%;
+}
+.bottomRight{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-left: 1px solid #e2dcdc;
+    width: 33%;
+}
+
+.topLeft:hover, .bottomLeft:hover, .topMiddle:hover, .bottomMiddle:hover, .bottomMiddle:hover, .topRight:hover, .bottomRight:hover{
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 9px white;
+    cursor: pointer;
+    z-index: 9;
+    transition: .5s;
+ 
+}
+
+.featuredContainer{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.featuredArticles{
+    
+  
+    margin-bottom: 50px;
+}
+
+.articleList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articleList > li {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 33%;
+    max-height: 22px;
+    overflow: hidden;
+    padding-left: 24px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 22px;
+    margin-bottom: 18px;
+    padding-right: 10px;
+}
+
+.articleList > li::before {
+    display: block;
+    content: "•";
+    position: absolute;
+    left: 0px;
+}
+

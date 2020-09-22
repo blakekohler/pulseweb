@@ -43,6 +43,10 @@ const image = img || `https://pulsemain-b6050.web.app/img/metaImage.jpg`
           property: `og:title`,
           content: title,
         },
+        {property: `og:url`,
+        content: 'https://www.pulseforgood.com',
+
+        },
         {
           property: `og:description`,
           content: metaDescription,
