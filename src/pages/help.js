@@ -61,7 +61,7 @@ const Help = () => {
 
   return (
 <main className={style.noOver}>
-<SEO title="Help is on the way!"  description="Let's get you out of here before you break something else!"/>
+<SEO title="Help Center"  description="Help is on the way!"/>
   <section className={style.hero_banner}>
 <div className={style.header}>
 <span className={style.headerLeft}>
