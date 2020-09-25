@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import style from "./help.module.scss"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
@@ -15,6 +15,7 @@ import SEO from "../components/seo"
 import Container from "../components/contentContainer"
 import writingforgood from "../images/writingforgood.png"
 import SkinnyFooter from "../components/skinnyfooter"
+import algoliasearch from "algoliasearch";
 
 
 const Help = () => {
@@ -24,9 +25,42 @@ const Help = () => {
   // const isLast = currentPage === numPages
   // const prevPage = currentPage - 1 === 1 ? "" : (currentPage - 1).toString()
   // const nextPage = (currentPage + 1).toString()
+  const [searchHits, setSearchHits] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+
+  const client = algoliasearch("ADPCT9LWPD", "e7a8089cf3be7d238b0ca56b0737e170");
+  const index = client.initIndex("artciles");
+
+
+ const search = (term) =>{
+   setSearchTerm(term);
+   console.log(term);
+    index
+    .search(searchTerm)
+    .then(({ hits }) => {
+     let restructureHits = [];
+     hits.map(h => {
+      let newHit = {
+        title: h.fields.title[Object.keys(h.fields.title)[0]],
+        article: h.fields.article[Object.keys(h.fields.article)[0]],
+        url: "/help/" + h.fields.slug[Object.keys(h.fields.slug)[0]]
+      };
+      restructureHits.push(newHit);
+     })
+     console.log(restructureHits);
+     setSearchHits(restructureHits);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }
+
+ 
+
 
   return (
-<main>
+<main className={style.noOver}>
 <SEO title="Help is on the way!"  description="Let's get you out of here before you break something else!"/>
   <section className={style.hero_banner}>
 <div className={style.header}>
@@ -34,74 +68,110 @@ const Help = () => {
 <Link  to="/"> <img className={style.logo} alt="Pulse Logo" src={logo}/></Link>  <div className={style.helpLinkHolder}>
 <Link to="/help" className={style.helplink}>Help Center</Link></div>
 </span> 
-<Link to="/supportrequest" className={style.supportRequest}>Request Help</Link>
+<Link to="/contact" className={style.supportRequestBig}>Request Help</Link>
+<div className={style.hideBig}>
+<Link to="/contact" className={style.supportRequestSmall}>Request Help</Link>
 </div>
+</div>
+
+
 <div className={style.helphero}> 
 <div className={style.helpCenter}>
-<h1 className={style.h1}>Hi. How can we help?</h1>
-  <input className={style.helpSearch} placeholder="Find anything (e.g. filters, emails, or reset password)" />
+{ searchTerm.length > 0 ? <h2 className={style.h2}> {searchHits.length} results found for "{searchTerm}"</h2> : <h1 className={style.h1}>Hi. How can we help?</h1>}
+  <i className={`fas fa-search ${style.searchIcon}`} ></i>
+  <input className={style.helpSearch} placeholder="Find anything (e.g. filters, emails, or reset password)"  value={searchTerm} onChange={e => search(e.target.value)} />
+  { searchTerm.length > 0 ? <i onClick={() => setSearchTerm('')} className={`fas fa-times ${style.cancel}`}></i>: ''}
+  
   <div className={style.searchText}>
-    <span className={style.bold}>Common troubleshooting topics:</span>  <a>notifications</a>, <a>offline kiosks</a>, <a>cats</a>
+    <span className={style.bold}>Common troubleshooting topics:</span>  <Link to="/help/dashboard">dashboard access</Link>, <Link to="/help/kiosks">offline kiosks</Link>, <a target="_blank" href="https://giphy.com/explore/cat">cats</a>
   </div>
 </div>
  
 </div>
   </section>
-<section className={style.helpTopics}>
+  
+  { searchTerm.length > 0 ? 
+
+
+
+  //Search hits
+  <section className={style.hits}>
+    {searchHits.length > 0 ? <>
+    {searchHits.map(h => <Link className={style.hit} to={h.url}>
+      <h3>{h.title}</h3>
+      <p>{h.article.substring(0,200)}...</p>
+    </Link>) 
+    
+    }
+    </>
+    : 
+    <div className={style.noHits}>
+      <h3>Yikes! We looked everywhere but couldn't find anything that matched what you were looking for!</h3>
+      <Link to="/contact">Reach out to us directly and we'll help!</Link>
+    </div>
+    }
+</section>
+
+
+  
+  : <> <section className={style.helpTopics}>
 <div className={style.topicsHolder}>
 <div className={style.topicRow}>
-  <div className={style.topLeft}>
+  <Link to="/help/started" className={style.topLeft}>
     <div><img src={started}/></div>
     <h2>Getting Started</h2>
-    <div>Details about this help topic</div>
-  </div>
-  <div className={style.topMiddle}>
+    <div>Get started using Pulse </div>
+  </Link>
+  <Link to="/help/kiosks" className={style.topMiddle}>
   <div><img src={kiosks}/></div>
     <h2>Kiosks</h2>
-    <div>Details about this help topic</div>
-  </div>
-  <div className={style.topRight}>
+    <div>Help with your hardware</div>
+  </Link>
+  <Link to="/help/surveys" className={style.topRight}>
   <div><img src={surveys}/></div>
     <h2>Surveys</h2>
-    <div>Details about this help topic</div>
-  </div>
+    <div>Everything about surveys</div>
+  </Link>
 </div>
 <div className={style.topicRow}>
-<div className={style.bottomLeft}>
+<Link to="/help/dashboard" className={style.bottomLeft}>
 <div><img src={dashboard} /></div>
     <h2>Dashboard</h2>
-    <div>Details about this help topic</div>
-</div>
-  <div className={style.bottomMiddle}>
+    <div>Help with your dashboard</div>
+</Link>
+<Link to="/help/accounts" className={style.bottomMiddle}>
   <div><img src={accounts}/></div>
     <h2>Accounts </h2>
-    <div>Details about this help topic</div>
-  </div>
-  <div className={style.bottomRight}>
+    <div>Accounts, Roles, Permissions</div>
+  </Link>
+  <Link to="/help/billing" className={style.bottomRight}>
   <div><img src={billing}/></div>
     <h2>Billing</h2>
-    <div>Details about this help topic</div>
-  </div>
+    <div>Money & Contracts</div>
+  </Link>
 </div>
 
 </div>
 </section>
-
-
 <section className={style.featuredArticles}>
   <div className={style.featuredContainer}>
   <h3>Featured Articles</h3>
   <div className={style.listHolder}>
     <ul className={style.articleList}>
-      <li><Link to="/">Send and read messages</Link></li>
-      <li>Set your Slack status and availability</li>
-      <li>View all your unread messages</li>
-      <li>Printing Reports</li>
-      <li>What is a channel?</li>
+      <li><Link to="/help/install-kiosk">How do I install my kiosk?</Link></li>
+      <li><Link to="/help/where-should-i-place-my-kiosk">Where should I place my kiosk?</Link></li>
+      <li><Link to="/help/how-do-I-choose-a-different-language">How do I choose a different language?</Link></li>
+      <li><Link to="/help/how-do-I-give-someone-access">How do I give someone access to my organization's dashboard?</Link></li>
+      <li><Link to="/help/how-do-i-reset-my-password">How do I reset my password?</Link></li>
     </ul>
   </div>
   </div>
-</section>
+</section> 
+</>}
+
+
+
+
 <SkinnyFooter></SkinnyFooter>
 </main>
   )

@@ -71,8 +71,11 @@ const BlogPost = ({ data }) => {
 export default BlogPost;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    contentfulBlog(slug: { eq: $slug }) {
+  query($slug: String!) 
+  {
+
+    contentfulBlog(slug: { eq: $slug }) 
+    {
       title
       author {
         image{
@@ -99,7 +102,9 @@ export const pageQuery = graphql`
       }
       
     }
-    allContentfulBlog(limit: 4) {
+
+    allContentfulBlog(limit: 4) 
+    {
       edges {
         node {
           description {
@@ -126,5 +131,7 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    
   }
 `;

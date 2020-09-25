@@ -14,6 +14,7 @@
     color: white;
     text-align: left;
     margin-bottom: 10px;
+    padding-left: 20px;
    
 }
 
@@ -254,6 +255,7 @@
 .sectionDescription{
     color: white;
     margin-left: 5px;
+    padding-left: 20px;
 }
 
 .helpNav > ul > li{
@@ -295,5 +297,96 @@ padding-bottom: 10px;
 }
 
 .subCategory{
+   padding: 20px;
+   min-height: 500px;
+}
+
+.helpNavResponsive{
+    background-color: #f4f7fa;
+    padding: 10px;
+    color: #c12f5c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.responseNavSelected{
+
+display: flex;
+justify-content: space-between;
+}
+
+.responseTitle{
+font-weight: 700;
+padding-top: 4px;
+}
+
+.responseNavIcon{
+    border-radius: 20px;
+    border: 3px solid #9E9E9E;
+    width: 33px;
+    height: 33px;
+    padding-left: 8px;
+    color: #9E9E9E;
+    font-size: small;
+    padding-bottom: 5px;
+    padding-top: 1px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .helpNav {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .helpNavResponsive {
+      display: none;
+    }
+  }
+  .hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.responseNavLink{
     background-color: gray;
+    width: 100%;
+    background-color: #f4f7fa;
+    color: #c12f5c;
+    
+    border-bottom: 1px solid #e6e6e6;
+   
+    margin-bottom: 0;
+}
+
+.responsiveList{
+    list-style: none;
+    margin-left: -5px;
+}
+.listLink{
+    width: 100%;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.listLink:hover{
+    background-color: white;
+}
+
+.catLink{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+
+.helpTopicHeader{font-family: Quicksand,sans-serif;
+    color: #383636;
+    font-size: large;
+    margin-top: 30px;
+    padding-left: 10px;
 }

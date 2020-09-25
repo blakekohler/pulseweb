@@ -23,6 +23,14 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allContentfulHelpTopic {
+          edges {
+            node {
+              id
+              slug
+            }
+          }
+        }
 }
       
     `
@@ -65,8 +73,7 @@ Array.from({ length: pressNumPages }).forEach((_, i) => {
   })
 });
 
-
-
+      //Get blog posts
       // Resolve the paths to our template
       const blogPostTemplate = path.resolve("./src/templates/blogpost.js");
 
@@ -81,8 +88,59 @@ Array.from({ length: pressNumPages }).forEach((_, i) => {
           }
         });
       });
+
+
+      //Get all help articles
+      // Resolve the paths to our template
+      const helpTopicTemplate = path.resolve("./src/templates/helparticle.js");
+      // Then for each result we create a page.
+      result.data.allContentfulHelpTopic.edges.forEach(edge => {
+        createPage({
+          path: `/help/${edge.node.slug}/`,
+          component: slash(helpTopicTemplate),
+          context: {
+            slug: edge.node.slug,
+            id: edge.node.id
+          }
+        });
+      });
+
+      //Build Help Category images
+     // Create blog-list pages
+const articles = result.data.allContentfulHelpTopic.edges
+const categories = [
+  {category: 'Accounts', description: 'Accounts, Roles, Permissions'},
+  {category: 'Started', description: 'Get started using Pulse'},
+  {category: 'Dashboard', description: 'Help with your dashboard'},
+  {category: 'Kiosks', description: 'Help with your hardware'},
+  {category: 'Billing', description: 'Money & Contracts'},
+  {category: 'Surveys', description: 'Everything about surveys'},
+]
+
+categories.forEach( i => {
+  createPage({
+    path: `/help/${i.category.toLocaleLowerCase()}`,
+    component: path.resolve("./src/templates/helpcategory.js"),
+    context: {
+     category: i.category,
+     categoryDescription: i.description
+    },
+  })
+});
+
+
+
+
+
+
+
+
     })
     .catch(error => {
       console.log("Error retrieving contentful data", error);
     });
+
+
+
+
 };

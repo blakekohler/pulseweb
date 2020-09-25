@@ -35,6 +35,10 @@
     justify-content: center;
 }
 
+.bodyText > h2{
+text-align: left;
+}
+
 .h1{
     font-size: 2.75em;
     font-weight: 400;
@@ -237,8 +241,9 @@
 
 .articlebody{
     padding-left: 15%;
-
+    min-height: 500px;
     padding-right: 15%;
+    margin-top: 50px;
 }
 
 .articlebody > h1, .articlebody > h2 , .articlebody > h3{
@@ -292,4 +297,80 @@
     border-top-left-radius: 10px;
     padding: 10px;
     margin-top:-10px;
+}
+
+
+.helpNavResponsive{
+    background-color: #f4f7fa;
+    padding: 10px;
+    color: #c12f5c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.responseNavSelected{
+
+display: flex;
+justify-content: space-between;
+}
+
+.responseTitle{
+font-weight: 700;
+}
+
+.responseNavIcon{
+    border-radius: 20px;
+    border: 3px solid #9E9E9E;
+    width: 30px;
+    height: 30px;
+    padding-left: 6px;
+    color: #9E9E9E;
+    font-size: small;
+    padding-bottom: 5px;
+    padding-top: 1px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .helpNav {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .helpNavResponsive {
+      display: none;
+    }
+  }
+  .hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.responseNavLink{
+    background-color: gray;
+    width: 100%;
+    background-color: #f4f7fa;
+    color: #c12f5c;
+    
+    border-bottom: 1px solid #e6e6e6;
+   
+    margin-bottom: 0;
+}
+
+.responsiveList{
+    list-style: none;
+    margin-left: -5px;
+}
+.listLink{
+    width: 100%;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.listLink:hover{
+    background-color: white;
 }

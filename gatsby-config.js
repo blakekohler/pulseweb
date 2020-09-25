@@ -68,6 +68,7 @@ module.exports = {
         includeInDevelopment: false
       }
     },
+    
     // {
     //   resolve: `gatsby-plugin-facebook-pixel`,
     //   options: {
