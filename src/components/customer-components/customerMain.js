@@ -216,7 +216,7 @@ Orgcode</div>
             <div className={style.details}>
               <div className={style.name}>-Kim Datwyler</div>
               <div className={style.title}>Executive Director
-Neightborhood Nonprofit Housing</div>
+              Neighborhood Nonprofit Housing</div>
             </div>
             
           </div>
