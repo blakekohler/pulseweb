@@ -29,7 +29,7 @@ const Help = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
 
-  const client = algoliasearch("ADPCT9LWPD", "e7a8089cf3be7d238b0ca56b0737e170");
+  const client = algoliasearch("XWTP9BS1XO", "2fbf6e01a06b80bd8e8581bd04bd3b03");
   const index = client.initIndex("artciles");
 
 
