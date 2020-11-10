@@ -11,6 +11,8 @@ import rebekah from "../images/rebekah.jpg"
 import sheen from "../images/sheen.jpg"
 import bri from "../images/bri.jpg"
 import ty from "../images/ty.jpg"
+import dustin from "../images/dustin.jpeg"
+import tevaun from "../images/tevaun.jpg"
 import travis from "../images/travis.jpg"
 import { Link } from "gatsby"
 //Advisors
@@ -52,6 +54,18 @@ const About  = () => {
         name: "Travis Marble",
         title: "Co-Founder & Development",
         img: travis,
+
+    },
+    {
+        name: "Dustin Hughes",
+        title: "Content Specialist",
+        img: dustin,
+
+    },
+    {
+        name: "TeVaun Bailey",
+        title: "Graphic Designer",
+        img: tevaun,
 
     },
     {
