@@ -41,6 +41,7 @@ const Footer = () => {
         </div>
         <div className={style.column}>
           <div className={style.header}>Resources</div>
+          <Link to="/help" className={style.navitem}>Help</Link>
           <Link to="/privacy" className={style.navitem}>Privacy Policy</Link>
           <Link to="/install" className={style.navitem}>Install Guide</Link>
           <div className={style.navitem}></div>
@@ -50,6 +51,7 @@ const Footer = () => {
         <div className={style.column}>
           <div className={style.header}>Company</div>
           <Link to="/about" className={style.navitem}>About</Link>
+          <a href="https://anchor.fm/pulseforgood" className={style.navitem}>Podcast</a>
           <Link to="/press" className={style.navitem}>Press</Link>
           <Link to="/about" className={style.navitem}>Mission</Link>
           <Link to="/press" className={style.navitem}>Media Kit</Link>
