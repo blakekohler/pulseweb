@@ -8,7 +8,7 @@ import magnet from "../images/magnets.jpg"
 const Example = () => {
   return (
     <Layout>
-      <SEO title="I want a Pulse magnet" description="Request one of Pulse For Good's awesome magnets." />
+      <SEO title="I want a Pulse magnet" description="Request one of Pulse For Good's awesome magnets." myUrl={'https://www.pulseforgood.com/magnet'} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
