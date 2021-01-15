@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title, img, myUrl }) {
 
   const metaDescription = description || site.siteMetadata.description
 const image = img || `https://pulsemain-b6050.web.app/img/metaImage.jpg`
-const URL = myUrl || `https://www.pulseforgood.com`;
+
   return (
     <Helmet
       htmlAttributes={{
@@ -45,7 +45,7 @@ const URL = myUrl || `https://www.pulseforgood.com`;
           content: title,
         },
         {property: `og:url`,
-        content: URL,
+        content: myUrl,
         },
         {
           property: `og:description`,
