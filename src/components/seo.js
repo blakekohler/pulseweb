@@ -46,7 +46,6 @@ const URL = myUrl || `https://www.pulseforgood.com`;
         },
         {property: `og:url`,
         content: URL,
-
         },
         {
           property: `og:description`,
@@ -93,6 +92,7 @@ SEO.defaultProps = {
   meta: [],
   img: null,
   description: ``,
+  myUrl: 'https://www.pulseforgood.com'
 }
 
 SEO.propTypes = {
@@ -100,7 +100,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  img: PropTypes.string
+  img: PropTypes.string,
+  myUrl: PropTypes.string
 }
 
 export default SEO
