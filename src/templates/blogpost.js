@@ -6,11 +6,11 @@ import Container from "../components/contentContainer"
 import style from "./blogpost.module.scss"
 
 const BlogPost = ({ data }) => {
-  const { title, body, description, heroImage, author } = data.contentfulBlog;
+  const { title, body, description, heroImage, author, slug } = data.contentfulBlog;
  
   return (
     <Layout>
-       <SEO title={title} description={description.description} img={heroImage.file.url}  />
+       <SEO title={title} description={description.description} img={heroImage.file.url} url={'https://www.pulseforgood.com/blogposts/' + slug}  />
 <Container>
         <div className={style.container}>
           {/* This image is here so that it's the first image so places like Linkedin pick this image instead of the author image when showing content. It is hidden from the user on the website. */}
