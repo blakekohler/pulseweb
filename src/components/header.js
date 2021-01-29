@@ -13,8 +13,6 @@ const Header = ({ siteTitle }) => {
        <Link className={style.link} to="/pricing/">Pricing</Link>
        <Link className={style.link} to="/customers/">Customers</Link>
        <Link className={style.link} to="/markets/">Markets</Link>
-       <Link className={style.link} to="/markets/">Markets</Link>
-       <Link className={style.link} to="/markets/">Markets</Link>
        <Link className={style.link} to="/contact/">Contact</Link>
         <div className={style.buttonHolder}>
         <a className={style.signin} href="https://kiosk.pulseforgood.com/">Sign In</a>
