@@ -26,7 +26,9 @@ const BlogPost = ({ data }) => {
         <div className={style.authorTitle}> {author.title}</div>
        
         </div>
-        
+        <div className={style.socialShare}>
+        <div class="addthis_inline_share_toolbox"></div>
+        </div>
         <img alt={title} className={style.heroImage} src={heroImage.file.url} />
        
         <div className={style.bodyText} dangerouslySetInnerHTML={{
