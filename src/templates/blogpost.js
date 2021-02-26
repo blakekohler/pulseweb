@@ -27,7 +27,26 @@ const BlogPost = ({ data }) => {
        
         </div>
         <div className={style.socialShare}>
-        <div class="addthis_inline_share_toolbox"></div>
+
+        <a className={style.linkedinShare}
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.pulseforgood.com/blogpost/${
+          slug
+        }&title=${title}&source=${title}`}
+        target="_blank"
+      >  <i className={`fab fa-linkedin-in ${style.white}`}></i> LinkedIn </a>
+<a className={style.facebookShare} href={`https://www.facebook.com/sharer/sharer.php?u=https://www.pulseforgood.com/blogpost/${
+          slug
+        }`}
+        target="_blank"
+      > <i className={`fab fa-facebook-f ${style.white}`}></i>  Facebook </a>
+ <a className={style.twitterShare}
+        href={`https://twitter.com/intent/tweet/?text=${title}&url=https://www.pulseforgood.com/blogpost/${
+          slug
+        }`}
+        target="_blank"
+      > <i className={`fab fa-twitter ${style.white}`}></i>   Twitter </a>
+
+
         </div>
         <img alt={title} className={style.heroImage} src={heroImage.file.url} />
        

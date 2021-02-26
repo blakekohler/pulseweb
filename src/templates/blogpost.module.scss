@@ -509,4 +509,56 @@ border-radius: 40px;
 
  .socialShare{
     margin-bottom: 10px;
+    display: flex;
+ }
+
+ .white{
+     color: white;
+ }
+
+ .linkedinShare{
+    background-color: rgb(0, 119, 181);
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+    display: flex;
+    width: 89px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 22px;
+    font-size: small;
+    margin-right: 10px;
+ }
+
+ .facebookShare{
+    background-color: rgb(59, 89, 152);
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+    display: flex;
+    width: 89px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 22px;
+    font-size: small;
+    margin-right: 10px;
+ }
+ .twitterShare{
+    background-color: rgb(29, 161, 242);
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+    display: flex;
+    width: 89px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 22px;
+    margin-right: 10px;
+    font-size: small;
  }
