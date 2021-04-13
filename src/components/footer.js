@@ -59,6 +59,20 @@ const Footer = () => {
           {/* <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a> */}
         </div>
         <div className={style.bigColumn}>
+          <div className={style.socialIcons}>
+          <a href="https://www.facebook.com/pulseforgood/">
+          <i className={`fab fa-facebook-square ${style.big}`}></i>
+          </a>
+          <a href="https://twitter.com/PulseForGood">
+          <i className={`fab fa-twitter-square ${style.big}`}></i>
+          </a>
+          <a href="https://www.linkedin.com/company/pulseforgood/">
+          <i className={`fab fa-linkedin ${style.big}`}></i>
+          </a>
+          
+
+          
+          </div>
 <div id="mc_embed_signup">
 <form action="https://pulseforgood.us19.list-manage.com/subscribe/post?u=232cb66eeaba1029ba1937bdf&amp;id=9fb73702d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
     <div id="mc_embed_signup_scroll">
