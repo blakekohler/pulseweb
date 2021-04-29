@@ -25,7 +25,7 @@ import melissa from "../../images/melissa.jpg"
 import becky from "../../images/becky.jpg"
 
 const CustomerMain = () => {
-  const responseCount = useState(Math.floor((Math.random() * 1000) + 27000));
+  const responseCount = useState(Math.floor((Math.random() * 1000) + 50000));
   return (
     <div className={style.container}>
       <h1 className={style.bigboy}>Over {responseCount} voices heard</h1>
