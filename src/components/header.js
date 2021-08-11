@@ -3,14 +3,22 @@ import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.jpg";
 import style from "./header.module.css"
+import { useState } from "react"
 const Header = ({ siteTitle }) => {
+
+  const [displayProduct, setDisplayProduct] = useState('none');
   return (
     <header>
       {/* Banner For Special Occations */}
       {/* <div className={style.banner}><Link className={style.bannerText} to="/covid">Learn how to use Pulse to fight COVID-19 <i className='fas fa-arrow-circle-right'></i></Link></div> */}
       <nav className={style.topnav} >
       <Link to="/"> <img className={style.logo} alt="Pulse Logo" src={logo}/></Link>
-       <Link className={style.link} to="/product/">Product</Link>
+       {/* <div className={style.link} onMouseEnter={() => setDisplayProduct('flex')}  onMouseLeave={() => setDisplayProduct('none')} to="/product/">Product 
+       <div className={style.itemSub} style={{ display: displayProduct}}>
+        Product
+      </div>
+      </div> */}
+      <Link className={style.link} to="/product/">Product</Link>
        <Link className={style.link} to="/pricing/">Pricing</Link>
        <Link className={style.link} to="/customers/">Customers</Link>
        <Link className={style.link} to="/markets/">Markets</Link>
@@ -31,8 +39,12 @@ const Header = ({ siteTitle }) => {
        <Link className={style.link} to="/markets/">Markets</Link>
        <Link className={style.link} to="/contact/">Contact</Link>
       </div>
-        
       </div>
+
+      
+
+
+
     </header>
   )
 }
