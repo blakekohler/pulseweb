@@ -41,12 +41,14 @@ const Help = () => {
     .then(({ hits }) => {
      let restructureHits = [];
      hits.map(h => {
+       if(h.sys.contentType.sys.id === "helpTopic"){
       let newHit = {
         title: h.fields.title[Object.keys(h.fields.title)[0]],
         article: h.fields.article[Object.keys(h.fields.article)[0]],
         url: "/help/" + h.fields.slug[Object.keys(h.fields.slug)[0]]
       };
       restructureHits.push(newHit);
+    }
      })
      console.log(restructureHits);
      setSearchHits(restructureHits);

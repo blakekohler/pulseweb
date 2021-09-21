@@ -31,7 +31,7 @@ const HelpArticle = ({ data }) => {
   }
   return (
 <main>
-<SEO title="Help is on the way!"  description="Let's get you out of here before you break something else!"/>
+<SEO title="Help is on the way!"  description={article.title}/>
  <section>
  <div className={style.header}>
 <span className={style.headerLeft}>
