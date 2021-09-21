@@ -31,7 +31,7 @@ const HelpArticle = ({ data }) => {
   }
   return (
 <main>
-<SEO title={article.title}  description="Pulse for Good Help Center"/>
+<SEO title={title}  description="Pulse for Good Help Center"/>
  <section>
  <div className={style.header}>
 <span className={style.headerLeft}>
