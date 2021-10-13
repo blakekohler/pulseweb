@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div className={style.callToAction}>
         <div className={style.left}>
-          <div className={style.headline}>Ready to get started?</div>
+          <div className={style.headline}>Ready to gather feedback?</div>
           <div className={style.subline}>Schedule a 15 minute demo </div>
         </div>
         <div className={style.right}>
@@ -35,6 +35,7 @@ const Footer = () => {
           <Link to="/usecase/volunteer" className={style.navitem}>Volunteer surveys</Link>
           <Link to="/usecase/staff" className={style.navitem}>Employees surveys</Link>
           <Link to="/usecase/housingauthority" className={style.navitem}>Housing Authorities</Link>
+          <Link to="/usecase/rescuemission" className={style.navitem}>Rescue Missions</Link>
           <Link to="/usecase/landlord" className={style.navitem}>Landlord surveys</Link>
           
           <div className={style.navitem}></div>
@@ -59,6 +60,7 @@ const Footer = () => {
           {/* <a href="https://medium.com/pulse-for-good" className={style.navitem}>Blog</a> */}
         </div>
         <div className={style.bigColumn}>
+          <div className={style.phone}><a href="tel:435-770-6209">435-770-6209</a></div>
           <div className={style.socialIcons}>
           <a href="https://www.facebook.com/pulseforgood/">
           <i className={`fab fa-facebook-square ${style.big}`}></i>
