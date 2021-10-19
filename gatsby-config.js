@@ -1,5 +1,6 @@
 module.exports = {
-  siteMetadata: {
+   siteMetadata: {
+    siteUrl: `https://www.pulseforgood.com`,
     title: `Pulse For Good | Client satisfaction tracking for vulnerable populations`,
     description: `Capture feedback from your clientele using secure kiosks.
     Improve your services, engage vulnerable populations, and tell compelling funding stories with data straight from your clients
@@ -8,6 +9,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
