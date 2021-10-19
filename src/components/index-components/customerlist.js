@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import style from "./customerlist.module.scss"
+import * as style from "./customerlist.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ccshomeless from "../../videos/ccshomeless.mp4"

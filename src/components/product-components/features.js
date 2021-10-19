@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './features.module.scss'
+import * as style from './features.module.scss'
 import kioskgif from "../../videos/kiosk-animation.mp4"
 import kioskstraight from "../../images/kioskstraight.jpg"
 import dashboardAnimated from "../../videos/dashboard-animation.mp4"

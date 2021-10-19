@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./presslist.module.scss"
+import * as style from "./presslist.module.scss"
 import Forbes from "../../images/forbes.png";
 import { Link } from "gatsby"
 

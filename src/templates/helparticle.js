@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./helparticle.module.scss"
+import * as style from "./helparticle.module.scss"
 import { Link, graphql } from "gatsby"
 import logo from "../images/logo.png";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './thanksmessage.module.scss'
+import * as style from './thanksmessage.module.scss'
 import { Link } from "gatsby"
 
 const Thanksmessage  = () => {

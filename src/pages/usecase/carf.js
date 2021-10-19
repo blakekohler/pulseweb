@@ -6,41 +6,41 @@ import SEO from "../../components/seo"
 import Container from "../../components/contentContainer"
 
 import brit from "../../images/brit-square.jpg"
-import faith from "../../images/faith.jpeg"
+import carf from "../../images/carf.png"
 import tenant from "../../images/tenant.jpeg"
 import julie from "../../images/julie.jpg"
 import melissa from "../../images/melissa.jpg"
 
-const RescueMission = () => {
+const Carf = () => {
   return (
     <Layout>
-      <SEO title="Automated landlord feedback gathering" description="Pulse for Good helps you get feedback from your landlords" img={faith} />
+      <SEO title="Automated your client input for CARF" description="Pulse for Good helps automates your CARF client input process" img={carf} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Feedback collection for Rescue Missions  </p>
+            <p className={style.header}>How does Pulse For Good support CARF Accreditation</p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
               <div className={style.subheader}>
-            Gain immediate insight into your guest, staff and volunteer satisfaction 
+              Automated your client input process, so it meets CARF requirements
             </div>
               <p>
-              Understanding how your clients, staff, and volunteers feel is hard to accomplish in the best of situations. Today's challenges amplify the need for an easy way to understand and share the challenges people face inside your mission. 
+              Becoming CARF accredited is not for the faint of heart. While it might seem like the laundry list of steps you need to take to get your CARF accreditation is a mile long, at least one of those steps has an easy button - feedback kiosks! 
               
                 </p>
                   <p>
-                  Having focused our entire solution on gathering feedback from groups who are reluctant to share feedback, we understand the complexity of collecting input from organizations with diverse needs.
+                  CARF accreditation requires a consistent client feedback process that shows how your organization's client input is captured and utilized. Using self-service kiosks and auto-generating reports, the Pulse For Good system handles the time-consuming parts. All that is left for you is implementing a meeting to review the information and produce action items.
  </p>
- <p>The Pulse solution captures feedback without effort on your part. It transforms feedback into actionable data to improve the experiences of those who interact with your organization. 
+ <p>Once you've got your scheduled meetings running, a few action items under your belt, and your feedback system in place, you'll be ready to cross off a portion of your CARF To-do list. Not bad for a day's work. 
 </p>
 <p>
-The data dashboard also gives you an easy way to share what your teams are doing with the board or other stakeholders, allowing your organization to improve your service, fulfill your mission, and provide better experiences.
+Once you've got your scheduled meetings running, a few action items under your belt, and your feedback system in place, you'll be ready to cross off a portion of your CARF To-do list. Not bad for a day's work.
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
               <div className={style.right}>
-              <img src={faith} className={style.schoolPic} alt="Faith"/>
+              <img src={carf} className={style.schoolPic} alt="CARF + Pulse For Good"/>
               </div>
             
 
@@ -151,4 +151,4 @@ The fear that is introduced creates a new class of people. Empowered individuals
     </Layout>
   )
 }
-export default RescueMission
+export default Carf

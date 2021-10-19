@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import style from "./valuecalculator.module.scss"
+import * as style from "./valuecalculator.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"

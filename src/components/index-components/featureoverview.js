@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./featureoverview.module.scss"
+import * as style from "./featureoverview.module.scss"
 import kiosk from "../../images/kiosk.jpg"
 import dashboardreal from "../../images/dashboardreal.jpg"
 
