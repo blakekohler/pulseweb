@@ -15,6 +15,7 @@
     "gatsby-plugin-algolia": "^0.22.2",
     "gatsby-plugin-facebook-pixel": "^1.0.8",
     "gatsby-plugin-google-analytics": "^3.14.0",
+    "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-linkedin-insight": "^1.0.1",
     "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-offline": "^4.14.0",
