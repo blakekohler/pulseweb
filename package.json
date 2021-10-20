@@ -12,6 +12,7 @@
     "algoliasearch": "^4.10.5",
     "gatsby": "^3.14.3",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-algolia": "^0.22.2",
     "gatsby-plugin-facebook-pixel": "^1.0.8",
     "gatsby-plugin-google-analytics": "^3.14.0",
