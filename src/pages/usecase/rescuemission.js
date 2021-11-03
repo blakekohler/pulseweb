@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./usecase.module.scss"
+import * as style from "./usecase.module.scss"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"
@@ -14,7 +14,7 @@ import melissa from "../../images/melissa.jpg"
 const RescueMission = () => {
   return (
     <Layout>
-      <SEO title="Automated landlord feedback gathering" description="Pulse for Good helps you get feedback from your landlords" img={faith} />
+      <SEO title="Automated feedback gathering for rescue missions" description="Pulse for Good helps you get feedback for your rescue mission" img={faith} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>

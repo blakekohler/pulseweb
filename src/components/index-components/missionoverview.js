@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import style from "./missionoverview.module.scss"
+import * as style from "./missionoverview.module.scss"
 import { Link } from "gatsby"
 
 import VideoPlayer from "../videoPlayer";

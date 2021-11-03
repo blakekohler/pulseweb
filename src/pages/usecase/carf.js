@@ -1,43 +1,46 @@
 import React from "react"
-import * as style from "./marketLanding.module.scss"
+import * as style from "./usecase.module.scss"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"
 import Container from "../../components/contentContainer"
 
-import becky from "../../images/becky.jpg"
-
-import bhuser from "../../images/bhuser.jpg"
+import brit from "../../images/brit-square.jpg"
+import carf from "../../images/carf.png"
+import tenant from "../../images/tenant.jpeg"
 import julie from "../../images/julie.jpg"
 import melissa from "../../images/melissa.jpg"
 
-const Example = () => {
+const Carf = () => {
   return (
     <Layout>
-      <SEO title="Pulse for Mental Health providers" description="Pulse for Good helps Mental Health providers get feedback from the people they serve" />
+      <SEO title="Automated your client input for CARF" description="Pulse for Good helps automates your CARF client input process" img={carf} />
       <Container>
         <div className={style.container}>
           <div className={style.article}>
           <br></br>
-            <p className={style.header}>Our customers see a 330% increase in Medicaid compliance  </p>
+            <p className={style.header}>How does Pulse For Good support CARF Accreditation</p>
             
             <div className={style.mainEvent}>
               <div className={style.left}>
               <div className={style.subheader}>
-            Gain immediate insight into your client satisfaction 
+              Automated your client input process, so it meets CARF requirements
             </div>
               <p>
-          
-              Gathering client feedback is hard even in the best of situations. When working with those affected by anxiety, depression, drug abuse, or other mental and behavioral challenges, gathering feedback can be even harder.                  </p>
+              Becoming CARF accredited is not for the faint of heart. While it might seem like the laundry list of steps you need to take to get your CARF accreditation is a mile long, at least one of those steps has an easy button - feedback kiosks! 
+              
+                </p>
                   <p>
-                  Having focused our entire solution on gathering feedback from vulnerable populations we understand the complexity involved in collecting feedback from this diverse group.
+                  CARF accreditation requires a consistent client feedback process that shows how your organization's client input is captured and utilized. Using self-service kiosks and auto-generating reports, the Pulse For Good system handles the time-consuming parts. All that is left for you is implementing a meeting to review the information and produce action items.
  </p>
-              <p>The Pulse solution captures client feedback without effort on your part and transforms it into actionable data that can be used to improve services. Data from Pulse can meet the metrics required by the Federal Government for Medicare without expending any time on the part of the provider. The data dashboard also gives you an easy way to share what your teams are doing with the board or other funders, allowing your organization to make improvements to your service to better help these individuals in the trying times of their lives.
-
+ <p>Once you've got your scheduled meetings running, a few action items under your belt, and your feedback system in place, you'll be ready to cross off a portion of your CARF To-do list. Not bad for a day's work. 
+</p>
+<p>
+Once you've got your scheduled meetings running, a few action items under your belt, and your feedback system in place, you'll be ready to cross off a portion of your CARF To-do list. Not bad for a day's work.
 </p>
               <Link className={style.demo} to="/demo">Schedule Demo</Link> </div>
               <div className={style.right}>
-              <iframe title="Pulse For Good + Valley Behavioral Health" className={style.video} src="https://www.youtube.com/embed/9flVqovH73U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <img src={carf} className={style.schoolPic} alt="CARF + Pulse For Good"/>
               </div>
             
 
@@ -49,25 +52,26 @@ const Example = () => {
 
             <div className={style.row}>
                 <div className={style.rowImage}>
-                  <img alt="Valley Kiosk" src={bhuser} />
+                  <img alt="For rent sign" src={tenant} />
                 </div>
                 <div className={style.rowDetails}>
                   <div className={style.rowHeader}>
-                  Having the right people at the table
+                  What happens when you are afraid to give your honest opinion?
                   </div>
                   <p>
-                 Partnering with the right people can help your organization free up resources and maximize potential.  </p><p>Service providers are already maxed out on resources, time, and people. Using more of those resources to have an internal staff member create a survey, administer that survey, aggregate and analyze that data is often more than providers can do and spare.</p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://medium.com/pulse-for-good/having-the-right-people-at-the-table-8cb9cdc729fb?source=friends_link&sk=2d9cc44aef9892467d313eea1d274460" className={style.learnmore}>Read more</a>
+                  What happens when you are afraid to give your honest opinion?
+The fear that is introduced creates a new class of people. Empowered individuals become vulnerable individuals. Empowered individuals give feedback that is honest, actionable and often negative. </p><p>Vulnerable individuals share feedback that is often calculated, reserved and often overly positive. When you fear retribution for your feedback the quality of the feedback drops dramatically. </p>
+                  <a target="_blank" rel="noopener noreferrer"  href="https://www.pulseforgood.com/blogpost/the-vulnerability-gap" className={style.learnmore}>Read more</a>
                 </div>
               </div>
 
 <div className={style.featuresList}>
   <div className={style.feature}>
-    <h3>Increase client engagement</h3>
+    <h3>Increase engagement</h3>
 
     <ul>
-      <li>Engage clients on their terms</li>
-      <li>Receive 3 - 5 Submissions daily</li>
+      <li>Engage individuals on their terms</li>
+      <li>Receive as many as 3 - 5 Submissions daily</li>
       <li>Learn what is working</li>
       <li>Resolve unseen concerns</li>
       <li>Uncover new solutions</li>
@@ -88,7 +92,7 @@ const Example = () => {
     <h3>Enhance funding discussions</h3>
 
     <ul>
-      <li>Share client concerns</li>
+      <li>Share concerns</li>
       <li>Bring real data to discussions</li>
       <li>Track key indicators</li>
       <li>Meet reporting requirements</li>
@@ -104,12 +108,12 @@ const Example = () => {
             </div>
 <div className={style.testimonials}>
 <div className={style.testSection}>
-  <div><img alt="becky" className={style.personPic} src={becky}/></div>
+  <div><img alt="becky" className={style.personPic} src={brit}/></div>
   <div>
-  <div className={style.personName}>Becky Brown </div>
-<div className={style.personTitle}>COO - Valley Behavioral Health</div>
+  <div className={style.personName}>Brittany Moulton </div>
+<div className={style.personTitle}>Engagement Coordinator</div>
 <div className={style.quote}>
-  "Pulse For Good has allowed us opportunities to see deep down to see where there are wins that have been missed in the past."
+  "..allows us to really make the changes to make sure that people have a positive experience.."
 </div>
   </div>
 </div>
@@ -147,4 +151,4 @@ const Example = () => {
     </Layout>
   )
 }
-export default Example
+export default Carf

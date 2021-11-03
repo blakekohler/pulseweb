@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./covid.module.scss"
+import * as style from "./covid.module.scss"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import heroes from "../images/heroes-small.jpg"

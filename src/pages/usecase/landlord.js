@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./usecase.module.scss"
+import * as style from "./usecase.module.scss"
 import Layout from "../../components/layout"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"

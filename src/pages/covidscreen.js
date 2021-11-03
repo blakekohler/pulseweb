@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./covidscreen.module.scss"
+import * as style from "./covidscreen.module.scss"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 

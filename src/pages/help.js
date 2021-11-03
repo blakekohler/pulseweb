@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import style from "./help.module.scss"
+import * as style from "./help.module.scss"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import logo from "../images/pulselogo-white.png";

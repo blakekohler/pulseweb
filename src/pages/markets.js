@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import style from "./markets.module.scss"
+import * as style from "./markets.module.scss"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
