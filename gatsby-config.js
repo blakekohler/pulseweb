@@ -51,7 +51,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-linkedin-insight`,
+      resolve: `@tmttn/gatsby-plugin-linkedin-insight`,
       options: {
         partnerId: `2186346`,
   
