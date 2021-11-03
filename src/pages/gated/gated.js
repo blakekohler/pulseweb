@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./gated.module.scss"
+import style from "./gated.module.scss"
 import logo from "../../images/logo.png"
 import SEO from "../../components/seo"
 

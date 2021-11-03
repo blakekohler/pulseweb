@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Container from "../components/contentContainer"
-import * as style from "./blogpost.module.scss"
+import style from "./blogpost.module.scss"
 
 const BlogPost = ({ data }) => {
   const { title, body, description, heroImage, author, slug } = data.contentfulBlog;

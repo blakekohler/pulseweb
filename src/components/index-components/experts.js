@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./experts.module.scss"
+import style from "./experts.module.scss"
 import Tamera from "../../images/advisors/tamera-min.jpg";
 import Iain from "../../images/advisors/iain-min.jpg";
 import Mark from "../../images/advisors/mark-min.jpg";

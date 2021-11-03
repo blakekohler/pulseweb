@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.jpg";
-import * as style from "./header.module.css"
+import style from "./header.module.css"
 import { useState } from "react"
 const Header = ({ siteTitle }) => {
 

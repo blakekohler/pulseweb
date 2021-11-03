@@ -3,7 +3,7 @@
 
 
 import React from "react"
-import * as style from "./videoPlayer.module.scss"
+import style from "./videoPlayer.module.scss"
 
 
 

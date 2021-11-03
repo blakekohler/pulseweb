@@ -4,7 +4,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
-import * as style from "./privacy.module.scss"
+import style from "./privacy.module.scss"
 const Privacy = () => (
   <Layout>
     <SEO title="Contact" description="Pulse For Good privacy policy"/>

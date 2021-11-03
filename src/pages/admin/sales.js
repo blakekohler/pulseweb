@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./sales.module.scss"
+import style from "./sales.module.scss"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Container from "../../components/contentContainer"

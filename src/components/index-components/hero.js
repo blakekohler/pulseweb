@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import * as style from "./hero.module.scss"
+import style from "./hero.module.scss"
 import { Link } from "gatsby"
 import OverviewVid from "../../videos/overview-verysmall.mp4";
 import VideoCover from "../../images/cover.jpg"

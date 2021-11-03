@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import * as style from "./customerMain.module.scss"
+import style from "./customerMain.module.scss"
 import austin from "../../images/austin.png"
 import wv from "../../images/westvirginia.png"
 import vbh from "../../images/vbh.png"

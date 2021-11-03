@@ -2,7 +2,7 @@ import React from "react"
 import Container from "../components/contentContainer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import * as style from "./404.module.scss"
+import style from "./404.module.scss"
 import sadkiosk from "../images/sadkiosk.png"
 import { Link } from "gatsby"
 

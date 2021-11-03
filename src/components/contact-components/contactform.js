@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./contactform.module.scss"
+import style from "./contactform.module.scss"
 import wes from "../../images/wesbig.jpg"
 
 const Contactform = () => {

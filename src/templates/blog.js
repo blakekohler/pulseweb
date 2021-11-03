@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./blog.module.scss"
+import style from "./blog.module.scss"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"

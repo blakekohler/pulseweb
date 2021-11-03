@@ -1,5 +1,5 @@
 import React from "react"
-import * as style from "./marketsoverview.module.scss"
+import style from "./marketsoverview.module.scss"
 
 
 import { Link } from "gatsby"

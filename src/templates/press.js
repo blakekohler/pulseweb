@@ -1,7 +1,7 @@
 import React, { useState }  from "react"
-import * as style from "./press.module.scss"
+import style from "./press.module.scss"
 import { Link } from "gatsby"
-import { graphql } from 'gatsby'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/contentContainer"
@@ -11,7 +11,6 @@ import pulseLogo from "../images/pulselogo.png"
 import whiteLogo from "../images/pulselogo-white.png"
 
 const Press = (props) => {
-  console.log(props.data);
   const items = props.data.allContentfulPress.nodes;
   const { currentPage, pressNumPages } = props.pageContext
   const isFirst = currentPage === 1
@@ -138,6 +137,7 @@ export const pressListQuery = graphql`
       nodes {
         date
         title
+        
         preview{
           preview
         }
