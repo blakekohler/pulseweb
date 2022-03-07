@@ -21,7 +21,7 @@ const MissionOverview = () => {
         <div className={style.featureDetails}>
           <div className={style.detailRow}>
             <p>Pulse For Good is devoted to helping vulnerable communities by supporting those that serve them. We provide a safe place for individuals to share feedback regarding the assistance they receive without fear of retribution.</p>
-          <p>As part of our mission, we also ensure we have a secondary impact on top of the services rendered by our feedback system. For every survey response, we make a small monetary donation. </p>
+          
           <Link className={style.seemore} to="/about">Learn More</Link>{" "}
           </div>
          
