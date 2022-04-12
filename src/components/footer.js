@@ -44,7 +44,7 @@ const Footer = () => {
           <div className={style.header}>Resources</div>
           <Link to="/help" className={style.navitem}>Help</Link>
           <Link to="/privacy" className={style.navitem}>Privacy Policy</Link>
-          <Link to="/install" className={style.navitem}>Install Guide</Link>
+          <Link to="/help/install-kiosk" className={style.navitem}>Install Guide</Link>
           <div className={style.navitem}></div>
          
         </div>

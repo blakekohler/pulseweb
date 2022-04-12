@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@tmttn/gatsby-plugin-linkedin-insight": "^4.0.0",
     "algoliasearch": "^4.10.5",
-    "gatsby": "^3.14.3",
+    "gatsby": "^3.14.6",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-algolia": "^0.22.2",
