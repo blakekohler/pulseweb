@@ -10,7 +10,7 @@ const Thanksmessage  = () => {
 <h1>Thanks for reaching out!</h1>
   <br></br>
   <div className={style.secondaryHeader}>
-  <h2 className={style.midwidth}>We'll be in touch with you very soon. </h2>
+<h2 className={style.midwidth}>We'll be in touch with you very soon. In the meantime check out our <Link  to="/blog">Blog</Link> or <Link  to="/help">Help Section</Link>  </h2>
   
   </div>
   <div className={style.buttonHolder}><Link className={style.homebutton} to="/"> Go Home</Link></div>
